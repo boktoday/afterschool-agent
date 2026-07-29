@@ -58,6 +58,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(14px);-
 .hero-sub{font-size:1.15rem;color:var(--ink-soft);max-width:580px;margin:0 auto 2.5rem;line-height:1.7}
 .hero-time{font-family:var(--disp);font-size:clamp(3rem,10vw,5.5rem);font-weight:700;letter-spacing:-.04em;color:var(--gold);line-height:1;margin-bottom:.4rem}
 .hero-time-label{font-family:var(--disp);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)}
+.hero-underline{position:relative;display:inline-block}
+.hero-underline::after{content:'';position:absolute;left:-2%;right:-2%;bottom:.08em;height:.12em;background:linear-gradient(90deg,transparent 0%,var(--terra) 15%,var(--gold) 50%,var(--terra) 85%,transparent 100%);border-radius:1px;transform:scaleX(0);transform-origin:left;animation:underline-draw 1.2s cubic-bezier(.22,.61,.36,1) .6s forwards}
+@keyframes underline-draw{to{transform:scaleX(1)}}
 .cta-row{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2.5rem}
 .btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--disp);font-size:.85rem;font-weight:600;letter-spacing:.04em;padding:.9rem 2rem;border-radius:10px;transition:all .2s;cursor:pointer;border:none}
 .btn-primary{background:var(--gold);color:var(--night)}
@@ -272,7 +275,7 @@ footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,
   <div class="hero-content">
     <span class="eyebrow">On-Demand Training + Weekly Live Q&amp;A</span>
     <div class="hero-time" style="font-size:clamp(2.8rem,6.5vw,4.8rem)">In a world full of <br>AI agents,</div>
-    <div class="hero-time" style="font-size:clamp(2.8rem,6.5vw,4.8rem);margin-bottom:1.5rem">we give young people agency in real life.</div>
+    <div class="hero-time" style="font-size:clamp(2.8rem,6.5vw,4.8rem);margin-bottom:1.5rem">we give young people <span class="hero-underline">agency in real life</span>.</div>
     <h1>Your teen builds their own <em>AI agent</em>. One that teaches life skills and guides them to grow.</h1>
     <p class="hero-sub">In a world full of AI agents, we give young people agency in real life. On-demand training where they build a local-first AI companion that walks them through the eight essentials of onetoeight &mdash; personalising each one with activities that fit their life. The agent also helps with homework, planning, and the day ahead. No coding experience needed. No cloud accounts. Everything lives on their device. Plus a weekly live Q&amp;A session every Tuesday.</p>
     <div class="cta-row">
