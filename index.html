@@ -485,12 +485,33 @@ footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,
   <div class="sec-inner">
     <!-- EXPLAINER AUDIO -->
     <div class="reveal" style="text-align:center;margin-bottom:3.5rem">
-      <div class="kicker" style="margin-bottom:.8rem">▶ Listen — 60‑Second Explainer</div>
-      <div style="display:inline-block;background:rgba(217,164,65,.06);border:1px solid rgba(217,164,65,.12);border-radius:16px;padding:1.2rem 1.8rem;max-width:480px;width:100%">
-        <audio controls preload="metadata" style="width:100%;height:44px" src="explainer.mp3"></audio>
-        <div style="display:flex;align-items:center;justify-content:center;gap:1.5rem;margin-top:.6rem">
-          <span style="font-family:var(--disp);font-size:.72rem;color:var(--ink-soft);letter-spacing:.08em">☰ Afterschool Agent</span>
-          <span style="font-family:var(--disp);font-size:.72rem;color:var(--ink-soft)">0:60</span>
+      <div class="kicker" style="margin-bottom:.8rem">Listen — 60‑Second Explainer</div>
+      <div class="audio-brand" data-src="explainer.mp3" style="display:inline-block;background:linear-gradient(135deg,rgba(217,164,65,.06) 0%,rgba(13,18,32,.6) 100%);border:1px solid rgba(217,164,65,.15);border-radius:20px;padding:1.5rem 2rem;max-width:480px;width:100%;position:relative;overflow:hidden">
+        <!-- glow -->
+        <div style="position:absolute;top:-60%;right:-20%;width:200px;height:200px;background:radial-gradient(circle,rgba(217,164,65,.08),transparent 70%);pointer-events:none"></div>
+        <div style="display:flex;align-items:center;gap:1.2rem;position:relative;z-index:1">
+          <!-- play button -->
+          <button class="play-btn" onclick="toggleAudio(this)" style="flex-shrink:0;width:48px;height:48px;border-radius:50%;border:2px solid var(--gold);background:rgba(217,164,65,.1);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .25s ease" onmouseover="this.style.background='rgba(217,164,65,.2)'" onmouseout="this.style.background='rgba(217,164,65,.1)'">
+            <svg class="play-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" style="display:block;margin-left:2px">
+              <polygon points="6,3 20,12 6,21" fill="#d9a441"/>
+            </svg>
+            <svg class="pause-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" style="display:none">
+              <rect x="5" y="3" width="5" height="18" rx="1.5" fill="#d9a441"/>
+              <rect x="14" y="3" width="5" height="18" rx="1.5" fill="#d9a441"/>
+            </svg>
+          </button>
+          <!-- progress -->
+          <div style="flex:1;min-width:0">
+            <div style="position:relative;height:4px;background:rgba(217,164,65,.1);border-radius:4px;cursor:pointer" onclick="seekAudio(event,this)">
+              <div class="progress-fill" style="width:0%;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-soft));border-radius:4px;transition:width .15s linear"></div>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:.6rem">
+              <span style="font-family:var(--disp);font-size:.7rem;color:var(--ink-soft);letter-spacing:.04em;font-weight:600">Afterschool Agent</span>
+              <span style="font-family:var(--disp);font-size:.72rem;color:var(--ink-soft)">
+                <span class="time-current">0:00</span><span style="opacity:.4"> / </span><span class="time-duration">1:00</span>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1013,6 +1034,61 @@ function submitModal(e){
   });
 
   return false;
+}
+
+// Custom audio player
+(function(){
+  document.querySelectorAll('.audio-brand').forEach(function(el){
+    var audio = document.createElement('audio');
+    audio.preload = 'metadata';
+    audio.src = el.dataset.src;
+    audio.style.display = 'none';
+    el.appendChild(audio);
+    audio.addEventListener('loadedmetadata', function(){
+      el.querySelector('.time-duration').textContent = formatTime(audio.duration);
+    });
+    audio.addEventListener('timeupdate', function(){
+      var pct = audio.currentTime / (audio.duration || 1) * 100;
+      el.querySelector('.progress-fill').style.width = pct + '%';
+      el.querySelector('.time-current').textContent = formatTime(audio.currentTime);
+    });
+    audio.addEventListener('ended', function(){
+      el.querySelector('.play-icon').style.display = 'block';
+      el.querySelector('.pause-icon').style.display = 'none';
+    });
+  });
+})();
+
+function toggleAudio(btn){
+  var el = btn.closest('.audio-brand');
+  var audio = el.querySelector('audio');
+  if(audio.paused){
+    // Pause any other playing audios
+    document.querySelectorAll('.audio-brand audio').forEach(function(a){ if(a !== audio && !a.paused) a.pause(); });
+    document.querySelectorAll('.audio-brand .pause-icon').forEach(function(i){ i.style.display = 'none'; });
+    document.querySelectorAll('.audio-brand .play-icon').forEach(function(i){ i.style.display = 'block'; });
+    audio.play();
+    btn.querySelector('.play-icon').style.display = 'none';
+    btn.querySelector('.pause-icon').style.display = 'block';
+  } else {
+    audio.pause();
+    btn.querySelector('.play-icon').style.display = 'block';
+    btn.querySelector('.pause-icon').style.display = 'none';
+  }
+}
+
+function seekAudio(e, bar){
+  var rect = bar.getBoundingClientRect();
+  var pct = (e.clientX - rect.left) / rect.width;
+  var el = bar.closest('.audio-brand');
+  var audio = el.querySelector('audio');
+  audio.currentTime = pct * audio.duration;
+}
+
+function formatTime(s){
+  var m = Math.floor(s / 60);
+  var sec = Math.floor(s % 60);
+  return m + ':' + (sec < 10 ? '0' : '') + sec;
 }
 </script>
 
