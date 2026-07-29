@@ -44,7 +44,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(14px);-
 .hero-layout{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;max-width:1400px;width:100%;margin:0 auto;align-items:end;padding-bottom:3rem}
 @media(max-width:900px){.hero-layout{grid-template-columns:1fr;gap:2rem;text-align:center}}
 /* Telegram-style chat */
-.agent-motif{position:relative;width:100%;max-width:400px;aspect-ratio:9/16;border-radius:24px;border:1px solid rgba(255,255,255,.06);background:#0f1622;box-shadow:0 0 80px rgba(217,164,65,.08),0 25px 70px rgba(0,0,0,.5);overflow:hidden;opacity:1;margin:0 auto;align-self:center;animation:chat-glow-in 1s cubic-bezier(.22,.61,.36,1) .2s both}
+.agent-motif{position:relative;width:100%;max-width:400px;aspect-ratio:9/18;border-radius:24px;border:1px solid rgba(255,255,255,.06);background:#0f1622;box-shadow:0 0 80px rgba(217,164,65,.08),0 25px 70px rgba(0,0,0,.5);overflow:hidden;opacity:1;margin:0 auto;align-self:center;animation:chat-glow-in 1s cubic-bezier(.22,.61,.36,1) .2s both}
 @media(max-width:900px){.agent-motif{display:none}}
 @keyframes chat-glow-in{0%{opacity:0;transform:translateY(20px) scale(.96)}100%{opacity:1;transform:translateY(0) scale(1)}}
 /* Telegram header */
@@ -55,7 +55,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(14px);-
 .tg-name{font-family:var(--disp);font-weight:600;font-size:.9rem;color:#fff;line-height:1.2}
 .tg-status{font-family:var(--disp);font-size:.68rem;color:rgba(255,255,255,.45);letter-spacing:.02em}
 /* Telegram chat area */
-.chat-body{position:absolute;top:60px;left:0;right:0;bottom:56px;padding:12px 10px;display:flex;flex-direction:column;gap:4px;overflow:hidden;background:#0f1622}
+.chat-body{position:absolute;top:60px;left:0;right:0;bottom:56px;padding:12px 10px;display:flex;flex-direction:column;gap:6px;overflow:hidden;background:#0f1622}
 /* Telegram message bubbles */
 .msg{max-width:78%;padding:.55rem .85rem;border-radius:16px;font-family:var(--disp);font-size:.82rem;line-height:1.5;opacity:0;transform:translateY(6px);animation:msg-in .35s cubic-bezier(.22,.61,.36,1) forwards;position:relative;word-wrap:break-word}
 @keyframes msg-in{to{opacity:1;transform:translateY(0)}}
@@ -354,7 +354,7 @@ footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,
   <div class="hero-layout">
     <div class="hero-content">
       <span class="eyebrow">On-Demand Training + Weekly Live Q&amp;A</span>
-      <div class="hero-time" style="font-size:clamp(2.8rem,6.5vw,4.8rem)">In a world full of <br>AI agents,</div>
+      <div class="hero-time" style="font-size:clamp(2.8rem,6.5vw,4.8rem)">In a world full of <br>AI agents <em>online</em>,</div>
       <div class="hero-time" style="font-size:clamp(2.8rem,6.5vw,4.8rem);margin-bottom:1.5rem">we give young people <span class="hero-underline">agency in real life</span>.</div>
       <h1>Your teen builds their own <em>AI agent</em>. One that teaches life skills and guides them to grow.</h1>
       <p class="hero-sub">In a world full of AI agents, we give young people agency in real life. On-demand training where they build a local-first AI companion that walks them through the eight essentials of onetoeight &mdash; personalising each one with activities that fit their life. The agent also helps with homework, planning, and the day ahead. No coding experience needed. Everything lives on their device after a one-time $5 OpenCode Go setup. Plus a weekly live Q&amp;A session every Tuesday.</p>
