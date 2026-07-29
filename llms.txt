@@ -1,0 +1,27 @@
+# Afterschool Agent
+> On-demand training + weekly live Q&A where young people build a personal AI agent that teaches the eight essentials.
+> https://www.afterschool.agency
+
+## About
+The Afterschool Agent programme teaches teens (13-23) to build a local-first AI companion using Hermes that guides them through the eight essentials of onetoeight — silence, body, scripture, nature, digital self-defence, life skills, community, and tested character. The agent also helps with homework, planning, and daily routines via a Morning Minute audio briefing.
+
+## Key features
+- On-demand training modules — self-paced
+- Weekly live Q&A every Tuesday at 4:30 PM
+- Fully secular — teen tailors the agent to their own beliefs
+- Local-first: everything runs on the device, no cloud data
+- Three daily rituals: Afterschool Chat, Planning Session, Morning Minute
+- $44.88 one-time payment
+- Requirements: personal laptop (8GB RAM), $5 OpenCode Go account, Telegram or WhatsApp
+
+## Pages
+- Home: https://www.afterschool.agency/
+- Privacy: https://www.afterschool.agency/privacy/
+- Security: https://www.afterschool.agency/security/
+- Terms: https://www.afterschool.agency/terms/
+- Refund Policy: https://www.afterschool.agency/refund-policy/
+
+## External links
+- onetoeight: https://onetoeight.org
+- Hermes Agent: https://hermes-agent.nousresearch.com
+- OpenCode Go: https://opencode.ai/zen/go
