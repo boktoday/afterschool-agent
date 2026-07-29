@@ -38,7 +38,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(14px);-
 .nav-links a{font-family:var(--disp);font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);transition:color .2s}
 .nav-links a:hover{color:var(--gold)}
 /* Hamburger */
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;z-index:101}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px 10px;background:rgba(217,164,65,.08);border:1px solid rgba(217,164,65,.15);border-radius:8px;z-index:101}
 .hamburger span{display:block;width:22px;height:2px;background:var(--gold);border-radius:2px;transition:all .3s}
 .hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
 .hamburger.open span:nth-child(2){opacity:0}
@@ -692,9 +692,9 @@ footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,
   <div class="sec-inner">
     <div class="kicker reveal">Before You Enrol — The Tech Requirements</div>
     <h2 class="sec-title reveal">What you'll need to <em>set this up</em>.</h2>
-    <p class="sec-lead reveal">This is a self-paced build, not a magic install. To get the most out of the Afterschool Agent programme, you'll need three things in place first. None of them are expensive — but they are real.</p>
+    <p class="sec-lead reveal">This is a self-paced build, not a magic install. To get the most out of the Afterschool Agent programme, you'll need these things in place first. None of them are expensive — but they are real.</p>
 
-    <div class="feature-grid">
+    <div class="feature-grid cred-grid">
       <div class="feature-card reveal">
         <div class="feature-icon" style="background:rgba(194,96,62,.12);color:var(--terra)">💻</div>
         <div class="feature-tag">Requirement 1</div>
@@ -715,6 +715,13 @@ footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,
         <h3>Local AI Model for Ongoing Tasks</h3>
         <p>Once set up, the agent runs mostly <strong>locally</strong> — no ongoing API bills for everyday use. For the best experience, install a small open-source model (we recommend <strong>LFM2-700M</strong> or similar) directly on the device. It's free, runs offline, and keeps everyday conversations private.</p>
         <p style="margin-top:.8rem;font-size:.85rem;color:var(--ink-mute)">Keep your $5 OpenCode Go balance topped up as you go for <em>advanced</em> tasks (deep personalisation, weekly curriculum reviews, parent reports). Most families find $5 covers the first few months; ongoing costs depend on how heavy the usage is.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon" style="background:rgba(217,164,65,.12);color:var(--gold)">💬</div>
+        <div class="feature-tag">Requirement 4</div>
+        <h3>Telegram or WhatsApp</h3>
+        <p>The Morning Minute audio briefing and daily check-ins are delivered through <strong>Telegram</strong> or <strong>WhatsApp</strong>. Your teen needs a registered account on one of these services on their phone. Both are free and available on any smartphone.</p>
+        <p style="margin-top:.8rem;font-size:.85rem;color:var(--ink-mute)">The agent sends messages, not the other way around — no bots, no spam, no data collection. Just a good morning and a plan for the day.</p>
       </div>
     </div>
 
@@ -740,7 +747,7 @@ footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,
       </div>
       <div class="faq-item reveal" onclick="this.classList.toggle('open')">
               <div class="faq-q">What equipment and accounts do we need?</div>
-              <div class="faq-a">See the full breakdown in the <a href="#requirements">What You'll Need</a> section above. Short version: a personal laptop (not school-issued) with 8 GB RAM, a one-time $5 OpenCode Go account for setup, and optionally a local AI model for ongoing use. The software is free.</div>
+              <div class="faq-a">See the full breakdown in the <a href="#requirements">What You'll Need</a> section above. Short version: a personal laptop (not school-issued) with 8 GB RAM, a one-time $5 OpenCode Go account for setup, optionally a local AI model, and a Telegram or WhatsApp account on a phone for the Morning Minute delivery. The software itself is free.</div>
             </div>
       <div class="faq-item reveal" onclick="this.classList.toggle('open')">
         <div class="faq-q">Is my teen's data safe?</div>
