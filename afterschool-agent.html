@@ -40,44 +40,71 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(14px);-
 
 /* HERO */
 .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:6rem 3rem 3rem}
-.hero-sky{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 30% 35%,rgba(217,164,65,.12) 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 70% 80%,rgba(79,111,158,.08) 0%,transparent 50%),linear-gradient(180deg,var(--night) 0%,var(--night2) 50%,var(--night3) 100%)}
+.hero-sky{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 30% 35%,rgba(217,164,65,.12) 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 70% 80%,rgba(79,111,158,.08) 0%,transparent 50%),linear-gradient(180deg,var(--night) 0%,var(--night2) 50%,var(--night3) 100%);z-index:0;pointer-events:none}
 .hero-layout{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;max-width:1400px;width:100%;margin:0 auto;align-items:end;padding-bottom:3rem}
 @media(max-width:900px){.hero-layout{grid-template-columns:1fr;gap:2rem;text-align:center}}
-/* Glowing agent phone chat */
-.agent-motif{position:relative;width:100%;max-width:400px;aspect-ratio:9/16;border-radius:32px;border:1px solid rgba(217,164,65,.25);background:linear-gradient(165deg,#101828 0%,#0d1220 40%,#0d1220 100%);box-shadow:0 0 80px rgba(217,164,65,.12),0 25px 70px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.04) inset;overflow:hidden;opacity:1;margin:0 auto;align-self:center;animation:chat-glow-in 1s cubic-bezier(.22,.61,.36,1) .2s both}
+/* Telegram-style chat */
+.agent-motif{position:relative;width:100%;max-width:400px;aspect-ratio:9/16;border-radius:24px;border:1px solid rgba(255,255,255,.06);background:#0f1622;box-shadow:0 0 80px rgba(217,164,65,.08),0 25px 70px rgba(0,0,0,.5);overflow:hidden;opacity:1;margin:0 auto;align-self:center;animation:chat-glow-in 1s cubic-bezier(.22,.61,.36,1) .2s both}
 @media(max-width:900px){.agent-motif{display:none}}
 @keyframes chat-glow-in{0%{opacity:0;transform:translateY(20px) scale(.96)}100%{opacity:1;transform:translateY(0) scale(1)}}
-/* phone header */
-.phone-header{position:absolute;top:0;left:0;right:0;height:64px;background:rgba(13,18,32,.85);border-bottom:1px solid rgba(217,164,65,.08);display:flex;align-items:center;gap:12px;padding:0 18px;z-index:2}
-.phone-avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--terra));display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;position:relative}
-.phone-avatar::after{content:'';position:absolute;bottom:-1px;right:-1px;width:10px;height:10px;border-radius:50%;background:#4ade80;border:2px solid var(--night)}
-.phone-name{font-family:var(--disp);font-weight:700;font-size:.85rem;color:var(--dawn)}
-.phone-status{font-family:var(--disp);font-size:.62rem;color:rgba(74,222,128,.7);letter-spacing:.06em}
-/* chat messages area */
-.chat-body{position:absolute;top:64px;left:0;right:0;bottom:56px;padding:16px 14px;display:flex;flex-direction:column;gap:10px;overflow:hidden}
-/* message bubbles */
-.msg{max-width:82%;padding:.65rem .9rem;border-radius:16px;font-family:var(--disp);font-size:.78rem;line-height:1.55;opacity:0;transform:translateY(10px);animation:msg-in .4s cubic-bezier(.22,.61,.36,1) forwards;position:relative;word-wrap:break-word}
+/* Telegram header */
+.tg-header{position:absolute;top:0;left:0;right:0;height:60px;background:#17212b;border-bottom:1px solid rgba(255,255,255,.04);display:flex;align-items:center;gap:12px;padding:0 16px;z-index:2}
+.tg-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--terra));display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;position:relative}
+.tg-avatar::after{content:'';position:absolute;bottom:0;right:0;width:10px;height:10px;border-radius:50%;background:#4ade80;border:2.5px solid #17212b}
+.tg-info{flex:1}
+.tg-name{font-family:var(--disp);font-weight:600;font-size:.9rem;color:#fff;line-height:1.2}
+.tg-status{font-family:var(--disp);font-size:.68rem;color:rgba(255,255,255,.45);letter-spacing:.02em}
+/* Telegram chat area */
+.chat-body{position:absolute;top:60px;left:0;right:0;bottom:56px;padding:12px 10px;display:flex;flex-direction:column;gap:4px;overflow:hidden;background:#0f1622}
+/* Telegram message bubbles */
+.msg{max-width:78%;padding:.55rem .85rem;border-radius:16px;font-family:var(--disp);font-size:.82rem;line-height:1.5;opacity:0;transform:translateY(6px);animation:msg-in .35s cubic-bezier(.22,.61,.36,1) forwards;position:relative;word-wrap:break-word}
 @keyframes msg-in{to{opacity:1;transform:translateY(0)}}
-.msg.agent{align-self:flex-start;background:rgba(217,164,65,.1);color:var(--gold-soft);border:1px solid rgba(217,164,65,.12);border-bottom-left-radius:4px}
-.msg.user{align-self:flex-end;background:rgba(79,111,158,.18);color:var(--dawn);border:1px solid rgba(79,111,158,.15);border-bottom-right-radius:4px}
-.msg.user:last-of-type{margin-bottom:2px}
-/* typing indicator */
-.typing-dots{display:flex;gap:5px;padding:.6rem .9rem;align-self:flex-start;background:rgba(217,164,65,.08);border-radius:16px;border-bottom-left-radius:4px;border:1px solid rgba(217,164,65,.1);opacity:0;animation:msg-in .4s forwards}
-.typing-dots span{width:6px;height:6px;border-radius:50%;background:rgba(217,164,65,.5);animation:td-bounce 1s infinite}
+.msg.agent{align-self:flex-start;background:#182533;color:#fff;border-bottom-left-radius:4px;margin-left:2px}
+.msg.user{align-self:flex-end;background:#2b5278;color:#fff;border-bottom-right-radius:4px;margin-right:2px}
+/* Telegram read check */
+.msg.user::after{content:'✓✓';position:absolute;bottom:4px;right:8px;font-size:.55rem;color:rgba(74,222,128,.7)}
+/* Telegram time */
+.msg-time{font-size:.6rem;color:rgba(255,255,255,.35);margin-top:2px;display:block;text-align:right}
+/* Typing indicator (Telegram style) */
+.typing-dots{display:flex;gap:5px;padding:.55rem .85rem;align-self:flex-start;background:#182533;border-radius:16px;border-bottom-left-radius:4px;margin-left:2px;opacity:0;animation:msg-in .35s forwards}
+.typing-dots span{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.5);animation:td-bounce 1.2s infinite}
 .typing-dots span:nth-child(2){animation-delay:.15s}
 .typing-dots span:nth-child(3){animation-delay:.3s}
 @keyframes td-bounce{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-5px)}}
-/* action chip (morning minute) */
-.action-chip{align-self:center;background:linear-gradient(90deg,rgba(125,138,110,.15),rgba(217,164,65,.12));border:1px solid rgba(125,138,110,.2);border-radius:20px;padding:.5rem 1rem;font-family:var(--disp);font-size:.68rem;color:var(--sage);display:flex;align-items:center;gap:6px;opacity:0;animation:msg-in .4s forwards}
-.action-chip .pulse{width:8px;height:8px;border-radius:50%;background:#4ade80;animation:pulse-green 2s infinite}
-@keyframes pulse-green{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(74,222,128,.4)}50%{opacity:.6;box-shadow:0 0 0 5px rgba(74,222,128,0)}}
-/* input bar */
-.input-bar{position:absolute;bottom:0;left:0;right:0;height:56px;background:rgba(13,18,32,.9);border-top:1px solid rgba(217,164,65,.08);display:flex;align-items:center;padding:0 14px;gap:10px;z-index:2}
-.input-bar .mic{width:28px;height:28px;border-radius:50%;background:rgba(217,164,65,.15);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:.8rem}
-.input-bar .placeholder{flex:1;font-family:var(--disp);font-size:.75rem;color:rgba(246,239,227,.3)}
-.input-bar .send{width:28px;height:28px;border-radius:50%;background:rgba(217,164,65,.12);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:.75rem}
-/* subtle scan line on agent messages */
-.msg.agent::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;border-radius:16px;border-bottom-left-radius:4px;background:linear-gradient(135deg,rgba(217,164,65,.05) 0%,transparent 50%);pointer-events:none}
+/* Voice message (Morning Minute) — Telegram style */
+.voice-msg{max-width:78%;align-self:flex-start;background:#182533;border-radius:16px;border-bottom-left-radius:4px;margin-left:2px;padding:.6rem .85rem;opacity:0;transform:translateY(6px);animation:msg-in .35s forwards;position:relative}
+.voice-msg-inner{display:flex;align-items:center;gap:10px}
+.voice-play{width:32px;height:32px;border-radius:50%;background:#2b5278;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.voice-play svg{width:12px;height:12px;fill:#fff}
+.voice-wave{display:flex;align-items:center;gap:2px;height:20px;flex:1}
+.voice-wave span{width:3px;border-radius:2px;background:rgba(255,255,255,.4)}
+.voice-wave span:nth-child(1){height:8px}
+.voice-wave span:nth-child(2){height:14px}
+.voice-wave span:nth-child(3){height:18px}
+.voice-wave span:nth-child(4){height:12px}
+.voice-wave span:nth-child(5){height:16px}
+.voice-wave span:nth-child(6){height:10px}
+.voice-wave span:nth-child(7){height:14px}
+.voice-wave span:nth-child(8){height:6px}
+.voice-wave span:nth-child(9){height:12px}
+.voice-wave span:nth-child(10){height:8px}
+.voice-wave span:nth-child(11){height:10px}
+.voice-wave span:nth-child(12){height:6px}
+.voice-wave span:nth-child(13){height:8px}
+.voice-wave span:nth-child(14){height:4px}
+.voice-wave span:nth-child(15){height:6px}
+.voice-wave span:nth-child(16){height:10px}
+.voice-wave span:nth-child(17){height:12px}
+.voice-wave span:nth-child(18){height:8px}
+.voice-wave span:nth-child(19){height:5px}
+.voice-wave span:nth-child(20){height:3px}
+.voice-duration{font-family:var(--disp);font-size:.7rem;color:rgba(255,255,255,.5);flex-shrink:0}
+.voice-caption{font-size:.72rem;color:rgba(255,255,255,.45);margin-top:6px;line-height:1.4}
+/* Telegram input bar */
+.input-bar{position:absolute;bottom:0;left:0;right:0;height:56px;background:#17212b;border-top:1px solid rgba(255,255,255,.04);display:flex;align-items:center;padding:0 14px;gap:12px;z-index:2}
+.input-bar .emoji-btn{width:28px;height:28px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.4);font-size:1.1rem}
+.input-bar .placeholder{flex:1;font-family:var(--disp);font-size:.78rem;color:rgba(255,255,255,.3)}
+.input-bar .send{width:32px;height:32px;border-radius:50%;background:#2b5278;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.8rem;flex-shrink:0}
 
 .hero-content{position:relative;z-index:2;text-align:left;max-width:680px}
 @media(max-width:900px){.hero-content{text-align:center;max-width:780px;margin:0 auto}}
@@ -337,30 +364,38 @@ footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,
       </div>
     </div>
     <div class="agent-motif">
-      <!-- phone header -->
-      <div class="phone-header">
-        <div class="phone-avatar">🤖</div>
-        <div>
-          <div class="phone-name">Afterschool Agent</div>
-          <div class="phone-status">● Online — local &amp; private</div>
+      <!-- Telegram header -->
+      <div class="tg-header">
+        <div class="tg-avatar"><svg viewBox="0 0 200 400" width="18" height="36" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M100,25 L100,360"/><path d="M68,55 L100,15"/><path d="M38,120 C55,117 75,119 100,119 C125,119 145,117 162,120"/><path d="M100,118 C140,118 165,155 160,190 C156,222 130,245 100,245 C70,245 44,222 40,190 C35,155 60,118 100,118"/><path d="M100,245 C135,245 155,280 150,315 C146,345 125,360 100,360 C75,360 54,345 50,315 C45,280 65,245 100,245"/></svg></div>
+        <div class="tg-info">
+          <div class="tg-name">Afterschool Agent</div>
+          <div class="tg-status">online</div>
         </div>
       </div>
       <!-- messages -->
       <div class="chat-body">
-        <div class="msg agent" style="animation-delay:.5s">Good afternoon, Alex. How was school today?</div>
-        <div class="msg user" style="animation-delay:1.2s">Pretty good, but maths test Thursday 😬</div>
+        <div class="msg agent" style="animation-delay:.5s">Good afternoon, Alex. How was school today? <span class="msg-time">4:30 PM</span></div>
+        <div class="msg user" style="animation-delay:1.2s">Pretty good, but maths test Thursday 😬 <span class="msg-time">4:31 PM</span></div>
         <div class="typing-dots" style="animation-delay:1.9s"><span></span><span></span><span></span></div>
-        <div class="msg agent" style="animation-delay:2.4s">Let's prep together. First — one minute of stillness to clear your head.</div>
-        <div class="msg user" style="animation-delay:3.2s">ok, done. that actually helped.</div>
-        <div class="msg agent" style="animation-delay:3.8s">Here's your study plan: 30 min tonight, 45 min Wednesday, review Thursday morning. Sound fair?</div>
-        <div class="msg user" style="animation-delay:4.5s">yes. can you remind me tomorrow?</div>
-        <div class="msg agent" style="animation-delay:5.2s">Done. Your Morning Minute will open with: "Thursday is your maths test. You've prepared. Take one breath. Trust the work."</div>
-        <div class="action-chip" style="animation-delay:5.8s"><span class="pulse"></span> Morning Minute ready</div>
+        <div class="msg agent" style="animation-delay:2.4s">Let's prep together. First — three minutes of stillness to clear your head. <span class="msg-time">4:32 PM</span></div>
+        <div class="msg user" style="animation-delay:3.2s">ok, done. that actually helped. <span class="msg-time">4:35 PM</span></div>
+        <div class="msg agent" style="animation-delay:3.8s">Here's your study plan: 30 min tonight, 45 min Wednesday, review Thursday morning. Sound fair? <span class="msg-time">4:35 PM</span></div>
+        <div class="msg user" style="animation-delay:4.5s">yes. can you remind me tomorrow? <span class="msg-time">4:36 PM</span></div>
+        <div class="msg agent" style="animation-delay:5.2s">Done. Your Morning Minute will open with: "Thursday is your maths test. You've prepared. Take one breath. Trust the work." <span class="msg-time">4:37 PM</span></div>
+        <!-- Voice message -->
+        <div class="voice-msg" style="animation-delay:5.8s">
+          <div class="voice-msg-inner">
+            <div class="voice-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+            <div class="voice-wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="voice-duration">0:59</div>
+          </div>
+          <div class="voice-caption">Morning Minute — Thursday's test briefing</div>
+        </div>
       </div>
-      <!-- input bar -->
+      <!-- Telegram input bar -->
       <div class="input-bar">
-        <div class="mic">🎤</div>
-        <div class="placeholder">Message your agent…</div>
+        <div class="emoji-btn">😊</div>
+        <div class="placeholder">Message</div>
         <div class="send">↑</div>
       </div>
     </div>
@@ -871,6 +906,8 @@ function submitModal(e){
   return false;
 }
 </script>
+
+<script>
 const obs=new IntersectionObserver((entries)=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}})
 },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
