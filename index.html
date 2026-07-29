@@ -30,13 +30,28 @@ img{max-width:100%;display:block}
 
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(13,18,32,.72);border-bottom:1px solid rgba(217,164,65,.12);transition:padding .3s}
-.nav-inner{max-width:1200px;margin:0 auto;padding:.85rem 1.5rem;display:flex;align-items:center;justify-content:space-between}
-.wordmark{font-family:var(--serif);font-size:1.35rem;font-weight:600;letter-spacing:-.02em;color:var(--dawn)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:.85rem 1.5rem;display:flex;align-items:center;justify-content:space-between;position:relative}
+.wordmark{font-family:var(--serif);font-size:1rem;font-weight:600;letter-spacing:-.02em;color:var(--dawn);line-height:1.2}
+.wordmark .by{font-size:.7rem;font-weight:400;color:var(--ink-soft);display:block;line-height:1}
 .wordmark em{font-style:italic;color:var(--gold);font-weight:400}
 .nav-links{display:flex;gap:2rem;list-style:none}
 .nav-links a{font-family:var(--disp);font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);transition:color .2s}
 .nav-links a:hover{color:var(--gold)}
-@media(max-width:760px){.nav-links{display:none}}
+/* Hamburger */
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;z-index:101}
+.hamburger span{display:block;width:22px;height:2px;background:var(--gold);border-radius:2px;transition:all .3s}
+.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+/* Mobile nav overlay */
+.nav-overlay{display:none}
+@media(max-width:760px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .nav-links.mobile-open{display:flex;flex-direction:column;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,18,32,.97);backdrop-filter:blur(20px);gap:0;padding:5rem 2rem 2rem;z-index:100;align-items:center;justify-content:center}
+  .nav-links.mobile-open li{margin:.5rem 0}
+  .nav-links.mobile-open a{font-size:1.3rem;letter-spacing:.15em;color:var(--dawn)}
+}
 
 /* HERO */
 .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:6rem 3rem 3rem}
@@ -335,8 +350,9 @@ footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <a href="../hub/" class="wordmark">one <em>to</em> eight</a>
-    <ul class="nav-links">
+    <a href="../hub/" class="wordmark">Afterschool Agent <span class="by">by one <em>to</em> eight</span></a>
+    <button class="hamburger" onclick="toggleNav()" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="nav-links">
           <li><a href="#what">What It Is</a></li>
           <li><a href="#essentials">The Eight</a></li>
           <li><a href="#rituals">The Rituals</a></li>
@@ -839,6 +855,15 @@ footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,
 </div>
 
 <script>
+function toggleNav(){
+  document.getElementById('nav-links').classList.toggle('mobile-open');
+}
+// Close nav on link click (mobile)
+document.querySelectorAll('.nav-links a').forEach(function(el){
+  el.addEventListener('click', function(){
+    document.getElementById('nav-links').classList.remove('mobile-open');
+  });
+});
 // Modal: show after 4 seconds, once per session
 (function(){
   if (!sessionStorage.getItem('earlyAccessSeen')) {
