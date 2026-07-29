@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9a441"/>
+      <stop offset="100%" stop-color="#e8c87a"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="6" fill="#0d1220"/>
+  <!-- 1 -->
+  <text x="8" y="24" font-family="Georgia,serif" font-size="22" font-weight="700" fill="url(#g)" text-anchor="middle">1</text>
+  <!-- thin underline -->
+  <line x1="3" y1="26" x2="13" y2="26" stroke="url(#g)" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- to symbol -->
+  <text x="18" y="18" font-family="Georgia,serif" font-size="9" fill="rgba(217,164,65,.35)" text-anchor="middle">→</text>
+  <!-- 8 -->
+  <text x="25" y="24" font-family="Georgia,serif" font-size="22" font-weight="700" fill="url(#g)" text-anchor="middle">8</text>
+  <line x1="20" y1="26" x2="30" y2="26" stroke="url(#g)" stroke-width="1.2" stroke-linecap="round"/>
+</svg>
