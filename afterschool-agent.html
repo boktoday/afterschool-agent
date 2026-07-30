@@ -1,1126 +1,1128 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0d1220">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23d9a441'/%3E%3Cstop offset='100%25' stop-color='%23e8c87a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='6' fill='%230d1220'/%3E%3Ctext x='8' y='24' font-family='Georgia,serif' font-size='22' font-weight='700' fill='url(%23g)' text-anchor='middle'%3E1%3C/text%3E%3Cline x1='3' y1='26' x2='13' y2='26' stroke='url(%23g)' stroke-width='1.2' stroke-linecap='round'/%3E%3Ctext x='18' y='18' font-family='Georgia,serif' font-size='9' fill='rgba(217,164,65,.35)' text-anchor='middle'%3E%E2%86%92%3C/text%3E%3Ctext x='25' y='24' font-family='Georgia,serif' font-size='22' font-weight='700' fill='url(%23g)' text-anchor='middle'%3E8%3C/text%3E%3Cline x1='20' y1='26' x2='30' y2='26' stroke='url(%23g)' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E">
-<meta name="color-scheme" content="dark">
-<meta name="robots" content="noindex, nofollow">
-<title>Afterschool Agent - Personalized Agent Training for Key Life Skills</title>
-<meta name="description" content="Teens build a personal AI agent that guides them through eight key life skills. On-demand training + weekly live Q&A. One-time $44.88.">
-<meta name="keywords" content="afterschool agent, AI agent, teen AI, youth AI training, AI education, onetoeight, eight essentials, AI assistant">
-<meta name="author" content="onetoeight">
-<link rel="canonical" href="https://www.afterschool.agency/">
-<!-- Open Graph -->
-<meta property="og:title" content="Afterschool Agent - Personalized Agent Training for Key Life Skills">
-<meta property="og:description" content="Teens build a personal AI agent that guides them through silence, body, scripture, nature, digital self-defence, life skills, community, and tested character.">
-<meta property="og:url" content="https://www.afterschool.agency/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Afterschool Agent by onetoeight">
-<meta property="og:image" content="https://www.afterschool.agency/og-image.svg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Afterschool Agent - Personalized Agent Training for Key Life Skills">
-<meta property="og:image:type" content="image/svg+xml">
-<meta property="og:locale" content="en_AU">
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Afterschool Agent - Personalized Agent Training for Key Life Skills">
-<meta name="twitter:description" content="Teens build a personal AI agent that teaches key life skills through the eight essentials of onetoeight.">
-<meta name="twitter:image" content="https://www.afterschool.agency/og-image.svg">
-<!-- JSON-LD Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Course",
-  "name": "Afterschool Agent",
-  "description": "Teens build a personal AI agent that guides them through eight key life skills. On-demand training + weekly live Q&A.",
-  "provider": {
-    "@type": "Organization",
-    "name": "onetoeight",
-    "url": "https://onetoeight.org"
-  },
-  "offers": {
-    "@type": "Offer",
-    "price": "44.88",
-    "priceCurrency": "AUD",
-    "priceValidUntil": "2026-12-31"
-  },
-  "educationalLevel": "Beginner",
-  "timeRequired": "P4W"
-}
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --night:#0d1220; --night2:#131a2e; --night3:#1a2340;
-  --dawn:#f6efe3; --dawn2:#efe6d6; --paper:#fbf7ee;
-  --ink:#232a3d; --ink-soft:#5a6278;
-  --terra:#c2603e; --terra-deep:#9c4a2e;
-  --sage:#7d8a6e; --sage-deep:#5f6d52;
-  --gold:#d9a441; --gold-soft:#e8c87a;
-  --blue:#4f6f9e;
-  --serif:'Fraunces',Georgia,serif;
-  --disp:'Space Grotesk',system-ui,sans-serif;
-  --body:'Inter',system-ui,sans-serif;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:var(--body);background:var(--night);color:var(--dawn);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
-
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(13,18,32,.72);border-bottom:1px solid rgba(217,164,65,.12);transition:padding .3s}
-.nav-inner{max-width:1200px;margin:0 auto;padding:.85rem 1.5rem;display:flex;align-items:center;justify-content:space-between;position:relative}
-.wordmark{font-family:var(--serif);font-size:1rem;font-weight:600;letter-spacing:-.02em;color:var(--dawn);line-height:1.2}
-.wordmark .by{font-size:.7rem;font-weight:400;color:var(--ink-soft);display:block;line-height:1}
-.wordmark em{font-style:italic;color:var(--gold);font-weight:400}
-.nav-links{display:flex;gap:2rem;list-style:none}
-.nav-links a{font-family:var(--disp);font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);transition:color .2s}
-.nav-links a:hover{color:var(--gold)}
-/* Hamburger */
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px 10px;background:transparent;border:1px solid rgba(217,164,65,.25);border-radius:8px;z-index:101}
-.hamburger span{display:block;width:22px;height:2px;background:var(--gold);border-radius:2px;transition:all .3s}
-.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
-.hamburger.open span:nth-child(2){opacity:0}
-.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
-/* Mobile nav overlay */
-.nav-overlay{display:none}
-@media(max-width:760px){
-  .nav-links{display:flex;flex-wrap:wrap;gap:.5rem 1rem;justify-content:flex-end;max-width:70%}
-  .nav-links a{font-size:.6rem;letter-spacing:.08em}
-  .hamburger{display:flex}
-  .nav-links.mobile-open{display:flex;flex-direction:column;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,18,32,.97);backdrop-filter:blur(20px);gap:0;padding:5rem 2rem 2rem;z-index:100;align-items:center;justify-content:center}
-  .nav-links.mobile-open li{margin:.5rem 0}
-  .nav-links.mobile-open a{font-size:1.3rem;letter-spacing:.15em;color:var(--dawn)}
-}
-@media(max-width:480px){
-  .nav-links{display:none}
-  .nav-inner{padding:.75rem 1rem}
-  .wordmark{font-size:.85rem}
-  .wordmark .by{font-size:.6rem}
-}
-
-/* HERO */
-.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:6rem 3rem 3rem}
-.hero-sky{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 30% 35%,rgba(217,164,65,.12) 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 70% 80%,rgba(79,111,158,.08) 0%,transparent 50%),linear-gradient(180deg,var(--night) 0%,var(--night2) 50%,var(--night3) 100%);z-index:0;pointer-events:none}
-.hero-layout{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;max-width:1400px;width:100%;margin:0 auto;align-items:end;padding-bottom:3rem}
-@media(max-width:900px){.hero-layout{grid-template-columns:1fr;gap:2rem;text-align:center;align-items:center;padding-bottom:0}}
-@media(max-width:900px){.hero-right{display:none!important}}
-@media(max-width:760px){.hero-layout{gap:0!important}}
-.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:6rem 3rem 3rem}
-@media(max-width:480px){
-  .hero{min-height:auto!important;padding:4.5rem 1rem 1.5rem!important;align-items:flex-start!important;overflow-x:hidden!important}
-  .hero-layout{grid-template-columns:1fr!important;gap:0!important;text-align:center!important;align-items:center!important;padding-bottom:0!important;width:100%!important;max-width:100%!important}
-  .hero-content{max-width:100%!important;width:100%!important;text-align:center!important;margin:0!important}
-  .hero h1{font-size:clamp(1.1rem,4vw,1.35rem)!important;margin-bottom:.8rem!important;word-break:break-word!important}
-  .hero-time{font-size:clamp(1.3rem,4.5vw,1.6rem)!important;line-height:1.1!important;margin-bottom:.3rem!important;word-break:break-word!important}
-  .hero-sub{font-size:.78rem!important;max-width:100%!important;width:100%!important;margin:0 0 1.2rem!important;line-height:1.5!important;word-break:break-word!important}
-  .eyebrow{font-size:.55rem!important;padding:.25rem .7rem!important;margin-bottom:.8rem!important;max-width:100%!important}
-  .cta-row{flex-direction:column!important;gap:.5rem!important;margin-top:1rem!important;width:100%!important}
-  .btn{font-size:.7rem!important;padding:.6rem 1rem!important;width:100%!important;justify-content:center!important;box-sizing:border-box!important}
-  .hero-sky{width:100%!important;max-width:100vw!important}
-}
-/* Telegram-style chat */
-.agent-motif{position:relative;width:100%;max-width:400px;aspect-ratio:9/18;border-radius:24px;border:1px solid rgba(255,255,255,.06);background:#0f1622;box-shadow:0 0 80px rgba(217,164,65,.08),0 25px 70px rgba(0,0,0,.5);overflow:hidden;opacity:1;margin:0 auto;align-self:center;animation:chat-glow-in 1s cubic-bezier(.22,.61,.36,1) .2s both}
-@media(max-width:900px){.agent-motif{display:none}}
-@keyframes chat-glow-in{0%{opacity:0;transform:translateY(20px) scale(.96)}100%{opacity:1;transform:translateY(0) scale(1)}}
-/* Telegram header */
-.tg-header{position:absolute;top:0;left:0;right:0;height:60px;background:#17212b;border-bottom:1px solid rgba(255,255,255,.04);display:flex;align-items:center;gap:12px;padding:0 16px;z-index:2}
-.tg-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--terra));display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;position:relative}
-.tg-avatar::after{content:'';position:absolute;bottom:0;right:0;width:10px;height:10px;border-radius:50%;background:#4ade80;border:2.5px solid #17212b}
-.tg-info{flex:1}
-.tg-name{font-family:var(--disp);font-weight:600;font-size:.9rem;color:#fff;line-height:1.2}
-.tg-status{font-family:var(--disp);font-size:.68rem;color:rgba(255,255,255,.45);letter-spacing:.02em}
-/* Telegram chat area */
-.chat-body{position:absolute;top:60px;left:0;right:0;bottom:56px;padding:12px 10px;display:flex;flex-direction:column;gap:6px;overflow:hidden;background:#0f1622}
-/* Telegram message bubbles */
-.msg{max-width:78%;padding:.55rem .85rem;border-radius:16px;font-family:var(--disp);font-size:.82rem;line-height:1.5;opacity:0;transform:translateY(6px);animation:msg-in .35s cubic-bezier(.22,.61,.36,1) forwards;position:relative;word-wrap:break-word}
-@keyframes msg-in{to{opacity:1;transform:translateY(0)}}
-.msg.agent{align-self:flex-start;background:#182533;color:#fff;border-bottom-left-radius:4px;margin-left:2px}
-.msg.user{align-self:flex-end;background:#2b5278;color:#fff;border-bottom-right-radius:4px;margin-right:2px}
-/* Telegram read check */
-.msg.user::after{content:'✓✓';position:absolute;bottom:4px;right:8px;font-size:.55rem;color:rgba(74,222,128,.7)}
-/* Telegram time */
-.msg-time{font-size:.6rem;color:rgba(255,255,255,.35);margin-top:2px;display:block;text-align:right}
-/* Typing indicator (Telegram style) */
-.typing-dots{display:flex;gap:5px;padding:.55rem .85rem;align-self:flex-start;background:#182533;border-radius:16px;border-bottom-left-radius:4px;margin-left:2px;opacity:0;animation:msg-in .35s forwards}
-.typing-dots span{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.5);animation:td-bounce 1.2s infinite}
-.typing-dots span:nth-child(2){animation-delay:.15s}
-.typing-dots span:nth-child(3){animation-delay:.3s}
-@keyframes td-bounce{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-5px)}}
-/* Voice message (Morning Minute) — Telegram style */
-.voice-msg{max-width:78%;align-self:flex-start;background:#182533;border-radius:16px;border-bottom-left-radius:4px;margin-left:2px;padding:.6rem .85rem;opacity:0;transform:translateY(6px);animation:msg-in .35s forwards;position:relative}
-.voice-msg-inner{display:flex;align-items:center;gap:10px}
-.voice-play{width:32px;height:32px;border-radius:50%;background:#2b5278;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.voice-play svg{width:12px;height:12px;fill:#fff}
-.voice-wave{display:flex;align-items:center;gap:2px;height:20px;flex:1}
-.voice-wave span{width:3px;border-radius:2px;background:rgba(255,255,255,.4)}
-.voice-wave span:nth-child(1){height:8px}
-.voice-wave span:nth-child(2){height:14px}
-.voice-wave span:nth-child(3){height:18px}
-.voice-wave span:nth-child(4){height:12px}
-.voice-wave span:nth-child(5){height:16px}
-.voice-wave span:nth-child(6){height:10px}
-.voice-wave span:nth-child(7){height:14px}
-.voice-wave span:nth-child(8){height:6px}
-.voice-wave span:nth-child(9){height:12px}
-.voice-wave span:nth-child(10){height:8px}
-.voice-wave span:nth-child(11){height:10px}
-.voice-wave span:nth-child(12){height:6px}
-.voice-wave span:nth-child(13){height:8px}
-.voice-wave span:nth-child(14){height:4px}
-.voice-wave span:nth-child(15){height:6px}
-.voice-wave span:nth-child(16){height:10px}
-.voice-wave span:nth-child(17){height:12px}
-.voice-wave span:nth-child(18){height:8px}
-.voice-wave span:nth-child(19){height:5px}
-.voice-wave span:nth-child(20){height:3px}
-.voice-duration{font-family:var(--disp);font-size:.7rem;color:rgba(255,255,255,.5);flex-shrink:0}
-.voice-caption{font-size:.72rem;color:rgba(255,255,255,.45);margin-top:6px;line-height:1.4}
-/* Telegram input bar */
-.input-bar{position:absolute;bottom:0;left:0;right:0;height:56px;background:#17212b;border-top:1px solid rgba(255,255,255,.04);display:flex;align-items:center;padding:0 14px;gap:12px;z-index:2}
-.input-bar .emoji-btn{width:28px;height:28px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.4);font-size:1.1rem}
-.input-bar .placeholder{flex:1;font-family:var(--disp);font-size:.78rem;color:rgba(255,255,255,.3)}
-.input-bar .send{width:32px;height:32px;border-radius:50%;background:#2b5278;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.8rem;flex-shrink:0}
-
-.hero-content{position:relative;z-index:2;text-align:left;max-width:680px}
-@media(max-width:900px){.hero-content{text-align:center;max-width:780px;margin:0 auto}}
-.eyebrow{font-family:var(--disp);font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1.8rem;display:inline-block;border:1px solid rgba(217,164,65,.28);padding:.4rem 1.1rem;border-radius:100px}
-.hero h1{font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.8rem);font-weight:700;line-height:1.05;letter-spacing:-.02em;color:var(--dawn);margin-bottom:1.5rem}
-.hero h1 em{font-style:italic;font-weight:400;color:var(--gold)}
-.hero-sub{font-size:1.1rem;color:var(--ink-soft);max-width:520px;margin:0 0 2.5rem;line-height:1.7}
-@media(max-width:900px){.hero-sub{max-width:580px;margin:0 auto 2.5rem}}
-.hero-time{font-family:var(--disp);font-size:clamp(2.8rem,6.5vw,4.8rem);font-weight:700;letter-spacing:-.04em;color:var(--gold);line-height:1;margin-bottom:.4rem}
-.hero-time-label{font-family:var(--disp);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)}
-.hero-underline{position:relative;display:inline-block}
-.hero-underline::after{content:'';position:absolute;left:-2%;right:-2%;bottom:.08em;height:.12em;background:linear-gradient(90deg,transparent 0%,var(--terra) 15%,var(--gold) 50%,var(--terra) 85%,transparent 100%);border-radius:1px;transform:scaleX(0);transform-origin:left;animation:underline-draw 1.2s cubic-bezier(.22,.61,.36,1) .6s forwards}
-@keyframes underline-draw{to{transform:scaleX(1)}}
-.cta-row{display:flex;gap:1rem;justify-content:flex-start;flex-wrap:wrap;margin-top:2.5rem}
-@media(max-width:900px){.cta-row{justify-content:center}}
-.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--disp);font-size:.85rem;font-weight:600;letter-spacing:.04em;padding:.9rem 2rem;border-radius:10px;transition:all .2s;cursor:pointer;border:none}
-.btn-primary{background:var(--gold);color:var(--night)}
-.btn-primary:hover{background:var(--gold-soft);transform:translateY(-1px)}
-.btn-ghost{background:transparent;color:var(--dawn);border:1px solid rgba(246,239,227,.18)}
-.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
-.scroll-cue{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);font-family:var(--disp);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);opacity:.6;animation:bob 2s ease-in-out infinite}
-@keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
-
-/* SECTIONS */
-section{padding:6rem 1.5rem;position:relative}
-.sec-inner{max-width:1000px;margin:0 auto}
-.kicker{font-family:var(--disp);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:flex;align-items:center;gap:.8rem}
-.kicker::after{content:'';flex:1;height:1px;background:rgba(217,164,65,.2)}
-.sec-title{font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:600;letter-spacing:-.015em;margin-bottom:1.5rem;line-height:1.1}
-.sec-title em{font-style:italic;font-weight:400;color:var(--gold)}
-.sec-lead{font-size:1.1rem;line-height:1.7;max-width:680px;margin-bottom:2.5rem}
-
-/* Alternating bg */
-.dark{background:var(--night)}
-.dark2{background:var(--night2)}
-.cream{background:var(--paper);color:var(--ink)}
-.cream .kicker{color:var(--terra)}
-.cream .kicker::after{background:rgba(194,96,62,.2)}
-.cream .sec-title{color:var(--ink)}
-.cream .sec-title em{color:var(--terra)}
-.cream .sec-lead{color:var(--ink-soft)}
-
-/* Feature cards */
-.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}
-@media(max-width:820px){.feature-grid{grid-template-columns:1fr}}
-.feature-card{background:rgba(19,26,46,.6);border:1px solid rgba(217,164,65,.1);border-radius:14px;padding:2rem 1.5rem;transition:all .3s}
-.feature-card:hover{border-color:rgba(217,164,65,.3);transform:translateY(-3px)}
-.cream .feature-card{background:#fff;border:1px solid rgba(194,96,62,.1);box-shadow:0 4px 20px rgba(0,0,0,.04)}
-.cream .feature-card:hover{border-color:rgba(194,96,62,.25)}
-.feature-icon{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1.2rem}
-.feature-card h3{font-family:var(--serif);font-size:1.3rem;font-weight:600;margin-bottom:.6rem}
-.feature-card .feature-tag{font-family:var(--disp);font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
-.cream .feature-tag{color:var(--terra)}
-.feature-card p{font-size:.95rem;color:var(--ink-soft);line-height:1.65}
-.cream .feature-card p{color:var(--ink-soft)}
-/* Host credentials grid — 4 across */
-.cred-grid{grid-template-columns:repeat(4,1fr);gap:1.1rem}
-.cred-grid .feature-card{padding:1.6rem 1.1rem}
-.cred-grid .feature-icon{width:46px;height:46px;font-size:1.2rem;margin-bottom:1rem}
-.cred-grid .feature-card h3{font-size:1.08rem}
-.cred-grid .feature-card p{font-size:.84rem;line-height:1.55}
-.cred-grid .feature-tag{margin-bottom:.4rem}
-@media(max-width:900px){.cred-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:480px){.cred-grid{grid-template-columns:1fr}}
-.feature-time{font-family:var(--disp);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(217,164,65,.08)}
-.cream .feature-time{border-color:rgba(194,96,62,.08)}
-
-/* Schedule */
-.schedule-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}
-@media(max-width:820px){.schedule-grid{grid-template-columns:1fr}}
-.day-card{background:rgba(19,26,46,.6);border:1px solid rgba(217,164,65,.12);border-radius:12px;padding:1.5rem;text-align:center;transition:all .3s}
-.day-card:hover{border-color:rgba(217,164,65,.3)}
-.day-name{font-family:var(--disp);font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
-.day-time{font-family:var(--disp);font-size:1.6rem;font-weight:700;color:var(--dawn);margin-bottom:.4rem}
-.day-topic{font-family:var(--serif);font-size:1rem;font-style:italic;color:var(--ink-soft)}
-.cream .day-card{background:#fff;border:1px solid rgba(194,96,62,.1)}
-.cream .day-name{color:var(--terra)}
-.cream .day-time{color:var(--ink)}
-.cream .day-topic{color:var(--ink-soft)}
-
-/* Weekly curriculum */
-.week-list{display:flex;flex-direction:column;gap:1rem;margin-top:2rem}
-.week-item{display:grid;grid-template-columns:auto 1fr auto;gap:1.5rem;align-items:center;padding:1.5rem 1.8rem;background:rgba(19,26,46,.5);border:1px solid rgba(217,164,65,.1);border-radius:12px;transition:all .3s}
-.week-item:hover{border-color:rgba(217,164,65,.25)}
-.cream .week-item{background:#fff;border:1px solid rgba(194,96,62,.08)}
-.cream .week-item:hover{border-color:rgba(194,96,62,.2)}
-.week-num{font-family:var(--disp);font-size:1.1rem;font-weight:700;color:var(--gold);letter-spacing:.04em;min-width:70px}
-.cream .week-num{color:var(--terra)}
-.week-title{font-family:var(--serif);font-size:1.15rem;font-weight:600;color:var(--dawn)}
-.cream .week-title{color:var(--ink)}
-.week-desc{font-size:.88rem;color:var(--ink-soft);margin-top:.2rem}
-.week-price{font-family:var(--disp);font-size:1.4rem;font-weight:700;color:var(--gold);white-space:nowrap}
-.cream .week-price{color:var(--terra)}
-@media(max-width:680px){.week-item{grid-template-columns:1fr;gap:.5rem}.week-price{font-size:1.1rem}}
-
-/* Pricing */
-.pricing-box{max-width:480px;margin:2rem auto 0;background:rgba(19,26,46,.6);border:1px solid rgba(217,164,65,.18);border-radius:18px;padding:3rem 2.5rem;text-align:center}
-.cream .pricing-box{background:#fff;border:1px solid rgba(194,96,62,.15);box-shadow:0 8px 30px rgba(0,0,0,.06)}
-.price-amount{font-family:var(--disp);font-size:clamp(3rem,8vw,4.5rem);font-weight:700;letter-spacing:-.03em;color:var(--gold);line-height:1}
-.cream .price-amount{color:var(--terra)}
-.price-unit{font-family:var(--disp);font-size:.85rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-top:.4rem}
-.price-include{list-style:none;margin:2rem 0;text-align:left}
-.price-include li{padding:.6rem 0;border-bottom:1px solid rgba(217,164,65,.08);font-size:.95rem;color:var(--ink-soft);display:flex;align-items:center;gap:.7rem}
-.cream .price-include li{border-color:rgba(194,96,62,.06)}
-.price-include li::before{content:'✓';color:var(--gold);font-weight:700;font-size:1.1rem}
-.cream .price-include li::before{color:var(--terra)}
-.price-include li:last-child{border-bottom:none}
-
-/* What you build */
-.build-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2rem;align-items:start}
-@media(max-width:760px){.build-grid{grid-template-columns:1fr}}
-.build-col h4{font-family:var(--serif);font-size:1.2rem;font-weight:600;margin-bottom:1rem;color:var(--dawn)}
-.cream .build-col h4{color:var(--ink)}
-.build-col p{font-size:.95rem;color:var(--ink-soft);line-height:1.7;margin-bottom:1rem}
-.build-list{list-style:none;counter-reset:step}
-.build-list li{counter-increment:step;padding:.6rem 0 .6rem 2.2rem;position:relative;font-size:.92rem;color:var(--ink-soft);line-height:1.55}
-.build-list li::before{content:counter(step);position:absolute;left:0;top:.5rem;width:1.5rem;height:1.5rem;border-radius:50%;background:rgba(217,164,65,.12);color:var(--gold);font-family:var(--disp);font-size:.7rem;font-weight:700;display:flex;align-items:center;justify-content:center}
-.cream .build-list li::before{background:rgba(194,96,62,.1);color:var(--terra)}
-.cream .build-list li{color:var(--ink-soft)}
-
-/* FAQ */
-.faq-list{margin-top:2rem;display:flex;flex-direction:column;gap:1rem}
-.faq-item{background:rgba(19,26,46,.5);border:1px solid rgba(217,164,65,.1);border-radius:12px;padding:1.5rem 1.8rem;cursor:pointer;transition:all .3s}
-.faq-item:hover{border-color:rgba(217,164,65,.2)}
-.cream .faq-item{background:#fff;border:1px solid rgba(194,96,62,.08)}
-.cream .faq-item:hover{border-color:rgba(194,96,62,.2)}
-.faq-q{font-family:var(--serif);font-size:1.1rem;font-weight:600;color:var(--dawn);display:flex;justify-content:space-between;align-items:center}
-.cream .faq-q{color:var(--ink)}
-.faq-q::after{content:'+';font-family:var(--disp);font-size:1.4rem;color:var(--gold);transition:transform .3s}
-.faq-item.open .faq-q::after{transform:rotate(45deg)}
-.cream .faq-q::after{color:var(--terra)}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,margin .3s;font-size:.95rem;color:var(--ink-soft);line-height:1.7}
-.faq-item.open .faq-a{max-height:300px;margin-top:1rem}
-
-/* CTA section */
-.cta-section{text-align:center;padding:7rem 1.5rem}
-.cta-section h2{font-family:var(--serif);font-size:clamp(2rem,5vw,3.2rem);font-weight:600;letter-spacing:-.02em;margin-bottom:1.2rem}
-.cta-section h2 em{font-style:italic;color:var(--gold)}
-.cta-section p{font-size:1.1rem;color:var(--ink-soft);max-width:520px;margin:0 auto 2.5rem}
-
-/* FOOTER */
-footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,164,65,.1);background:var(--night)}
-.footer-wordmark{font-family:var(--serif);font-size:1.3rem;font-weight:600;margin-bottom:1rem}
-.footer-wordmark em{font-style:italic;color:var(--gold);font-weight:400}
-.footer-links{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
-.footer-links a{font-family:var(--disp);font-size:.68rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);opacity:.7;transition:opacity .2s}
-.footer-links a:hover{opacity:1}
-.footer-disclaim{font-size:.78rem;color:var(--ink-soft);opacity:.6;max-width:560px;margin:0 auto;line-height:1.6}
-
-/* Reveal */
-.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
-.reveal.in{opacity:1;transform:translateY(0)}
-.reveal:nth-child(2){transition-delay:.1s}
-.reveal:nth-child(3){transition-delay:.2s}
-.reveal:nth-child(4){transition-delay:.3s}
-@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
-
-/* Chat bubble motif */
-.chat-demo{max-width:340px;margin:2rem auto 0;background:rgba(13,18,32,.8);border:1px solid rgba(217,164,65,.12);border-radius:16px;padding:1.5rem;font-size:.82rem;line-height:1.6}
-
-/* Eight Essentials grid */
-.essentials-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2.5rem}
-@media(max-width:900px){.essentials-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:480px){.essentials-grid{grid-template-columns:1fr}}
-.essential-card{background:rgba(19,26,46,.6);border:1px solid rgba(217,164,65,.1);border-radius:12px;padding:1.5rem 1.2rem;transition:all .3s;position:relative;overflow:hidden}
-.essential-card:hover{border-color:rgba(217,164,65,.3);transform:translateY(-3px)}
-.cream .essential-card{background:#fff;border:1px solid rgba(194,96,62,.08);box-shadow:0 4px 16px rgba(0,0,0,.03)}
-.cream .essential-card:hover{border-color:rgba(194,96,62,.2)}
-.essential-num{font-family:var(--disp);font-size:.62rem;font-weight:700;letter-spacing:.12em;color:var(--gold);margin-bottom:.5rem}
-.cream .essential-num{color:var(--terra)}
-.essential-icon{font-size:1.8rem;margin-bottom:.6rem;line-height:1}
-.essential-card h4{font-family:var(--serif);font-size:1.05rem;font-weight:600;margin-bottom:.4rem;color:var(--dawn);line-height:1.2}
-.cream .essential-card h4{color:var(--ink)}
-.essential-card .essential-activity{font-size:.82rem;color:var(--ink-soft);line-height:1.55;margin-top:.6rem;padding-top:.6rem;border-top:1px solid rgba(217,164,65,.06)}
-.cream .essential-card .essential-activity{border-color:rgba(194,96,62,.06)}
-.essential-activity strong{color:var(--gold);font-weight:600}
-.cream .essential-activity strong{color:var(--terra)}
-.essential-card .personalise-badge{display:inline-block;font-family:var(--disp);font-size:.55rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);background:rgba(125,138,110,.1);padding:.2rem .5rem;border-radius:100px;margin-top:.7rem}
-.cream .personalise-badge{color:var(--sage-deep);background:rgba(125,138,110,.08)}
-
-/* Personalise highlight band */
-.personalise-band{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center;margin-top:3rem}
-@media(max-width:760px){.personalise-band{grid-template-columns:1fr}}
-.personalise-band .pb-text h4{font-family:var(--serif);font-size:1.4rem;font-weight:600;margin-bottom:1rem;color:var(--dawn)}
-.cream .personalise-band .pb-text h4{color:var(--ink)}
-.personalise-band .pb-text p{font-size:.95rem;color:var(--ink-soft);line-height:1.7;margin-bottom:1rem}
-.personalise-band .pb-steps{list-style:none;counter-reset:ps}
-.personalise-band .pb-steps li{counter-increment:ps;padding:.5rem 0 .5rem 2.2rem;position:relative;font-size:.88rem;color:var(--ink-soft);line-height:1.55}
-.personalise-band .pb-steps li::before{content:counter(ps);position:absolute;left:0;top:.4rem;width:1.5rem;height:1.5rem;border-radius:50%;background:rgba(217,164,65,.12);color:var(--gold);font-family:var(--disp);font-size:.68rem;font-weight:700;display:flex;align-items:center;justify-content:center}
-.cream .personalise-band .pb-steps li::before{background:rgba(194,96,62,.1);color:var(--terra)}
-.personalise-band .pb-steps li strong{color:var(--dawn);font-weight:600}
-.cream .personalise-band .pb-steps li strong{color:var(--ink)}
-.chat-msg{margin-bottom:.8rem;padding:.6rem .9rem;border-radius:10px;max-width:85%}
-.chat-user{background:rgba(79,111,158,.15);color:var(--dawn);margin-left:auto;text-align:right}
-.chat-agent{background:rgba(217,164,65,.08);color:var(--gold);border:1px solid rgba(217,164,65,.1)}
-.chat-time{font-family:var(--disp);font-size:.6rem;color:var(--ink-soft);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.3rem}
-/* MODAL */
-.modal-overlay{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:rgba(13,18,32,.75);backdrop-filter:blur(8px);opacity:0;pointer-events:none;transition:opacity .4s ease}
-.modal-overlay.show{opacity:1;pointer-events:auto}
-.modal-card{background:linear-gradient(145deg,var(--gold) 0%,#e8c87a 50%,var(--gold) 100%);color:var(--night);border-radius:24px;padding:3rem 2.8rem 2.5rem;max-width:480px;width:90%;box-shadow:0 30px 80px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.15) inset;transform:scale(.92) translateY(20px);transition:transform .4s cubic-bezier(.22,.61,.36,1);position:relative}
-.modal-overlay.show .modal-card{transform:scale(1) translateY(0)}
-.modal-close{position:absolute;top:16px;right:20px;background:none;border:none;font-size:1.6rem;color:var(--night);opacity:.5;cursor:pointer;transition:opacity .2s;font-family:var(--body)}
-.modal-close:hover{opacity:1}
-.modal-badge{font-family:var(--disp);font-size:.7rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--terra-deep);margin-bottom:1rem;display:inline-block;background:rgba(13,18,32,.08);padding:.35rem .9rem;border-radius:100px}
-.modal-title{font-family:var(--serif);font-size:clamp(1.6rem,4vw,2.2rem);font-weight:700;line-height:1.15;margin-bottom:.6rem;color:var(--night)}
-.modal-title em{font-style:italic;font-weight:400;color:var(--terra-deep)}
-.modal-sub{font-size:.95rem;color:rgba(13,18,32,.7);line-height:1.6;margin-bottom:1.8rem}
-.modal-form-row{display:flex;gap:.6rem;margin-bottom:.8rem}
-.modal-form-row.single{flex-direction:column}
-.modal-form-row input{flex:1;background:rgba(255,255,255,.5);border:1.5px solid rgba(13,18,32,.15);border-radius:12px;padding:.85rem 1rem;font-size:.95rem;font-family:var(--body);color:var(--night);outline:none;transition:border-color .2s,background .2s}
-.modal-form-row input:focus{border-color:var(--terra);background:rgba(255,255,255,.8)}
-.modal-form-row input::placeholder{color:rgba(13,18,32,.4)}
-.modal-btn{width:100%;background:var(--night);color:var(--dawn);border:none;padding:1rem 1.5rem;border-radius:12px;font-weight:700;font-size:.95rem;font-family:var(--disp);letter-spacing:.06em;cursor:pointer;transition:all .25s;text-transform:uppercase}
-.modal-btn:hover{background:var(--night2);transform:translateY(-1px)}
-.modal-btn:disabled{opacity:.6;cursor:default;transform:none}
-.modal-note{font-size:.78rem;color:rgba(13,18,32,.55);margin-top:.9rem;line-height:1.5;text-align:center}
-.modal-success{display:none;background:rgba(255,255,255,.4);border:1.5px solid var(--sage);border-radius:12px;padding:1.2rem 1.5rem;text-align:center}
-.modal-success.show{display:block}
-.modal-success .check{font-size:2rem;color:var(--sage-deep);margin-bottom:.3rem}
-.modal-success p{font-size:.95rem;color:var(--night);line-height:1.6}
-.modal-success p em{font-style:italic;color:var(--terra-deep)}
-.modal-error{display:none;color:var(--terra-deep);font-size:.85rem;margin-top:.5rem;text-align:center}
-.modal-error.show{display:block}
-</style>
-<!-- site-deploy: 2026-07-29-v2 -->
-</head>
-<body>
-
-<!-- NAV -->
-<nav>
-  <div class="nav-inner">
-    <a href="https://onetoeight.org" class="wordmark">Afterschool Agent <span class="by">by one <em>to</em> eight</span></a>
-    <!-- Hamburger commented out for now
-    <button class="hamburger" onclick="toggleNav()" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    -->
-    <ul class="nav-links" id="nav-links">
-          <li><a href="#what">What It Is</a></li>
-          <li><a href="#essentials">The Eight</a></li>
-          <li><a href="#rituals">The Rituals</a></li>
-          <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#requirements">Requirements</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
-  </div>
-</nav>
-
-<!-- HERO -->
-<header class="hero">
-  <div class="hero-sky"></div>
-  <div class="hero-layout">
-    <div class="hero-content">
-      <span class="eyebrow">On-Demand Training + Weekly Live Q&amp;A</span>
-      <div class="hero-time" style="font-size:clamp(2.8rem,6.5vw,4.8rem)">In a world full of <br>AI agents <em>online</em>,</div>
-      <div class="hero-time" style="font-size:clamp(2.8rem,6.5vw,4.8rem);margin-bottom:1.5rem">we give young people <span class="hero-underline">agency in real life</span>.</div>
-      <h1>Your teen builds their own <em>AI agent</em>. One that teaches life skills and guides them to grow.</h1>
-      <p class="hero-sub">In a world full of AI agents, we give young people agency in real life. On-demand training where they build a local-first AI assistant that walks them through the eight essentials of onetoeight &mdash; personalising each one with activities that fit their life. The agent also helps with homework, planning, and the day ahead. No coding experience needed. Everything lives on their device after a one-time $5 OpenCode Go setup. Plus a weekly live Q&amp;A session every Tuesday.</p>
-      <div class="cta-row">
-        <a href="#pricing" class="btn btn-primary">Enrol — $44.88 <span style="font-size:.7rem;opacity:.7">/ $11.22/wk</span></a>
-        <a href="#what" class="btn btn-ghost">How it works</a>
-      </div>
-    </div>
-    <div class="hero-right" style="display:flex;flex-direction:column;align-items:center;gap:1rem">
-      <div class="agent-motif">
-        <!-- Telegram header -->
-        <div class="tg-header">
-          <div class="tg-avatar"><svg viewBox="0 0 200 400" width="18" height="36" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M100,25 L100,360"/><path d="M68,55 L100,15"/><path d="M38,120 C55,117 75,119 100,119 C125,119 145,117 162,120"/><path d="M100,118 C140,118 165,155 160,190 C156,222 130,245 100,245 C70,245 44,222 40,190 C35,155 60,118 100,118"/><path d="M100,245 C135,245 155,280 150,315 C146,345 125,360 100,360 C75,360 54,345 50,315 C45,280 65,245 100,245"/></svg></div>
-          <div class="tg-info">
-            <div class="tg-name">Afterschool Agent</div>
-            <div class="tg-status">online</div>
-          </div>
-        </div>
-        <!-- messages -->
-        <div class="chat-body">
-          <div class="msg agent" style="animation-delay:.5s">Good afternoon, Alex. How was school today? <span class="msg-time">4:30 PM</span></div>
-          <div class="msg user" style="animation-delay:1.2s">Pretty good, but maths test Thursday 😬 <span class="msg-time">4:31 PM</span></div>
-          <div class="typing-dots" style="animation-delay:1.9s"><span></span><span></span><span></span></div>
-          <div class="msg agent" style="animation-delay:2.4s">Let's prep together. First — three minutes of stillness to clear your head. <span class="msg-time">4:32 PM</span></div>
-          <div class="msg user" style="animation-delay:3.2s">ok, done. that actually helped. <span class="msg-time">4:35 PM</span></div>
-          <div class="msg agent" style="animation-delay:3.8s">Here's your study plan: 30 min tonight, 45 min Wednesday, review Thursday morning. Sound fair? <span class="msg-time">4:35 PM</span></div>
-          <div class="msg user" style="animation-delay:4.5s">yes. can you remind me tomorrow? <span class="msg-time">4:36 PM</span></div>
-          <div class="msg agent" style="animation-delay:5.2s">Done. Your Morning Minute will open with: "Thursday is your maths test. You've prepared. Take one breath. Trust the work." <span class="msg-time">4:37 PM</span></div>
-          <!-- Voice message -->
-          <div class="voice-msg" style="animation-delay:5.8s">
-            <div class="voice-msg-inner">
-              <div class="voice-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-              <div class="voice-wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-              <div class="voice-duration">0:59</div>
-            </div>
-            <div class="voice-caption">Morning Minute — Thursday's test briefing</div>
-          </div>
-        </div>
-        <!-- Telegram input bar -->
-        <div class="input-bar">
-          <div class="emoji-btn">😊</div>
-          <div class="placeholder">Message</div>
-          <div class="send">↑</div>
-        </div>
-      </div>
-      <!-- brand logos below chat -->
-      <div style="display:flex;align-items:center;gap:.7rem;padding:.3rem .8rem;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:100px;backdrop-filter:blur(8px)">
-        <span style="font-family:var(--disp);font-size:.55rem;letter-spacing:.08em;color:var(--ink-soft);text-transform:uppercase">Powered by</span>
-        <span style="display:flex;align-items:center;gap:4px;font-family:var(--serif);font-size:.65rem;font-weight:600;color:var(--dawn);opacity:.5"><svg viewBox="0 0 40 40" width="12" height="12" fill="none" stroke="var(--gold)" stroke-width="2"><circle cx="20" cy="20" r="18"/><path d="M14 20h12M20 14v12"/></svg>Hermes</span>
-        <span style="color:rgba(255,255,255,.08)">|</span>
-        <span style="font-size:.65rem;font-weight:600;color:var(--dawn);opacity:.5">OpenCode</span>
-        <span style="color:rgba(255,255,255,.08)">|</span>
-        <span style="font-size:.65rem;opacity:.5">⚡ LM Studio</span>
-        <span style="color:rgba(255,255,255,.08)">|</span>
-        <span style="font-size:.65rem;opacity:.5">✈ Telegram</span>
-        <span style="color:rgba(255,255,255,.08)">|</span>
-        <span style="font-size:.65rem;opacity:.5">💬 WhatsApp</span>
-      </div>
-    </div>
-  </div>
-  <div class="scroll-cue">Scroll to explore</div>
-</header>
-
-<!-- WHAT IT IS -->
-<section class="dark" id="what">
-  <div class="sec-inner">
-    <!-- EXPLAINER AUDIO -->
-    <div class="reveal" style="text-align:center;margin-bottom:3.5rem">
-      <div class="kicker" style="margin-bottom:.8rem">Listen — 60‑Second Explainer</div>
-      <div class="audio-brand" data-src="explainer.mp3" style="display:inline-block;background:linear-gradient(135deg,rgba(217,164,65,.06) 0%,rgba(13,18,32,.6) 100%);border:1px solid rgba(217,164,65,.15);border-radius:20px;padding:1.5rem 2rem;max-width:480px;width:100%;position:relative;overflow:hidden">
-        <!-- glow -->
-        <div style="position:absolute;top:-60%;right:-20%;width:200px;height:200px;background:radial-gradient(circle,rgba(217,164,65,.08),transparent 70%);pointer-events:none"></div>
-        <div style="display:flex;align-items:center;gap:1.2rem;position:relative;z-index:1">
-          <!-- play button -->
-          <button class="play-btn" onclick="toggleAudio(this)" style="flex-shrink:0;width:48px;height:48px;border-radius:50%;border:2px solid var(--gold);background:rgba(217,164,65,.1);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .25s ease" onmouseover="this.style.background='rgba(217,164,65,.2)'" onmouseout="this.style.background='rgba(217,164,65,.1)'">
-            <svg class="play-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" style="display:block;margin-left:2px">
-              <polygon points="6,3 20,12 6,21" fill="#d9a441"/>
-            </svg>
-            <svg class="pause-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" style="display:none">
-              <rect x="5" y="3" width="5" height="18" rx="1.5" fill="#d9a441"/>
-              <rect x="14" y="3" width="5" height="18" rx="1.5" fill="#d9a441"/>
-            </svg>
-          </button>
-          <!-- progress -->
-          <div style="flex:1;min-width:0">
-            <div style="position:relative;height:4px;background:rgba(217,164,65,.1);border-radius:4px;cursor:pointer" onclick="seekAudio(event,this)">
-              <div class="progress-fill" style="width:0%;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-soft));border-radius:4px;transition:width .15s linear"></div>
-            </div>
-            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:.6rem">
-              <span style="font-family:var(--disp);font-size:.7rem;color:var(--ink-soft);letter-spacing:.04em;font-weight:600">Afterschool Agent</span>
-              <span style="font-family:var(--disp);font-size:.72rem;color:var(--ink-soft)">
-                <span class="time-current">0:00</span><span style="opacity:.4"> / </span><span class="time-duration">1:00</span>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="kicker reveal">Part 1 — The Idea</div>
-    <h2 class="sec-title reveal">An afterschool hour where your teen learns to <em>build</em>, not just <em>consume</em>.</h2>
-    <p class="sec-lead reveal">Your teen learns through on-demand training modules they can follow at their own pace, on their own schedule. Each module covers a piece of the build, with step-by-step video and hands-on exercises. Then, every Tuesday at 4:30 PM, we come together for a live Q&amp;A session &mdash; bring your questions, get help, and learn alongside other teens. For one hour, we work together to build a personal AI agent using Hermes &mdash; a free, local-first agent platform that runs on a laptop or desktop. Set up requires a one-time $5 OpenCode Go account; after that, no data leaves the device for everyday use. The agent's primary job is to guide your teen through the eight essentials of onetoeight &mdash; with personalised activities the agent designs for them. Homework help, planning, and research are the bonus, not the point.</p>
-
-    <div class="build-grid">
-      <div class="build-col reveal">
-        <h4>What your teen gets</h4>
-        <ul class="build-list">
-          <li>A working AI agent running on your home computer — set up with a one-time $5 OpenCode Go account, then runs locally free for everyday use</li>
-          <li>Guided learning through all eight essentials, with personalised activities the agent creates for your teen</li>
-          <li>The three daily rituals: Afterschool Chat, Planning, and Morning Minute text-to-speech</li>
-          <li>An agent that knows which essential they're working on and weaves it into every conversation</li>
-          <li>Fully secular &mdash; your teen tailors the agent to their own beliefs. No pressure to think otherwise</li>
-          <li>Skills they can reuse &mdash; the same agent can then help with homework, research, and planning</li>
-        </ul>
-      </div>
-      <div class="build-col reveal">
-        <h4>What parents get</h4>
-        <ul class="build-list">
-          <li>Peace of mind — everything runs locally, no data sent to third parties</li>
-          <li>A structured on-demand programme anchored to the eight essentials</li>
-          <li>Weekly live Q&amp;A session every Tuesday with a real instructor</li>
-          <li>Flexible schedule &mdash; learn at your own pace, any time</li>
-          <li>A tool the whole family can use once it's built</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- secular callout -->
-    <div class="reveal" style="margin-top:2.5rem;padding:1.5rem 2rem;background:rgba(125,138,110,.08);border-left:3px solid var(--sage);border-radius:0 12px 12px 0;max-width:780px">
-      <p style="font-family:var(--serif);font-style:italic;font-size:1.15rem;color:var(--dawn);line-height:1.6">
-        This programme is fully secular. The eight essentials &mdash; silence, body, community, nature, digital self-defence, life skills, knowledge, and tested convictions &mdash; are practical foundations for any young person. Your teen tailors their agent to reflect their own beliefs and values. No worldview is pushed. No pressure to think otherwise.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- THE RITUALS -->
-<section class="cream" id="rituals">
-  <div class="sec-inner">
-    <div class="kicker reveal">Part 2 — The Three Rituals</div>
-    <h2 class="sec-title reveal">Three things the agent does every <em>single day</em>.</h2>
-    <p class="sec-lead reveal">Through on-demand training modules, your teen configures their agent to perform three daily rituals. By the end, these run automatically — the agent greets them after school, helps them plan, and speaks a one-minute morning briefing when they wake up.</p>
-
-    <div class="feature-grid">
-      <div class="feature-card reveal">
-        <div class="feature-icon" style="background:rgba(217,164,65,.12);color:var(--gold)">💬</div>
-        <div class="feature-tag">Ritual 1 · After School</div>
-        <h3>The Afterschool Chat</h3>
-        <p>Your teen sits down, opens their agent, and talks. How was the day? What's weighing on you? What's the plan tonight? The agent listens, reflects, and helps them decompress before screen time takes over. It's a grounding conversation — the essential of silence and real community in practice.</p>
-        <div class="feature-time">Anytime · On-demand</div>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon" style="background:rgba(125,138,110,.15);color:var(--sage)">📋</div>
-        <div class="feature-tag">Ritual 2 · Evening</div>
-        <h3>The Planning Session</h3>
-        <p>Before bed, the agent helps them map tomorrow. School tasks, homework deadlines, the essential they're working on this week, one real-world thing they want to do. The agent drafts the plan, your teen edits it, and it saves locally. No app, no account, no cloud sync — just their agent remembering for them.</p>
-        <div class="feature-time">Anytime · Self-paced</div>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon" style="background:rgba(194,96,62,.12);color:var(--terra)">🔊</div>
-        <div class="feature-tag">Ritual 3 · Every Morning</div>
-        <h3>The Morning Minute</h3>
-        <p>This is the magic. Each morning, the agent generates a one-minute text-to-speech audio briefing — their plan, their essential for the week, a thought to carry, a breath to take. Your teen wakes up, presses play, and starts the day with intention instead of a feed. The agent builds it overnight from yesterday's plan.</p>
-        <div class="feature-time">Auto-generated · Every day</div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- EIGHT ESSENTIALS — THE CORE CURRICULUM -->
-<section class="dark2" id="essentials">
-  <div class="sec-inner">
-    <div class="kicker reveal">The Core — The Eight Essentials</div>
-    <h2 class="sec-title reveal">The agent doesn't just <em>chat</em>. It teaches.</h2>
-    <p class="sec-lead reveal">The onetoeight programme has eight essentials &mdash; the eight insights a screen-born generation needs. Your teen's agent is configured to teach each one, with activities it personalises for who they are. Not generic worksheets. Not a one-size app. The agent learns your teen and tailors the essential to their world.</p>
-
-    <div class="essentials-grid">
-      <div class="essential-card reveal">
-        <div class="essential-num">ESSENTIAL 01</div>
-        <div class="essential-icon">🕯️</div>
-        <h4>Silence &amp; Stillness</h4>
-        <p class="essential-activity"><strong>Agent activity:</strong> guides a one-minute silence timer, asks what they noticed, and sets a daily "stillness challenge" scaled to their comfort level.</p>
-        <span class="personalise-badge">Personalised</span>
-      </div>
-      <div class="essential-card reveal">
-        <div class="essential-num">ESSENTIAL 02</div>
-        <div class="essential-icon">🏃</div>
-        <h4>Body as Temple</h4>
-        <p class="essential-activity"><strong>Agent activity:</strong> tracks one health habit your teen chooses — sleep, movement, hydration — and checks in daily without nagging.</p>
-        <span class="personalise-badge">Personalised</span>
-      </div>
-      <div class="essential-card reveal">
-        <div class="essential-num">ESSENTIAL 03</div>
-        <div class="essential-icon">📖</div>
-        <h4>Scripture &amp; Wisdom</h4>
-        <p class="essential-activity"><strong>Agent activity:</strong> shares a short passage each morning, asks one reflection question, and connects it to something happening in their week.</p>
-        <span class="personalise-badge">Personalised</span>
-      </div>
-      <div class="essential-card reveal">
-        <div class="essential-num">ESSENTIAL 04</div>
-        <div class="essential-icon">🌿</div>
-        <h4>Nature Connection</h4>
-        <p class="essential-activity"><strong>Agent activity:</strong> suggests one outdoor action based on their location and weather — a walk, a sit, a photo of something growing — and asks them to report back.</p>
-        <span class="personalise-badge">Personalised</span>
-      </div>
-      <div class="essential-card reveal">
-        <div class="essential-num">ESSENTIAL 05</div>
-        <div class="essential-icon">📱</div>
-        <h4>Digital Self-Defence</h4>
-        <p class="essential-activity"><strong>Agent activity:</strong> runs a weekly screen-time review, helps them set one boundary, and teaches them how algorithms work so they can recognise the patterns.</p>
-        <span class="personalise-badge">Personalised</span>
-      </div>
-      <div class="essential-card reveal">
-        <div class="essential-num">ESSENTIAL 06</div>
-        <div class="essential-icon">🔧</div>
-        <h4>Life Skills</h4>
-        <p class="essential-activity"><strong>Agent activity:</strong> picks one real-world skill each week — cooking a meal, writing an email, managing money — and breaks it into doable steps they can tick off.</p>
-        <span class="personalise-badge">Personalised</span>
-      </div>
-      <div class="essential-card reveal">
-        <div class="essential-num">ESSENTIAL 07</div>
-        <div class="essential-icon">🤝</div>
-        <h4>Real Community</h4>
-        <p class="essential-activity"><strong>Agent activity:</strong> prompts one real-world connection action — a conversation, a thank-you, a visit — and follows up to ask how it went.</p>
-        <span class="personalise-badge">Personalised</span>
-      </div>
-      <div class="essential-card reveal">
-        <div class="essential-num">ESSENTIAL 08</div>
-        <div class="essential-icon">⭐</div>
-        <h4>Tested Character</h4>
-        <p class="essential-activity"><strong>Agent activity:</strong> sets a weekly character challenge — honesty, courage, patience — and helps them reflect on what they learned when it got hard.</p>
-        <span class="personalise-badge">Personalised</span>
-      </div>
-    </div>
-
-    <!-- How personalisation works -->
-    <div class="personalise-band">
-      <div class="pb-text reveal">
-        <h4>How does the agent <em style="font-style:italic;color:var(--gold)">personalise</em> each essential?</h4>
-        <p>The agent isn't reading from a script. During the live sessions, your teen tells the agent about themselves — what they like, what's hard, what their week looks like. The agent uses that to design activities that actually fit. A sporty kid gets a different Body-as-Temple challenge than a bookish one. A teen who's anxious about screens gets a gentler Digital Self-Defence ramp than one who's already cutting back.</p>
-        <p>Every activity is saved locally with a short reflection. By the end of the programme, your teen has a portfolio of eight personalised essential challenges &mdash; and an agent that knows them well enough to keep going.</p>
-      </div>
-      <div class="pb-steps reveal">
-        <li><strong>Module 1:</strong> Your teen tells the agent their name, interests, and how they're feeling. The agent picks an Essential 1 activity for them.</li>
-        <li><strong>Each module:</strong> The agent reviews last time's activity, asks how it went, and designs the next one based on their answer.</li>
-        <li><strong>Every morning:</strong> The Morning Minute weaves in the essential they're working on &mdash; a reminder, a nudge, a question to carry.</li>
-        <li><strong>By the end:</strong> All eight essentials are configured. The agent cycles through them, adapting as your teen grows.</li>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CHAT DEMO -->
-<section class="dark">
-  <div class="sec-inner">
-    <div class="kicker reveal">A Glimpse — What the Agent Sounds Like</div>
-    <h2 class="sec-title reveal">This is the conversation your teen <em>builds</em>.</h2>
-    <p class="sec-lead reveal">Here's how the agent weaves the essential of the week into an everyday afterschool check-in — without sounding like a textbook.</p>
-    <div class="chat-demo reveal">
-      <div class="chat-time">4:32 PM — Monday · Essential of the week: Silence &amp; Stillness</div>
-      <div class="chat-msg chat-user">Hey, school was okay. Kind of tired. Got a maths test Thursday.</div>
-      <div class="chat-msg chat-agent">Good to hear from you. Let's be real — tired and a test on Thursday. This week's essential is stillness. Want to try one minute of quiet before we plan, or do you need to talk first?</div>
-      <div class="chat-msg chat-user">Maybe a minute.</div>
-      <div class="chat-msg chat-agent">Alright. Timer starts now. One minute of stillness. I'll wait.</div>
-      <div class="chat-time">4:35 PM</div>
-      <div class="chat-msg chat-agent">Welcome back. How was that? Now let's look at Thursday — want me to draft a study plan, 30 minutes Tuesday, 45 Wednesday, review Thursday morning?</div>
-      <div class="chat-msg chat-user">Yeah, and can you make the morning minute about the test?</div>
-      <div class="chat-msg chat-agent">Done. Your Morning Minute tomorrow will open with: "Thursday's your maths test. You've prepared. Take one breath. Then trust the work." And we'll try another stillness minute at the end — that's your Essential 1 challenge for today.</div>
-    </div>
-  </div>
-</section>
-
-<!-- SCHEDULE -->
-<section class="dark" id="schedule">
-  <div class="sec-inner">
-    <div class="kicker reveal">Part 3 — How It Works</div>
-    <h2 class="sec-title reveal">On-demand training. <em>Weekly live Q&amp;A.</em></h2>
-    <p class="sec-lead reveal">Your teen works through the training modules at their own pace &mdash; any day, any time. Then every Tuesday at 4:30 PM, join the live Q&amp;A session for help, feedback, and community.</p>
-
-    <div class="schedule-grid">
-      <div class="day-card reveal">
-        <div class="day-name">On-Demand</div>
-        <div class="day-time">Anytime</div>
-        <div class="day-topic">Training modules &mdash; work through the build at your own pace</div>
-      </div>
-      <div class="day-card reveal">
-        <div class="day-name">Tuesday</div>
-        <div class="day-time">4:30 PM</div>
-        <div class="day-topic">Live Q&amp;A session &mdash; bring questions, get help, learn together</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CURRICULUM -->
-<section class="cream">
-  <div class="sec-inner">
-    <div class="kicker reveal">Part 4 — The Modules</div>
-    <h2 class="sec-title reveal">What we build, <em>module by module</em>.</h2>
-    <p class="sec-lead reveal">Each module pairs a build layer with a new essential. Work through them at your own pace. By the final module, the agent teaches all eight &mdash; with personalised activities for each &mdash; and the three daily rituals run on autopilot.</p>
-
-    <div class="week-list">
-      <div class="week-item reveal">
-        <div class="week-num">Module 1</div>
-        <div>
-          <div class="week-title">Foundations + Essential 1: Silence &amp; Stillness</div>
-          <div class="week-desc">Install Hermes on a home computer. Learn what a local-first agent is and why data stays on your device. Set up the Afterschool Chat. The agent learns who your teen is and designs their first personalised Silence &amp; Stillness activity.</div>
-        </div>
-        <div class="week-price">&nbsp;</div>
-      </div>
-      <div class="week-item reveal">
-        <div class="week-num">Module 2</div>
-        <div>
-          <div class="week-title">Planning + Essentials 2 &amp; 3: Body &amp; Wisdom</div>
-          <div class="week-desc">Build the evening planning ritual. The agent now designs Body-as-Temple and Scripture &amp; Wisdom activities tailored to your teen. Plans save locally. The agent connects each essential to the plan for the week.</div>
-        </div>
-        <div class="week-price">&nbsp;</div>
-      </div>
-      <div class="week-item reveal">
-        <div class="week-num">Module 3</div>
-        <div>
-          <div class="week-title">Morning Minute + Essentials 4 &amp; 5: Nature &amp; Digital Defence</div>
-          <div class="week-desc">Configure text-to-speech. The agent generates a one-minute audio briefing overnight, weaving in the essential of the week. Your teen wakes up, presses play, and starts the day with intention. Nature Connection and Digital Self-Defence activities go live.</div>
-        </div>
-        <div class="week-price">&nbsp;</div>
-      </div>
-      <div class="week-item reveal">
-        <div class="week-num">Module 4</div>
-        <div>
-          <div class="week-title">Extend + Essentials 6, 7 &amp; 8: Life Skills, Community, Character</div>
-          <div class="week-desc">The final three essentials are configured. The agent now cycles through all eight, adapting activities as your teen grows. We extend the agent for homework help and research. Your teen learns to write their own agent skills. Certificate of completion.</div>
-        </div>
-        <div class="week-price">&nbsp;</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- HOST & SAFEGUARDING -->
-<section class="dark" id="host">
-  <div class="sec-inner">
-    <div class="kicker reveal">Your Host — Safe & Vetted</div>
-    <h2 class="sec-title reveal">Every live session is run by a <em>screened</em> instructor.</h2>
-    <p class="sec-lead reveal">The Afterschool Agent programme is hosted by a safeguarding-cleared facilitator. Before any teen logs on, the host holds the following verified credentials:</p>
-    <div class="feature-grid cred-grid">
-      <div class="feature-card reveal">
-        <div class="feature-icon" style="background:rgba(194,96,62,.12);color:var(--terra)">🛡️</div>
-        <div class="feature-tag">Credential 1</div>
-        <h3>Working with Children Check</h3>
-        <p>State-issued clearance confirming the host is approved to work with minors — the baseline requirement for any programme involving young people.</p>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon" style="background:rgba(79,111,158,.15);color:var(--blue)">✅</div>
-        <div class="feature-tag">Credential 2</div>
-        <h3>NDIS Worker Screening</h3>
-        <p>National Disability Insurance Scheme clearance, verifying the host meets the strict conduct and safety standards required to support vulnerable participants.</p>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon" style="background:rgba(217,164,65,.12);color:var(--gold)">❤️</div>
-        <div class="feature-tag">Credential 3</div>
-        <h3>First Aid &amp; CPR</h3>
-        <p>Current accredited training in emergency first aid and cardiopulmonary resuscitation — because a responsible host is prepared for the physical as well as the digital.</p>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon" style="background:rgba(125,138,110,.15);color:var(--sage)">🧠</div>
-        <div class="feature-tag">Credential 4</div>
-        <h3>Youth Mental Health First Aid</h3>
-        <p>Accredited training in recognising and responding to mental health challenges in young people — knowing the signs, how to listen, and when to escalate to professional support.</p>
-      </div>
-    </div>
-    <p class="sec-lead reveal" style="margin-top:2.5rem">Four checks. One promise: your teen learns in a space that is supervised, safe, and accountable.</p>
-  </div>
-</section>
-
-
-<!-- PRICING -->
-<section class="dark" id="pricing">
-  <div class="sec-inner">
-    <div class="kicker reveal">Part 5 — Enrol</div>
-    <h2 class="sec-title reveal"><em>$44.88</em> one-time <span style="font-size:1rem;font-weight:400;color:var(--ink-soft)">/ <em style="color:var(--gold);font-style:italic">$11.22</em> per week</span>. Your agent for life.</h2>
-    <p class="sec-lead reveal">Pay once. Get full access to all training modules, the weekly live Q&amp;A, and the community. The software is free forever &mdash; you're paying for the instruction, the guided build, and the support.</p>
-
-    <div class="pricing-box reveal">
-      <div class="price-amount">$44.88</div>
-      <div class="price-unit">One-Time Payment <span style="font-size:.78rem;color:var(--ink-soft);display:block;margin-top:.3rem">/ <strong style="color:var(--gold)">$11.22</strong> per week</span></div>
-      <ul class="price-include">
-        <li>All on-demand training modules (work at your own pace)</li>
-        <li>Weekly live Q&amp;A session every Tuesday at 4:30 PM</li>
-        <li>One-on-one help during Q&amp;A sessions</li>
-        <li>All eight essentials personalised with activities for your teen</li>
-        <li>Hermes agent software — free and local-first. A one-time $5 OpenCode Go account covers setup and advanced queries.</li>
-        <li>The three daily rituals configured by the final module</li>
-        <li>Text-to-speech morning briefings running automatically</li>
-        <li>A portfolio of eight personalised essential challenges</li>
-        <li>Skills to extend the agent for school and homework</li>
-        <li>Certificate of completion</li>
-      </ul>
-      <a href="mailto:boktoday@gmail.com?subject=Afterschool%20Agent%20Enrolment" class="btn btn-primary" style="width:100%;justify-content:center">Enrol Now</a>
-    </div>
-  </div>
-</section>
-
-<!-- REQUIREMENTS -->
-<section class="dark" id="requirements">
-  <div class="sec-inner">
-    <div class="kicker reveal">Before You Enrol — The Tech Requirements</div>
-    <h2 class="sec-title reveal">What you'll need to <em>set this up</em>.</h2>
-    <p class="sec-lead reveal">This is a self-paced build, not a magic install. To get the most out of the Afterschool Agent programme, you'll need these things in place first. None of them are expensive — but they are real.</p>
-
-    <div class="feature-grid cred-grid">
-      <div class="feature-card reveal">
-        <div class="feature-icon" style="background:rgba(194,96,62,.12);color:var(--terra)">💻</div>
-        <div class="feature-tag">Requirement 1</div>
-        <h3>Your Own Laptop</h3>
-        <p>A personal laptop or desktop running <strong>Windows, macOS, or Linux</strong> — one the teen has <strong>full admin access</strong> to. <em>Not a school laptop.</em> School-issued machines typically block installations, sandbox new software, and reset on logout — all of which break the agent.</p>
-        <p style="margin-top:.8rem;font-size:.85rem;color:var(--ink-mute)"><strong>Minimum spec:</strong> 8 GB RAM, 2 GB free SSD storage, modern CPU (any laptop made after 2018).</p>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon" style="background:rgba(79,111,158,.15);color:var(--blue)">🔑</div>
-        <div class="feature-tag">Requirement 2</div>
-        <h3>OpenCode Go Account — $5</h3>
-        <p>A one-time <strong>$5 top-up</strong> on an <strong>OpenCode Go account</strong> at <code>opencode.ai/zen/go</code>. This is required to <em>set up</em> the agent system and configure advanced features. The $5 covers the initial agent build and personalisation step — after that, the agent runs primarily on the device itself.</p>
-        <p style="margin-top:.8rem;font-size:.85rem;color:var(--ink-mute)">OpenCode Go gives you access to leading open-source models — DeepSeek, Kimi, Qwen, GLM, Grok, and more — all behind one pay-as-you-go gateway.</p>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon" style="background:rgba(125,138,110,.15);color:var(--sage)">🧠</div>
-        <div class="feature-tag">Requirement 3 (Optional but Recommended)</div>
-        <h3>Local AI Model for Ongoing Tasks</h3>
-        <p>Once set up, the agent runs mostly <strong>locally</strong> — no ongoing API bills for everyday use. For the best experience, install a small open-source model (we recommend <strong>LFM2-700M</strong> or similar) directly on the device. It's free, runs offline, and keeps everyday conversations private.</p>
-        <p style="margin-top:.8rem;font-size:.85rem;color:var(--ink-mute)">Keep your $5 OpenCode Go balance topped up as you go for <em>advanced</em> tasks (deep personalisation, weekly curriculum reviews, parent reports). Most families find $5 covers the first few months; ongoing costs depend on how heavy the usage is.</p>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon" style="background:rgba(217,164,65,.12);color:var(--gold)">💬</div>
-        <div class="feature-tag">Requirement 4</div>
-        <h3>Telegram or WhatsApp</h3>
-        <p>The Morning Minute audio briefing and daily check-ins are delivered through <strong>Telegram</strong> or <strong>WhatsApp</strong>. Your teen needs a registered account on one of these services on their phone. Both are free and available on any smartphone.</p>
-        <p style="margin-top:.8rem;font-size:.85rem;color:var(--ink-mute)">The agent sends messages, not the other way around — no bots, no spam, no data collection. Just a good morning and a plan for the day.</p>
-      </div>
-    </div>
-
-    <p class="sec-lead reveal" style="margin-top:2.5rem;text-align:center">The software itself is <strong>free forever</strong>. The agent lives on your device. The cost is for the gateway access during setup and the occasional advanced query — not for everyday use.</p>
-    <p class="sec-lead reveal" style="text-align:center;font-size:.9rem;color:var(--ink-soft);margin-top:.3rem">Get <strong>$5.00 bonus credit</strong> when you sign up with this link.</p>
-    <div class="cta-row reveal" style="margin-top:2rem;justify-content:center;display:flex;flex-wrap:wrap;gap:1rem">
-      <a href="https://opencode.ai/go?ref=6RBASHMZK0" target="_blank" rel="noopener" class="btn btn-primary">Set Up Your $5 OpenCode Go Account →</a>
-      <a href="#pricing" class="btn btn-ghost">See Pricing</a>
-    </div>
-  </div>
-</section>
-
-<!-- UPGRADE -->
-<section class="dark2" id="upgrade">
-  <div class="sec-inner" style="text-align:center">
-    <div class="kicker reveal">Coming September</div>
-    <h2 class="sec-title reveal" style="text-align:center"><span class="hero-underline" style="display:inline-block">Awesome Agent Upgrade</span></h2>
-    <p class="sec-lead reveal" style="max-width:640px;margin:0 auto 2rem">New training module for advanced agent building. Your teen learns to create custom agent skills, connect external tools, deploy local AI models, and build collaborative multi-agent workflows. For graduates who want to go further.</p>
-    <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;max-width:500px;margin:0 auto">
-      <span class="pricing-badge" style="background:rgba(217,164,65,.1);border:1px solid rgba(217,164,65,.15);border-radius:100px;padding:.4rem 1rem;font-family:var(--disp);font-size:.72rem;color:var(--gold-soft)">Custom Skills</span>
-      <span class="pricing-badge" style="background:rgba(125,138,110,.1);border:1px solid rgba(125,138,110,.15);border-radius:100px;padding:.4rem 1rem;font-family:var(--disp);font-size:.72rem;color:var(--sage)">Tool Integration</span>
-      <span class="pricing-badge" style="background:rgba(79,111,158,.1);border:1px solid rgba(79,111,158,.15);border-radius:100px;padding:.4rem 1rem;font-family:var(--disp);font-size:.72rem;color:var(--blue)">Multi-Agent</span>
-      <span class="pricing-badge" style="background:rgba(194,96,62,.1);border:1px solid rgba(194,96,62,.15);border-radius:100px;padding:.4rem 1rem;font-family:var(--disp);font-size:.72rem;color:var(--terra)">Local Deploy</span>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="cream" id="faq">
-  <div class="sec-inner">
-    <div class="kicker reveal">Part 6 — Questions</div>
-    <h2 class="sec-title reveal">Things parents <em>ask</em>.</h2>
-
-    <div class="faq-list">
-      <div class="faq-item reveal" onclick="this.classList.toggle('open')">
-        <div class="faq-q">Does my teen need to know how to code?</div>
-        <div class="faq-a">No. Hermes is a natural-language agent platform — your teen configures it by talking to it and writing plain-English instructions. We teach everything step by step in the live sessions. If they can use a chat app, they can build an agent.</div>
-      </div>
-      <div class="faq-item reveal" onclick="this.classList.toggle('open')">
-              <div class="faq-q">What equipment and accounts do we need?</div>
-              <div class="faq-a">See the full breakdown in the <a href="#requirements">What You'll Need</a> section above. Short version: a personal laptop (not school-issued) with 8 GB RAM, a one-time $5 OpenCode Go account for setup, optionally a local AI model, and a Telegram or WhatsApp account on a phone for the Morning Minute delivery. The software itself is free.</div>
-            </div>
-      <div class="faq-item reveal" onclick="this.classList.toggle('open')">
-        <div class="faq-q">Is my teen's data safe?</div>
-        <div class="faq-a">Yes. Everything runs on your home computer. No data is sent to the cloud. No accounts to create with third parties. The agent's memory, plans, and morning briefings all live on your device. You can delete everything at any time.</div>
-      </div>
-      <div class="faq-item reveal" onclick="this.classList.toggle('open')">
-        <div class="faq-q">What if we miss a session?</div>
-        <div class="faq-a">No problem. The training modules are on-demand, so your teen can work through them any time. The weekly live Q&amp;A is recorded and made available to enrolled teens. Miss a Tuesday? Catch the recording. The programme is designed so you never fall behind &mdash; every module and recording is accessible for as long as you need.</div>
-      </div>
-      <div class="faq-item reveal" onclick="this.classList.toggle('open')">
-        <div class="faq-q">What age is this for?</div>
-        <div class="faq-a">This guide is written for 13-23 year olds. The content is the eight essentials from the onetoeight programme &mdash; silence, body, scripture, nature, digital self-defence, life skills, community, and tested character. The agent build is age-appropriate and doesn't require any prior technical knowledge.</div>
-      </div>
-      <div class="faq-item reveal" onclick="this.classList.toggle('open')">
-        <div class="faq-q">Is this a religious programme?</div>
-        <div class="faq-a">No. The programme is fully secular. The eight essentials are practical foundations &mdash; silence, body, community, nature, digital self-defence, life skills, knowledge, and tested convictions &mdash; that benefit any young person regardless of their background. Your teen tailors the agent to incorporate their own beliefs and values. The agent is theirs to shape. No worldview is pushed, and there's no pressure to think one way or another.</div>
-      </div>
-      <div class="faq-item reveal" onclick="this.classList.toggle('open')">
-        <div class="faq-q">Can siblings join?</div>
-        <div class="faq-a">Yes — one enrolment covers one teen, but siblings can sit in on the webcast and build their own agents on the same computer. Each agent runs independently with its own memory and personality.</div>
-      </div>
-      <div class="faq-item reveal" onclick="this.classList.toggle('open')">
-        <div class="faq-q">What happens after the programme?</div>
-        <div class="faq-a">The agent is yours forever. The software is free. Your teen keeps the three daily rituals running and can extend the agent on their own &mdash; for homework, projects, research, anything. The weekly Q&amp;A remains available for as long as you want to keep attending.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-wordmark">one <em>to</em> eight</div>
-  <div class="footer-links">
-    <a href="../privacy">Privacy</a>
-    <a href="../security">Security</a>
-    <a href="../terms">Terms</a>
-    <a href="../refund-policy">Refund Policy</a>
-  </div>
-  <div class="footer-disclaim">Afterschool Agent is an on-demand training programme with a weekly live Q&amp;A. The Hermes agent software is free and open-source. All live sessions are supervised. No data leaves your device. Pricing is $44.88 one-time / $11.22 per week. No lock-in.</div>
-</footer>
-
-<!-- EARLY ACCESS MODAL -->
-<div class="modal-overlay" id="early-access-modal">
-  <div class="modal-card">
-    <button class="modal-close" onclick="closeModal()">&times;</button>
-    <span class="modal-badge">Coming Mid August</span>
-    <h2 class="modal-title">Register for <em>early access</em>.</h2>
-    <p class="modal-sub">Be first to know when enrolment opens. We'll send you the details and a special early-bird offer.</p>
-    <form id="modal-form" onsubmit="return submitModal(event)">
-      <div class="modal-form-row single">
-        <input type="text" name="name" placeholder="Your name" required autocomplete="name">
-        <input type="email" name="email" placeholder="Email address" required autocomplete="email" style="margin-top:.6rem">
-      </div>
-      <button type="submit" class="modal-btn" id="modal-btn">Register for Early Access</button>
-    </form>
-    <div class="modal-success" id="modal-success">
-      <div class="check">&#10003;</div>
-      <p>You're on the list, <em id="modal-success-name">friend</em>.<br>Watch your inbox &mdash; we'll be in touch when August arrives.</p>
-    </div>
-    <div class="modal-error" id="modal-error">Something went wrong. Please try again.</div>
-    <p class="modal-note">No spam. We never share your details with third parties.</p>
-  </div>
-</div>
-
-<script>
-function toggleNav(){
-  document.getElementById('nav-links').classList.toggle('mobile-open');
-}
-// Close nav on link click (mobile)
-document.querySelectorAll('.nav-links a').forEach(function(el){
-  el.addEventListener('click', function(){
-    document.getElementById('nav-links').classList.remove('mobile-open');
-  });
-});
-// Modal: show after 4 seconds, once per session
-(function(){
-  if (!sessionStorage.getItem('earlyAccessSeen')) {
-    setTimeout(function(){
-      document.getElementById('early-access-modal').classList.add('show');
-    }, 4000);
-  }
-})();
-
-function closeModal(){
-  document.getElementById('early-access-modal').classList.remove('show');
-  sessionStorage.setItem('earlyAccessSeen','1');
-}
-
-// Close on overlay click
-document.getElementById('early-access-modal').addEventListener('click', function(e){
-  if (e.target === this) closeModal();
-});
-
-function submitModal(e){
-  e.preventDefault();
-  var form = document.getElementById('modal-form');
-  var btn = document.getElementById('modal-btn');
-  var success = document.getElementById('modal-success');
-  var error = document.getElementById('modal-error');
-  var name = form.querySelector('input[name="name"]').value;
-  var email = form.querySelector('input[name="email"]').value;
-
-  btn.disabled = true;
-  btn.textContent = 'Registering...';
-  error.classList.remove('show');
-
-  fetch('https://cloud.activepieces.com/api/v1/webhooks/mFlYDmEWcfIOBLkpGcAPN', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ name: name, email: email, source: 'afterschool.agency early access modal' })
-  })
-  .then(function(resp){
-    if (resp.ok || resp.status === 200 || resp.status === 201 || resp.status === 204) {
-      form.style.display = 'none';
-      document.getElementById('modal-success-name').textContent = name.split(' ')[0] || 'friend';
-      success.classList.add('show');
-      sessionStorage.setItem('earlyAccessSeen','1');
-    } else {
-      throw new Error('HTTP ' + resp.status);
-    }
-  })
-  .catch(function(){
-    fetch('https://cloud.activepieces.com/api/v1/webhooks/mFlYDmEWcfIOBLkpGcAPN', {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name: name, email: email, source: 'afterschool.agency early access modal' })
-    }).then(function(){
-      form.style.display = 'none';
-      document.getElementById('modal-success-name').textContent = name.split(' ')[0] || 'friend';
-      success.classList.add('show');
-      sessionStorage.setItem('earlyAccessSeen','1');
-    }).catch(function(){
-      btn.disabled = false;
-      btn.textContent = 'Register for Early Access';
-      error.classList.add('show');
-    });
-  });
-
-  return false;
-}
-
-// Custom audio player
-(function(){
-  document.querySelectorAll('.audio-brand').forEach(function(el){
-    var audio = document.createElement('audio');
-    audio.preload = 'metadata';
-    audio.src = el.dataset.src;
-    audio.style.display = 'none';
-    el.appendChild(audio);
-    audio.addEventListener('loadedmetadata', function(){
-      el.querySelector('.time-duration').textContent = formatTime(audio.duration);
-    });
-    audio.addEventListener('timeupdate', function(){
-      var pct = audio.currentTime / (audio.duration || 1) * 100;
-      el.querySelector('.progress-fill').style.width = pct + '%';
-      el.querySelector('.time-current').textContent = formatTime(audio.currentTime);
-    });
-    audio.addEventListener('ended', function(){
-      el.querySelector('.play-icon').style.display = 'block';
-      el.querySelector('.pause-icon').style.display = 'none';
-    });
-  });
-})();
-
-function toggleAudio(btn){
-  var el = btn.closest('.audio-brand');
-  var audio = el.querySelector('audio');
-  if(audio.paused){
-    // Pause any other playing audios
-    document.querySelectorAll('.audio-brand audio').forEach(function(a){ if(a !== audio && !a.paused) a.pause(); });
-    document.querySelectorAll('.audio-brand .pause-icon').forEach(function(i){ i.style.display = 'none'; });
-    document.querySelectorAll('.audio-brand .play-icon').forEach(function(i){ i.style.display = 'block'; });
-    audio.play();
-    btn.querySelector('.play-icon').style.display = 'none';
-    btn.querySelector('.pause-icon').style.display = 'block';
-  } else {
-    audio.pause();
-    btn.querySelector('.play-icon').style.display = 'block';
-    btn.querySelector('.pause-icon').style.display = 'none';
-  }
-}
-
-function seekAudio(e, bar){
-  var rect = bar.getBoundingClientRect();
-  var pct = (e.clientX - rect.left) / rect.width;
-  var el = bar.closest('.audio-brand');
-  var audio = el.querySelector('audio');
-  audio.currentTime = pct * audio.duration;
-}
-
-function formatTime(s){
-  var m = Math.floor(s / 60);
-  var sec = Math.floor(s % 60);
-  return m + ':' + (sec < 10 ? '0' : '') + sec;
-}
-</script>
-
-<script>
-const obs=new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}})
-},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
-document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-</script>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0d1220">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23d9a441'/%3E%3Cstop offset='100%25' stop-color='%23e8c87a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='6' fill='%230d1220'/%3E%3Ctext x='8' y='24' font-family='Georgia,serif' font-size='22' font-weight='700' fill='url(%23g)' text-anchor='middle'%3E1%3C/text%3E%3Cline x1='3' y1='26' x2='13' y2='26' stroke='url(%23g)' stroke-width='1.2' stroke-linecap='round'/%3E%3Ctext x='18' y='18' font-family='Georgia,serif' font-size='9' fill='rgba(217,164,65,.35)' text-anchor='middle'%3E%E2%86%92%3C/text%3E%3Ctext x='25' y='24' font-family='Georgia,serif' font-size='22' font-weight='700' fill='url(%23g)' text-anchor='middle'%3E8%3C/text%3E%3Cline x1='20' y1='26' x2='30' y2='26' stroke='url(%23g)' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E">
+<meta name="color-scheme" content="dark">
+<meta name="robots" content="noindex, nofollow">
+<title>Afterschool Agent - Personalized Agent Training for Key Life Skills</title>
+<meta name="description" content="Teens build a personal AI agent that guides them through eight key life skills. On-demand training + weekly live Q&A. One-time $44.88.">
+<meta name="keywords" content="afterschool agent, AI agent, teen AI, youth AI training, AI education, onetoeight, eight essentials, AI assistant">
+<meta name="author" content="onetoeight">
+<link rel="canonical" href="https://www.afterschool.agency/">
+<!-- Open Graph -->
+<meta property="og:title" content="Afterschool Agent - Personalized Agent Training for Key Life Skills">
+<meta property="og:description" content="Teens build a personal AI agent that guides them through silence, body, scripture, nature, digital self-defence, life skills, community, and tested character.">
+<meta property="og:url" content="https://www.afterschool.agency/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Afterschool Agent by onetoeight">
+<meta property="og:image" content="https://www.afterschool.agency/og-image.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Afterschool Agent - Personalized Agent Training for Key Life Skills">
+<meta property="og:image:type" content="image/svg+xml">
+<meta property="og:locale" content="en_AU">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Afterschool Agent - Personalized Agent Training for Key Life Skills">
+<meta name="twitter:description" content="Teens build a personal AI agent that teaches key life skills through the eight essentials of onetoeight.">
+<meta name="twitter:image" content="https://www.afterschool.agency/og-image.svg">
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Afterschool Agent",
+  "description": "Teens build a personal AI agent that guides them through eight key life skills. On-demand training + weekly live Q&A.",
+  "provider": {
+    "@type": "Organization",
+    "name": "onetoeight",
+    "url": "https://onetoeight.org"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "44.88",
+    "priceCurrency": "AUD",
+    "priceValidUntil": "2026-12-31"
+  },
+  "educationalLevel": "Beginner",
+  "timeRequired": "P4W"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#0d1220; --night2:#131a2e; --night3:#1a2340;
+  --dawn:#f6efe3; --dawn2:#efe6d6; --paper:#fbf7ee;
+  --ink:#232a3d; --ink-soft:#5a6278;
+  --terra:#c2603e; --terra-deep:#9c4a2e;
+  --sage:#7d8a6e; --sage-deep:#5f6d52;
+  --gold:#d9a441; --gold-soft:#e8c87a;
+  --blue:#4f6f9e;
+  --serif:'Fraunces',Georgia,serif;
+  --disp:'Space Grotesk',system-ui,sans-serif;
+  --body:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--night);color:var(--dawn);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(13,18,32,.72);border-bottom:1px solid rgba(217,164,65,.12);transition:padding .3s}
+.nav-inner{max-width:1200px;margin:0 auto;padding:.85rem 1.5rem;display:flex;align-items:center;justify-content:space-between;position:relative}
+.wordmark{font-family:var(--serif);font-size:1rem;font-weight:600;letter-spacing:-.02em;color:var(--dawn);line-height:1.2}
+.wordmark .by{font-size:.7rem;font-weight:400;color:var(--ink-soft);display:block;line-height:1}
+.wordmark em{font-style:italic;color:var(--gold);font-weight:400}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{font-family:var(--disp);font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+/* Hamburger */
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px 10px;background:transparent;border:1px solid rgba(217,164,65,.25);border-radius:8px;z-index:101}
+.hamburger span{display:block;width:22px;height:2px;background:var(--gold);border-radius:2px;transition:all .3s}
+.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+/* Mobile nav overlay */
+.nav-overlay{display:none}
+@media(max-width:760px){
+  .nav-links{display:flex;flex-wrap:wrap;gap:.5rem 1rem;justify-content:flex-end;max-width:70%}
+  .nav-links a{font-size:.6rem;letter-spacing:.08em}
+  .hamburger{display:flex}
+  .nav-links.mobile-open{display:flex;flex-direction:column;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,18,32,.97);backdrop-filter:blur(20px);gap:0;padding:5rem 2rem 2rem;z-index:100;align-items:center;justify-content:center}
+  .nav-links.mobile-open li{margin:.5rem 0}
+  .nav-links.mobile-open a{font-size:1.3rem;letter-spacing:.15em;color:var(--dawn)}
+}
+@media(max-width:480px){
+  .nav-links{display:none}
+  .nav-inner{padding:.75rem 1rem}
+  .wordmark{font-size:.85rem}
+  .wordmark .by{font-size:.6rem}
+}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:6rem 3rem 3rem}
+.hero-sky{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 30% 35%,rgba(217,164,65,.12) 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 70% 80%,rgba(79,111,158,.08) 0%,transparent 50%),linear-gradient(180deg,var(--night) 0%,var(--night2) 50%,var(--night3) 100%);z-index:0;pointer-events:none}
+.hero-layout{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;max-width:1400px;width:100%;margin:0 auto;align-items:end;padding-bottom:3rem}
+@media(max-width:900px){.hero-layout{grid-template-columns:1fr;gap:2rem;text-align:center;align-items:center;padding-bottom:0}}
+@media(max-width:900px){.hero-right{display:none!important}}
+@media(max-width:760px){.hero-layout{gap:0!important}}
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:6rem 3rem 3rem}
+@media(max-width:480px){
+  .hero{min-height:auto!important;padding:4.5rem 1rem 1.5rem!important;align-items:flex-start!important;overflow-x:hidden!important}
+  .hero-layout{grid-template-columns:1fr!important;gap:0!important;text-align:center!important;align-items:center!important;padding-bottom:0!important;width:100%!important;max-width:100%!important}
+  .hero-content{max-width:100%!important;width:100%!important;text-align:center!important;margin:0!important}
+  .hero h1{font-size:clamp(1.1rem,4vw,1.35rem)!important;margin-bottom:.8rem!important;word-break:break-word!important}
+  .hero-time{font-size:clamp(1.3rem,4.5vw,1.6rem)!important;line-height:1.1!important;margin-bottom:.3rem!important;word-break:break-word!important}
+  .hero-sub{font-size:.78rem!important;max-width:100%!important;width:100%!important;margin:0 0 1.2rem!important;line-height:1.5!important;word-break:break-word!important}
+  .eyebrow{font-size:.55rem!important;padding:.25rem .7rem!important;margin-bottom:.8rem!important;max-width:100%!important}
+  .cta-row{flex-direction:column!important;gap:.5rem!important;margin-top:1rem!important;width:100%!important}
+  .btn{font-size:.7rem!important;padding:.6rem 1rem!important;width:100%!important;justify-content:center!important;box-sizing:border-box!important}
+  .hero-sky{width:100%!important;max-width:100vw!important}
+}
+/* Telegram-style chat */
+.agent-motif{position:relative;width:100%;max-width:400px;aspect-ratio:9/18;border-radius:24px;border:1px solid rgba(255,255,255,.06);background:#0f1622;box-shadow:0 0 80px rgba(217,164,65,.08),0 25px 70px rgba(0,0,0,.5);overflow:hidden;opacity:1;margin:0 auto;align-self:center;animation:chat-glow-in 1s cubic-bezier(.22,.61,.36,1) .2s both}
+@media(max-width:900px){.agent-motif{display:none}}
+@keyframes chat-glow-in{0%{opacity:0;transform:translateY(20px) scale(.96)}100%{opacity:1;transform:translateY(0) scale(1)}}
+/* Telegram header */
+.tg-header{position:absolute;top:0;left:0;right:0;height:60px;background:#17212b;border-bottom:1px solid rgba(255,255,255,.04);display:flex;align-items:center;gap:12px;padding:0 16px;z-index:2}
+.tg-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--terra));display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;position:relative}
+.tg-avatar::after{content:'';position:absolute;bottom:0;right:0;width:10px;height:10px;border-radius:50%;background:#4ade80;border:2.5px solid #17212b}
+.tg-info{flex:1}
+.tg-name{font-family:var(--disp);font-weight:600;font-size:.9rem;color:#fff;line-height:1.2}
+.tg-status{font-family:var(--disp);font-size:.68rem;color:rgba(255,255,255,.45);letter-spacing:.02em}
+/* Telegram chat area */
+.chat-body{position:absolute;top:60px;left:0;right:0;bottom:56px;padding:12px 10px;display:flex;flex-direction:column;gap:6px;overflow:hidden;background:#0f1622}
+/* Telegram message bubbles */
+.msg{max-width:78%;padding:.55rem .85rem;border-radius:16px;font-family:var(--disp);font-size:.82rem;line-height:1.5;opacity:0;transform:translateY(6px);animation:msg-in .35s cubic-bezier(.22,.61,.36,1) forwards;position:relative;word-wrap:break-word}
+@keyframes msg-in{to{opacity:1;transform:translateY(0)}}
+.msg.agent{align-self:flex-start;background:#182533;color:#fff;border-bottom-left-radius:4px;margin-left:2px}
+.msg.user{align-self:flex-end;background:#2b5278;color:#fff;border-bottom-right-radius:4px;margin-right:2px}
+/* Telegram read check */
+.msg.user::after{content:'✓✓';position:absolute;bottom:4px;right:8px;font-size:.55rem;color:rgba(74,222,128,.7)}
+/* Telegram time */
+.msg-time{font-size:.6rem;color:rgba(255,255,255,.35);margin-top:2px;display:block;text-align:right}
+/* Typing indicator (Telegram style) */
+.typing-dots{display:flex;gap:5px;padding:.55rem .85rem;align-self:flex-start;background:#182533;border-radius:16px;border-bottom-left-radius:4px;margin-left:2px;opacity:0;animation:msg-in .35s forwards}
+.typing-dots span{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.5);animation:td-bounce 1.2s infinite}
+.typing-dots span:nth-child(2){animation-delay:.15s}
+.typing-dots span:nth-child(3){animation-delay:.3s}
+@keyframes td-bounce{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-5px)}}
+/* Voice message (Morning Minute) — Telegram style */
+.voice-msg{max-width:78%;align-self:flex-start;background:#182533;border-radius:16px;border-bottom-left-radius:4px;margin-left:2px;padding:.6rem .85rem;opacity:0;transform:translateY(6px);animation:msg-in .35s forwards;position:relative}
+.voice-msg-inner{display:flex;align-items:center;gap:10px}
+.voice-play{width:32px;height:32px;border-radius:50%;background:#2b5278;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.voice-play svg{width:12px;height:12px;fill:#fff}
+.voice-wave{display:flex;align-items:center;gap:2px;height:20px;flex:1}
+.voice-wave span{width:3px;border-radius:2px;background:rgba(255,255,255,.4)}
+.voice-wave span:nth-child(1){height:8px}
+.voice-wave span:nth-child(2){height:14px}
+.voice-wave span:nth-child(3){height:18px}
+.voice-wave span:nth-child(4){height:12px}
+.voice-wave span:nth-child(5){height:16px}
+.voice-wave span:nth-child(6){height:10px}
+.voice-wave span:nth-child(7){height:14px}
+.voice-wave span:nth-child(8){height:6px}
+.voice-wave span:nth-child(9){height:12px}
+.voice-wave span:nth-child(10){height:8px}
+.voice-wave span:nth-child(11){height:10px}
+.voice-wave span:nth-child(12){height:6px}
+.voice-wave span:nth-child(13){height:8px}
+.voice-wave span:nth-child(14){height:4px}
+.voice-wave span:nth-child(15){height:6px}
+.voice-wave span:nth-child(16){height:10px}
+.voice-wave span:nth-child(17){height:12px}
+.voice-wave span:nth-child(18){height:8px}
+.voice-wave span:nth-child(19){height:5px}
+.voice-wave span:nth-child(20){height:3px}
+.voice-duration{font-family:var(--disp);font-size:.7rem;color:rgba(255,255,255,.5);flex-shrink:0}
+.voice-caption{font-size:.72rem;color:rgba(255,255,255,.45);margin-top:6px;line-height:1.4}
+/* Telegram input bar */
+.input-bar{position:absolute;bottom:0;left:0;right:0;height:56px;background:#17212b;border-top:1px solid rgba(255,255,255,.04);display:flex;align-items:center;padding:0 14px;gap:12px;z-index:2}
+.input-bar .emoji-btn{width:28px;height:28px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.4);font-size:1.1rem}
+.input-bar .placeholder{flex:1;font-family:var(--disp);font-size:.78rem;color:rgba(255,255,255,.3)}
+.input-bar .send{width:32px;height:32px;border-radius:50%;background:#2b5278;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.8rem;flex-shrink:0}
+
+.hero-content{position:relative;z-index:2;text-align:left;max-width:680px}
+@media(max-width:900px){.hero-content{text-align:center;max-width:780px;margin:0 auto}}
+.eyebrow{font-family:var(--disp);font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1.8rem;display:inline-block;border:1px solid rgba(217,164,65,.28);padding:.4rem 1.1rem;border-radius:100px}
+.hero h1{font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.8rem);font-weight:700;line-height:1.05;letter-spacing:-.02em;color:var(--dawn);margin-bottom:1.5rem}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--gold)}
+.hero-sub{font-size:1.1rem;color:var(--ink-soft);max-width:520px;margin:0 0 2.5rem;line-height:1.7}
+@media(max-width:900px){.hero-sub{max-width:580px;margin:0 auto 2.5rem}}
+.hero-time{font-family:var(--disp);font-size:clamp(2.8rem,6.5vw,4.8rem);font-weight:700;letter-spacing:-.04em;color:var(--gold);line-height:1;margin-bottom:.4rem}
+.hero-time-label{font-family:var(--disp);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)}
+.hero-underline{position:relative;display:inline-block}
+.hero-underline::after{content:'';position:absolute;left:-2%;right:-2%;bottom:.08em;height:.12em;background:linear-gradient(90deg,transparent 0%,var(--terra) 15%,var(--gold) 50%,var(--terra) 85%,transparent 100%);border-radius:1px;transform:scaleX(0);transform-origin:left;animation:underline-draw 1.2s cubic-bezier(.22,.61,.36,1) .6s forwards}
+@keyframes underline-draw{to{transform:scaleX(1)}}
+.cta-row{display:flex;gap:1rem;justify-content:flex-start;flex-wrap:wrap;margin-top:2.5rem}
+@media(max-width:900px){.cta-row{justify-content:center}}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--disp);font-size:.85rem;font-weight:600;letter-spacing:.04em;padding:.9rem 2rem;border-radius:10px;transition:all .2s;cursor:pointer;border:none}
+.btn-primary{background:var(--gold);color:var(--night)}
+.btn-primary:hover{background:var(--gold-soft);transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:var(--dawn);border:1px solid rgba(246,239,227,.18)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.scroll-cue{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);font-family:var(--disp);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);opacity:.6;animation:bob 2s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
+
+/* SECTIONS */
+section{padding:6rem 1.5rem;position:relative}
+.sec-inner{max-width:1000px;margin:0 auto}
+.kicker{font-family:var(--disp);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:flex;align-items:center;gap:.8rem}
+.kicker::after{content:'';flex:1;height:1px;background:rgba(217,164,65,.2)}
+.sec-title{font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:600;letter-spacing:-.015em;margin-bottom:1.5rem;line-height:1.1}
+.sec-title em{font-style:italic;font-weight:400;color:var(--gold)}
+.sec-lead{font-size:1.1rem;line-height:1.7;max-width:680px;margin-bottom:2.5rem}
+
+/* Alternating bg */
+.dark{background:var(--night)}
+.dark2{background:var(--night2)}
+.cream{background:var(--paper);color:var(--ink)}
+.cream .kicker{color:var(--terra)}
+.cream .kicker::after{background:rgba(194,96,62,.2)}
+.cream .sec-title{color:var(--ink)}
+.cream .sec-title em{color:var(--terra)}
+.cream .sec-lead{color:var(--ink-soft)}
+
+/* Feature cards */
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}
+@media(max-width:820px){.feature-grid{grid-template-columns:1fr}}
+.feature-card{background:rgba(19,26,46,.6);border:1px solid rgba(217,164,65,.1);border-radius:14px;padding:2rem 1.5rem;transition:all .3s}
+.feature-card:hover{border-color:rgba(217,164,65,.3);transform:translateY(-3px)}
+.cream .feature-card{background:#fff;border:1px solid rgba(194,96,62,.1);box-shadow:0 4px 20px rgba(0,0,0,.04)}
+.cream .feature-card:hover{border-color:rgba(194,96,62,.25)}
+.feature-icon{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1.2rem}
+.feature-card h3{font-family:var(--serif);font-size:1.3rem;font-weight:600;margin-bottom:.6rem}
+.feature-card .feature-tag{font-family:var(--disp);font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
+.cream .feature-tag{color:var(--terra)}
+.feature-card p{font-size:.95rem;color:var(--ink-soft);line-height:1.65}
+.cream .feature-card p{color:var(--ink-soft)}
+/* Host credentials grid — 4 across */
+.cred-grid{grid-template-columns:repeat(4,1fr);gap:1.1rem}
+.cred-grid .feature-card{padding:1.6rem 1.1rem}
+.cred-grid .feature-icon{width:46px;height:46px;font-size:1.2rem;margin-bottom:1rem}
+.cred-grid .feature-card h3{font-size:1.08rem}
+.cred-grid .feature-card p{font-size:.84rem;line-height:1.55}
+.cred-grid .feature-tag{margin-bottom:.4rem}
+@media(max-width:900px){.cred-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.cred-grid{grid-template-columns:1fr}}
+.feature-time{font-family:var(--disp);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(217,164,65,.08)}
+.cream .feature-time{border-color:rgba(194,96,62,.08)}
+
+/* Schedule */
+.schedule-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}
+@media(max-width:820px){.schedule-grid{grid-template-columns:1fr}}
+.day-card{background:rgba(19,26,46,.6);border:1px solid rgba(217,164,65,.12);border-radius:12px;padding:1.5rem;text-align:center;transition:all .3s}
+.day-card:hover{border-color:rgba(217,164,65,.3)}
+.day-name{font-family:var(--disp);font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
+.day-time{font-family:var(--disp);font-size:1.6rem;font-weight:700;color:var(--dawn);margin-bottom:.4rem}
+.day-topic{font-family:var(--serif);font-size:1rem;font-style:italic;color:var(--ink-soft)}
+.cream .day-card{background:#fff;border:1px solid rgba(194,96,62,.1)}
+.cream .day-name{color:var(--terra)}
+.cream .day-time{color:var(--ink)}
+.cream .day-topic{color:var(--ink-soft)}
+
+/* Weekly curriculum */
+.week-list{display:flex;flex-direction:column;gap:1rem;margin-top:2rem}
+.week-item{display:grid;grid-template-columns:auto 1fr auto;gap:1.5rem;align-items:center;padding:1.5rem 1.8rem;background:rgba(19,26,46,.5);border:1px solid rgba(217,164,65,.1);border-radius:12px;transition:all .3s}
+.week-item:hover{border-color:rgba(217,164,65,.25)}
+.cream .week-item{background:#fff;border:1px solid rgba(194,96,62,.08)}
+.cream .week-item:hover{border-color:rgba(194,96,62,.2)}
+.week-num{font-family:var(--disp);font-size:1.1rem;font-weight:700;color:var(--gold);letter-spacing:.04em;min-width:70px}
+.cream .week-num{color:var(--terra)}
+.week-title{font-family:var(--serif);font-size:1.15rem;font-weight:600;color:var(--dawn)}
+.cream .week-title{color:var(--ink)}
+.week-desc{font-size:.88rem;color:var(--ink-soft);margin-top:.2rem}
+.week-price{font-family:var(--disp);font-size:1.4rem;font-weight:700;color:var(--gold);white-space:nowrap}
+.cream .week-price{color:var(--terra)}
+@media(max-width:680px){.week-item{grid-template-columns:1fr;gap:.5rem}.week-price{font-size:1.1rem}}
+
+/* Pricing */
+.pricing-box{max-width:480px;margin:2rem auto 0;background:rgba(19,26,46,.6);border:1px solid rgba(217,164,65,.18);border-radius:18px;padding:3rem 2.5rem;text-align:center}
+.cream .pricing-box{background:#fff;border:1px solid rgba(194,96,62,.15);box-shadow:0 8px 30px rgba(0,0,0,.06)}
+.price-amount{font-family:var(--disp);font-size:clamp(3rem,8vw,4.5rem);font-weight:700;letter-spacing:-.03em;color:var(--gold);line-height:1}
+.cream .price-amount{color:var(--terra)}
+.price-unit{font-family:var(--disp);font-size:.85rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-top:.4rem}
+.price-include{list-style:none;margin:2rem 0;text-align:left}
+.price-include li{padding:.6rem 0;border-bottom:1px solid rgba(217,164,65,.08);font-size:.95rem;color:var(--ink-soft);display:flex;align-items:center;gap:.7rem}
+.cream .price-include li{border-color:rgba(194,96,62,.06)}
+.price-include li::before{content:'✓';color:var(--gold);font-weight:700;font-size:1.1rem}
+.cream .price-include li::before{color:var(--terra)}
+.price-include li:last-child{border-bottom:none}
+
+/* What you build */
+.build-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2rem;align-items:start}
+@media(max-width:760px){.build-grid{grid-template-columns:1fr}}
+.build-col h4{font-family:var(--serif);font-size:1.2rem;font-weight:600;margin-bottom:1rem;color:var(--dawn)}
+.cream .build-col h4{color:var(--ink)}
+.build-col p{font-size:.95rem;color:var(--ink-soft);line-height:1.7;margin-bottom:1rem}
+.build-list{list-style:none;counter-reset:step}
+.build-list li{counter-increment:step;padding:.6rem 0 .6rem 2.2rem;position:relative;font-size:.92rem;color:var(--ink-soft);line-height:1.55}
+.build-list li::before{content:counter(step);position:absolute;left:0;top:.5rem;width:1.5rem;height:1.5rem;border-radius:50%;background:rgba(217,164,65,.12);color:var(--gold);font-family:var(--disp);font-size:.7rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+.cream .build-list li::before{background:rgba(194,96,62,.1);color:var(--terra)}
+.cream .build-list li{color:var(--ink-soft)}
+
+/* FAQ */
+.faq-list{margin-top:2rem;display:flex;flex-direction:column;gap:1rem}
+.faq-item{background:rgba(19,26,46,.5);border:1px solid rgba(217,164,65,.1);border-radius:12px;padding:1.5rem 1.8rem;cursor:pointer;transition:all .3s}
+.faq-item:hover{border-color:rgba(217,164,65,.2)}
+.cream .faq-item{background:#fff;border:1px solid rgba(194,96,62,.08)}
+.cream .faq-item:hover{border-color:rgba(194,96,62,.2)}
+.faq-q{font-family:var(--serif);font-size:1.1rem;font-weight:600;color:var(--dawn);display:flex;justify-content:space-between;align-items:center}
+.cream .faq-q{color:var(--ink)}
+.faq-q::after{content:'+';font-family:var(--disp);font-size:1.4rem;color:var(--gold);transition:transform .3s}
+.faq-item.open .faq-q::after{transform:rotate(45deg)}
+.cream .faq-q::after{color:var(--terra)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,margin .3s;font-size:.95rem;color:var(--ink-soft);line-height:1.7}
+.faq-item.open .faq-a{max-height:300px;margin-top:1rem}
+
+/* CTA section */
+.cta-section{text-align:center;padding:7rem 1.5rem}
+.cta-section h2{font-family:var(--serif);font-size:clamp(2rem,5vw,3.2rem);font-weight:600;letter-spacing:-.02em;margin-bottom:1.2rem}
+.cta-section h2 em{font-style:italic;color:var(--gold)}
+.cta-section p{font-size:1.1rem;color:var(--ink-soft);max-width:520px;margin:0 auto 2.5rem}
+
+/* FOOTER */
+footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,164,65,.1);background:var(--night)}
+.footer-wordmark{font-family:var(--serif);font-size:1.3rem;font-weight:600;margin-bottom:1rem}
+.footer-wordmark em{font-style:italic;color:var(--gold);font-weight:400}
+.footer-links{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
+.footer-links a{font-family:var(--disp);font-size:.68rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);opacity:.7;transition:opacity .2s}
+.footer-links a:hover{opacity:1}
+.footer-disclaim{font-size:.78rem;color:var(--ink-soft);opacity:.6;max-width:560px;margin:0 auto;line-height:1.6}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:translateY(0)}
+.reveal:nth-child(2){transition-delay:.1s}
+.reveal:nth-child(3){transition-delay:.2s}
+.reveal:nth-child(4){transition-delay:.3s}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+
+/* Chat bubble motif */
+.chat-demo{max-width:340px;margin:2rem auto 0;background:rgba(13,18,32,.8);border:1px solid rgba(217,164,65,.12);border-radius:16px;padding:1.5rem;font-size:.82rem;line-height:1.6}
+
+/* Eight Essentials grid */
+.essentials-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2.5rem}
+@media(max-width:900px){.essentials-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.essentials-grid{grid-template-columns:1fr}}
+.essential-card{background:rgba(19,26,46,.6);border:1px solid rgba(217,164,65,.1);border-radius:12px;padding:1.5rem 1.2rem;transition:all .3s;position:relative;overflow:hidden}
+.essential-card:hover{border-color:rgba(217,164,65,.3);transform:translateY(-3px)}
+.cream .essential-card{background:#fff;border:1px solid rgba(194,96,62,.08);box-shadow:0 4px 16px rgba(0,0,0,.03)}
+.cream .essential-card:hover{border-color:rgba(194,96,62,.2)}
+.essential-num{font-family:var(--disp);font-size:.62rem;font-weight:700;letter-spacing:.12em;color:var(--gold);margin-bottom:.5rem}
+.cream .essential-num{color:var(--terra)}
+.essential-icon{font-size:1.8rem;margin-bottom:.6rem;line-height:1}
+.essential-card h4{font-family:var(--serif);font-size:1.05rem;font-weight:600;margin-bottom:.4rem;color:var(--dawn);line-height:1.2}
+.cream .essential-card h4{color:var(--ink)}
+.essential-card .essential-activity{font-size:.82rem;color:var(--ink-soft);line-height:1.55;margin-top:.6rem;padding-top:.6rem;border-top:1px solid rgba(217,164,65,.06)}
+.cream .essential-card .essential-activity{border-color:rgba(194,96,62,.06)}
+.essential-activity strong{color:var(--gold);font-weight:600}
+.cream .essential-activity strong{color:var(--terra)}
+.essential-card .personalise-badge{display:inline-block;font-family:var(--disp);font-size:.55rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);background:rgba(125,138,110,.1);padding:.2rem .5rem;border-radius:100px;margin-top:.7rem}
+.cream .personalise-badge{color:var(--sage-deep);background:rgba(125,138,110,.08)}
+
+/* Personalise highlight band */
+.personalise-band{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center;margin-top:3rem}
+@media(max-width:760px){.personalise-band{grid-template-columns:1fr}}
+.personalise-band .pb-text h4{font-family:var(--serif);font-size:1.4rem;font-weight:600;margin-bottom:1rem;color:var(--dawn)}
+.cream .personalise-band .pb-text h4{color:var(--ink)}
+.personalise-band .pb-text p{font-size:.95rem;color:var(--ink-soft);line-height:1.7;margin-bottom:1rem}
+.personalise-band .pb-steps{list-style:none;counter-reset:ps}
+.personalise-band .pb-steps li{counter-increment:ps;padding:.5rem 0 .5rem 2.2rem;position:relative;font-size:.88rem;color:var(--ink-soft);line-height:1.55}
+.personalise-band .pb-steps li::before{content:counter(ps);position:absolute;left:0;top:.4rem;width:1.5rem;height:1.5rem;border-radius:50%;background:rgba(217,164,65,.12);color:var(--gold);font-family:var(--disp);font-size:.68rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+.cream .personalise-band .pb-steps li::before{background:rgba(194,96,62,.1);color:var(--terra)}
+.personalise-band .pb-steps li strong{color:var(--dawn);font-weight:600}
+.cream .personalise-band .pb-steps li strong{color:var(--ink)}
+.chat-msg{margin-bottom:.8rem;padding:.6rem .9rem;border-radius:10px;max-width:85%}
+.chat-user{background:rgba(79,111,158,.15);color:var(--dawn);margin-left:auto;text-align:right}
+.chat-agent{background:rgba(217,164,65,.08);color:var(--gold);border:1px solid rgba(217,164,65,.1)}
+.chat-time{font-family:var(--disp);font-size:.6rem;color:var(--ink-soft);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.3rem}
+/* MODAL */
+.modal-overlay{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:rgba(13,18,32,.75);backdrop-filter:blur(8px);opacity:0;pointer-events:none;transition:opacity .4s ease}
+.modal-overlay.show{opacity:1;pointer-events:auto}
+.modal-card{background:linear-gradient(145deg,var(--gold) 0%,#e8c87a 50%,var(--gold) 100%);color:var(--night);border-radius:24px;padding:3rem 2.8rem 2.5rem;max-width:480px;width:90%;box-shadow:0 30px 80px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.15) inset;transform:scale(.92) translateY(20px);transition:transform .4s cubic-bezier(.22,.61,.36,1);position:relative}
+.modal-overlay.show .modal-card{transform:scale(1) translateY(0)}
+.modal-close{position:absolute;top:16px;right:20px;background:none;border:none;font-size:1.6rem;color:var(--night);opacity:.5;cursor:pointer;transition:opacity .2s;font-family:var(--body)}
+.modal-close:hover{opacity:1}
+.modal-badge{font-family:var(--disp);font-size:.7rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--terra-deep);margin-bottom:1rem;display:inline-block;background:rgba(13,18,32,.08);padding:.35rem .9rem;border-radius:100px}
+.modal-title{font-family:var(--serif);font-size:clamp(1.6rem,4vw,2.2rem);font-weight:700;line-height:1.15;margin-bottom:.6rem;color:var(--night)}
+.modal-title em{font-style:italic;font-weight:400;color:var(--terra-deep)}
+.modal-sub{font-size:.95rem;color:rgba(13,18,32,.7);line-height:1.6;margin-bottom:1.8rem}
+.modal-form-row{display:flex;gap:.6rem;margin-bottom:.8rem}
+.modal-form-row.single{flex-direction:column}
+.modal-form-row input{flex:1;background:rgba(255,255,255,.5);border:1.5px solid rgba(13,18,32,.15);border-radius:12px;padding:.85rem 1rem;font-size:.95rem;font-family:var(--body);color:var(--night);outline:none;transition:border-color .2s,background .2s}
+.modal-form-row input:focus{border-color:var(--terra);background:rgba(255,255,255,.8)}
+.modal-form-row input::placeholder{color:rgba(13,18,32,.4)}
+.modal-btn{width:100%;background:var(--night);color:var(--dawn);border:none;padding:1rem 1.5rem;border-radius:12px;font-weight:700;font-size:.95rem;font-family:var(--disp);letter-spacing:.06em;cursor:pointer;transition:all .25s;text-transform:uppercase}
+.modal-btn:hover{background:var(--night2);transform:translateY(-1px)}
+.modal-btn:disabled{opacity:.6;cursor:default;transform:none}
+.modal-note{font-size:.78rem;color:rgba(13,18,32,.55);margin-top:.9rem;line-height:1.5;text-align:center}
+.modal-success{display:none;background:rgba(255,255,255,.4);border:1.5px solid var(--sage);border-radius:12px;padding:1.2rem 1.5rem;text-align:center}
+.modal-success.show{display:block}
+.modal-success .check{font-size:2rem;color:var(--sage-deep);margin-bottom:.3rem}
+.modal-success p{font-size:.95rem;color:var(--night);line-height:1.6}
+.modal-success p em{font-style:italic;color:var(--terra-deep)}
+.modal-error{display:none;color:var(--terra-deep);font-size:.85rem;margin-top:.5rem;text-align:center}
+.modal-error.show{display:block}
+</style>
+<!-- site-deploy: 2026-07-29-v2 -->
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="https://onetoeight.org" class="wordmark">Afterschool Agent <span class="by">by one <em>to</em> eight</span></a>
+    <!-- Hamburger commented out for now
+    <button class="hamburger" onclick="toggleNav()" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    -->
+    <ul class="nav-links" id="nav-links">
+          <li><a href="#what">What It Is</a></li>
+          <li><a href="#essentials">The Eight</a></li>
+          <li><a href="#rituals">The Rituals</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#requirements">Requirements</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-sky"></div>
+  <div class="hero-layout">
+    <div class="hero-content">
+      <span class="eyebrow">On-Demand Training + Weekly Live Q&amp;A</span>
+      <div class="hero-time" style="font-size:clamp(2.8rem,6.5vw,4.8rem)">In a world full of <br>AI agents <em>online</em>,</div>
+      <div class="hero-time" style="font-size:clamp(2.8rem,6.5vw,4.8rem);margin-bottom:1.5rem">we give young people <span class="hero-underline">agency in real life</span>.</div>
+      <h1>Your teen builds their own <em>AI agent</em>. One that teaches life skills and guides them to grow.</h1>
+      <p class="hero-sub">In a world full of AI agents, we give young people agency in real life. On-demand training where they build a local-first AI assistant that walks them through the eight essentials of onetoeight &mdash; personalising each one with activities that fit their life. The agent also helps with homework, planning, and the day ahead. No coding experience needed. Everything lives on their device after a one-time $5 OpenCode Go setup. Plus a weekly live Q&amp;A session every Tuesday.</p>
+      <div class="cta-row">
+        <a href="#pricing" class="btn btn-primary">Enrol — $44.88 <span style="font-size:.7rem;opacity:.7">/ $11.22/wk</span></a>
+        <a href="#what" class="btn btn-ghost">How it works</a>
+      </div>
+    </div>
+    <div class="hero-right" style="display:flex;flex-direction:column;align-items:center;gap:1rem">
+      <div class="agent-motif">
+        <!-- Telegram header -->
+        <div class="tg-header">
+          <div class="tg-avatar"><svg viewBox="0 0 200 400" width="18" height="36" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M100,25 L100,360"/><path d="M68,55 L100,15"/><path d="M38,120 C55,117 75,119 100,119 C125,119 145,117 162,120"/><path d="M100,118 C140,118 165,155 160,190 C156,222 130,245 100,245 C70,245 44,222 40,190 C35,155 60,118 100,118"/><path d="M100,245 C135,245 155,280 150,315 C146,345 125,360 100,360 C75,360 54,345 50,315 C45,280 65,245 100,245"/></svg></div>
+          <div class="tg-info">
+            <div class="tg-name">Afterschool Agent</div>
+            <div class="tg-status">online</div>
+          </div>
+        </div>
+        <!-- messages -->
+        <div class="chat-body">
+          <div class="msg agent" style="animation-delay:.5s">Good afternoon, Alex. How was school today? <span class="msg-time">4:30 PM</span></div>
+          <div class="msg user" style="animation-delay:1.2s">Pretty good, but maths test Thursday 😬 <span class="msg-time">4:31 PM</span></div>
+          <div class="typing-dots" style="animation-delay:1.9s"><span></span><span></span><span></span></div>
+          <div class="msg agent" style="animation-delay:2.4s">Let's prep together. First — three minutes of stillness to clear your head. <span class="msg-time">4:32 PM</span></div>
+          <div class="msg user" style="animation-delay:3.2s">ok, done. that actually helped. <span class="msg-time">4:35 PM</span></div>
+          <div class="msg agent" style="animation-delay:3.8s">Here's your study plan: 30 min tonight, 45 min Wednesday, review Thursday morning. Sound fair? <span class="msg-time">4:35 PM</span></div>
+          <div class="msg user" style="animation-delay:4.5s">yes. can you remind me tomorrow? <span class="msg-time">4:36 PM</span></div>
+          <div class="msg agent" style="animation-delay:5.2s">Done. Your Morning Minute will open with: "Thursday is your maths test. You've prepared. Take one breath. Trust the work." <span class="msg-time">4:37 PM</span></div>
+          <!-- Voice message -->
+          <div class="voice-msg" style="animation-delay:5.8s">
+            <div class="voice-msg-inner">
+              <div class="voice-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+              <div class="voice-wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+              <div class="voice-duration">0:59</div>
+            </div>
+            <div class="voice-caption">Morning Minute — Thursday's test briefing</div>
+          </div>
+        </div>
+        <!-- Telegram input bar -->
+        <div class="input-bar">
+          <div class="emoji-btn">😊</div>
+          <div class="placeholder">Message</div>
+          <div class="send">↑</div>
+        </div>
+      </div>
+      <!-- brand logos below chat -->
+      <div style="display:flex;align-items:center;gap:.7rem;padding:.3rem .8rem;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:100px;backdrop-filter:blur(8px)">
+        <span style="font-family:var(--disp);font-size:.55rem;letter-spacing:.08em;color:var(--ink-soft);text-transform:uppercase">Powered by</span>
+        <span style="display:flex;align-items:center;gap:4px;font-family:var(--serif);font-size:.65rem;font-weight:600;color:var(--dawn);opacity:.5"><svg viewBox="0 0 40 40" width="12" height="12" fill="none" stroke="var(--gold)" stroke-width="2"><circle cx="20" cy="20" r="18"/><path d="M14 20h12M20 14v12"/></svg>Hermes</span>
+        <span style="color:rgba(255,255,255,.08)">|</span>
+        <span style="font-size:.65rem;font-weight:600;color:var(--dawn);opacity:.5">OpenCode</span>
+        <span style="color:rgba(255,255,255,.08)">|</span>
+        <span style="font-size:.65rem;opacity:.5">⚡ LM Studio</span>
+        <span style="color:rgba(255,255,255,.08)">|</span>
+        <span style="font-size:.65rem;opacity:.5">✈ Telegram</span>
+        <span style="color:rgba(255,255,255,.08)">|</span>
+        <span style="font-size:.65rem;opacity:.5">💬 WhatsApp</span>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue">Scroll to explore</div>
+</header>
+
+<!-- WHAT IT IS -->
+<section class="dark" id="what">
+  <div class="sec-inner">
+    <!-- EXPLAINER AUDIO -->
+    <div class="reveal" style="text-align:center;margin-bottom:3.5rem">
+      <div class="kicker" style="margin-bottom:.8rem">Listen — 60‑Second Explainer</div>
+      <div class="audio-brand" data-src="explainer.mp3" style="display:inline-block;background:linear-gradient(135deg,rgba(217,164,65,.06) 0%,rgba(13,18,32,.6) 100%);border:1px solid rgba(217,164,65,.15);border-radius:20px;padding:1.5rem 2rem;max-width:480px;width:100%;position:relative;overflow:hidden">
+        <!-- glow -->
+        <div style="position:absolute;top:-60%;right:-20%;width:200px;height:200px;background:radial-gradient(circle,rgba(217,164,65,.08),transparent 70%);pointer-events:none"></div>
+        <div style="display:flex;align-items:center;gap:1.2rem;position:relative;z-index:1">
+          <!-- play button -->
+          <button class="play-btn" onclick="toggleAudio(this)" style="flex-shrink:0;width:48px;height:48px;border-radius:50%;border:2px solid var(--gold);background:rgba(217,164,65,.1);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .25s ease" onmouseover="this.style.background='rgba(217,164,65,.2)'" onmouseout="this.style.background='rgba(217,164,65,.1)'">
+            <svg class="play-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" style="display:block;margin-left:2px">
+              <polygon points="6,3 20,12 6,21" fill="#d9a441"/>
+            </svg>
+            <svg class="pause-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" style="display:none">
+              <rect x="5" y="3" width="5" height="18" rx="1.5" fill="#d9a441"/>
+              <rect x="14" y="3" width="5" height="18" rx="1.5" fill="#d9a441"/>
+            </svg>
+          </button>
+          <!-- progress -->
+          <div style="flex:1;min-width:0">
+            <div style="position:relative;height:4px;background:rgba(217,164,65,.1);border-radius:4px;cursor:pointer" onclick="seekAudio(event,this)">
+              <div class="progress-fill" style="width:0%;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-soft));border-radius:4px;transition:width .15s linear"></div>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:.6rem">
+              <span style="font-family:var(--disp);font-size:.7rem;color:var(--ink-soft);letter-spacing:.04em;font-weight:600">Afterschool Agent</span>
+              <span style="font-family:var(--disp);font-size:.72rem;color:var(--ink-soft)">
+                <span class="time-current">0:00</span><span style="opacity:.4"> / </span><span class="time-duration">1:00</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="kicker reveal">Part 1 — The Idea</div>
+    <h2 class="sec-title reveal">An afterschool hour where your teen learns to <em>build</em>, not just <em>consume</em>.</h2>
+    <p class="sec-lead reveal">Your teen learns through on-demand training modules they can follow at their own pace, on their own schedule. Each module covers a piece of the build, with step-by-step video and hands-on exercises. Then, every Tuesday at 4:30 PM, we come together for a live Q&amp;A session &mdash; bring your questions, get help, and learn alongside other teens. For one hour, we work together to build a personal AI agent using Hermes &mdash; a free, local-first agent platform that runs on a laptop or desktop. Set up requires a one-time $5 OpenCode Go account; after that, no data leaves the device for everyday use. The agent's primary job is to guide your teen through the eight essentials of onetoeight &mdash; with personalised activities the agent designs for them. Homework help, planning, and research are the bonus, not the point.</p>
+
+    <div class="build-grid">
+      <div class="build-col reveal">
+        <h4>What your teen gets</h4>
+        <ul class="build-list">
+          <li>A working AI agent running on your home computer — set up with a one-time $5 OpenCode Go account, then runs locally free for everyday use</li>
+          <li>Guided learning through all eight essentials, with personalised activities the agent creates for your teen</li>
+          <li>The three daily rituals: Afterschool Chat, Planning, and Morning Minute text-to-speech</li>
+          <li>An agent that knows which essential they're working on and weaves it into every conversation</li>
+          <li>Fully secular &mdash; your teen tailors the agent to their own beliefs. No pressure to think otherwise</li>
+          <li>Skills they can reuse &mdash; the same agent can then help with homework, research, and planning</li>
+        </ul>
+      </div>
+      <div class="build-col reveal">
+        <h4>What parents get</h4>
+        <ul class="build-list">
+          <li>Peace of mind — everything runs locally, no data sent to third parties</li>
+          <li>A structured on-demand programme anchored to the eight essentials</li>
+          <li>Weekly live Q&amp;A session every Tuesday with a real instructor</li>
+          <li>Flexible schedule &mdash; learn at your own pace, any time</li>
+          <li>A tool the whole family can use once it's built</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- secular callout -->
+    <div class="reveal" style="margin-top:2.5rem;padding:1.5rem 2rem;background:rgba(125,138,110,.08);border-left:3px solid var(--sage);border-radius:0 12px 12px 0;max-width:780px">
+      <p style="font-family:var(--serif);font-style:italic;font-size:1.15rem;color:var(--dawn);line-height:1.6">
+        This programme is fully secular. The eight essentials &mdash; silence, body, community, nature, digital self-defence, life skills, knowledge, and tested convictions &mdash; are practical foundations for any young person. Your teen tailors their agent to reflect their own beliefs and values. No worldview is pushed. No pressure to think otherwise.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- THE RITUALS -->
+<section class="cream" id="rituals">
+  <div class="sec-inner">
+    <div class="kicker reveal">Part 2 — The Three Rituals</div>
+    <h2 class="sec-title reveal">Three things the agent does every <em>single day</em>.</h2>
+    <p class="sec-lead reveal">Through on-demand training modules, your teen configures their agent to perform three daily rituals. By the end, these run automatically — the agent greets them after school, helps them plan, and speaks a one-minute morning briefing when they wake up.</p>
+
+    <div class="feature-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon" style="background:rgba(217,164,65,.12);color:var(--gold)">💬</div>
+        <div class="feature-tag">Ritual 1 · After School</div>
+        <h3>The Afterschool Chat</h3>
+        <p>Your teen sits down, opens their agent, and talks. How was the day? What's weighing on you? What's the plan tonight? The agent listens, reflects, and helps them decompress before screen time takes over. It's a grounding conversation — the essential of silence and real community in practice.</p>
+        <div class="feature-time">Anytime · On-demand</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon" style="background:rgba(125,138,110,.15);color:var(--sage)">📋</div>
+        <div class="feature-tag">Ritual 2 · Evening</div>
+        <h3>The Planning Session</h3>
+        <p>Before bed, the agent helps them map tomorrow. School tasks, homework deadlines, the essential they're working on this week, one real-world thing they want to do. The agent drafts the plan, your teen edits it, and it saves locally. No app, no account, no cloud sync — just their agent remembering for them.</p>
+        <div class="feature-time">Anytime · Self-paced</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon" style="background:rgba(194,96,62,.12);color:var(--terra)">🔊</div>
+        <div class="feature-tag">Ritual 3 · Every Morning</div>
+        <h3>The Morning Minute</h3>
+        <p>This is the magic. Each morning, the agent generates a one-minute text-to-speech audio briefing — their plan, their essential for the week, a thought to carry, a breath to take. Your teen wakes up, presses play, and starts the day with intention instead of a feed. The agent builds it overnight from yesterday's plan.</p>
+        <div class="feature-time">Auto-generated · Every day</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- EIGHT ESSENTIALS — THE CORE CURRICULUM -->
+<section class="dark2" id="essentials">
+  <div class="sec-inner">
+    <div class="kicker reveal">The Core — The Eight Essentials</div>
+    <h2 class="sec-title reveal">The agent doesn't just <em>chat</em>. It teaches.</h2>
+    <p class="sec-lead reveal">The onetoeight programme has eight essentials &mdash; the eight insights a screen-born generation needs. Your teen's agent is configured to teach each one, with activities it personalises for who they are. Not generic worksheets. Not a one-size app. The agent learns your teen and tailors the essential to their world.</p>
+
+    <div class="essentials-grid">
+      <div class="essential-card reveal">
+        <div class="essential-num">ESSENTIAL 01</div>
+        <div class="essential-icon">🕯️</div>
+        <h4>Silence &amp; Stillness</h4>
+        <p class="essential-activity"><strong>Agent activity:</strong> guides a one-minute silence timer, asks what they noticed, and sets a daily "stillness challenge" scaled to their comfort level.</p>
+        <span class="personalise-badge">Personalised</span>
+      </div>
+      <div class="essential-card reveal">
+        <div class="essential-num">ESSENTIAL 02</div>
+        <div class="essential-icon">🏃</div>
+        <h4>Body as Temple</h4>
+        <p class="essential-activity"><strong>Agent activity:</strong> tracks one health habit your teen chooses — sleep, movement, hydration — and checks in daily without nagging.</p>
+        <span class="personalise-badge">Personalised</span>
+      </div>
+      <div class="essential-card reveal">
+        <div class="essential-num">ESSENTIAL 03</div>
+        <div class="essential-icon">📖</div>
+        <h4>Scripture &amp; Wisdom</h4>
+        <p class="essential-activity"><strong>Agent activity:</strong> shares a short passage each morning, asks one reflection question, and connects it to something happening in their week.</p>
+        <span class="personalise-badge">Personalised</span>
+      </div>
+      <div class="essential-card reveal">
+        <div class="essential-num">ESSENTIAL 04</div>
+        <div class="essential-icon">🌿</div>
+        <h4>Nature Connection</h4>
+        <p class="essential-activity"><strong>Agent activity:</strong> suggests one outdoor action based on their location and weather — a walk, a sit, a photo of something growing — and asks them to report back.</p>
+        <span class="personalise-badge">Personalised</span>
+      </div>
+      <div class="essential-card reveal">
+        <div class="essential-num">ESSENTIAL 05</div>
+        <div class="essential-icon">📱</div>
+        <h4>Digital Self-Defence</h4>
+        <p class="essential-activity"><strong>Agent activity:</strong> runs a weekly screen-time review, helps them set one boundary, and teaches them how algorithms work so they can recognise the patterns.</p>
+        <span class="personalise-badge">Personalised</span>
+      </div>
+      <div class="essential-card reveal">
+        <div class="essential-num">ESSENTIAL 06</div>
+        <div class="essential-icon">🔧</div>
+        <h4>Life Skills</h4>
+        <p class="essential-activity"><strong>Agent activity:</strong> picks one real-world skill each week — cooking a meal, writing an email, managing money — and breaks it into doable steps they can tick off.</p>
+        <span class="personalise-badge">Personalised</span>
+      </div>
+      <div class="essential-card reveal">
+        <div class="essential-num">ESSENTIAL 07</div>
+        <div class="essential-icon">🤝</div>
+        <h4>Real Community</h4>
+        <p class="essential-activity"><strong>Agent activity:</strong> prompts one real-world connection action — a conversation, a thank-you, a visit — and follows up to ask how it went.</p>
+        <span class="personalise-badge">Personalised</span>
+      </div>
+      <div class="essential-card reveal">
+        <div class="essential-num">ESSENTIAL 08</div>
+        <div class="essential-icon">⭐</div>
+        <h4>Tested Character</h4>
+        <p class="essential-activity"><strong>Agent activity:</strong> sets a weekly character challenge — honesty, courage, patience — and helps them reflect on what they learned when it got hard.</p>
+        <span class="personalise-badge">Personalised</span>
+      </div>
+    </div>
+
+    <!-- How personalisation works -->
+    <div class="personalise-band">
+      <div class="pb-text reveal">
+        <h4>How does the agent <em style="font-style:italic;color:var(--gold)">personalise</em> each essential?</h4>
+        <p>The agent isn't reading from a script. During the live sessions, your teen tells the agent about themselves — what they like, what's hard, what their week looks like. The agent uses that to design activities that actually fit. A sporty kid gets a different Body-as-Temple challenge than a bookish one. A teen who's anxious about screens gets a gentler Digital Self-Defence ramp than one who's already cutting back.</p>
+        <p>Every activity is saved locally with a short reflection. By the end of the programme, your teen has a portfolio of eight personalised essential challenges &mdash; and an agent that knows them well enough to keep going.</p>
+      </div>
+      <div class="pb-steps reveal">
+        <li><strong>Module 1:</strong> Your teen tells the agent their name, interests, and how they're feeling. The agent picks an Essential 1 activity for them.</li>
+        <li><strong>Each module:</strong> The agent reviews last time's activity, asks how it went, and designs the next one based on their answer.</li>
+        <li><strong>Every morning:</strong> The Morning Minute weaves in the essential they're working on &mdash; a reminder, a nudge, a question to carry.</li>
+        <li><strong>By the end:</strong> All eight essentials are configured. The agent cycles through them, adapting as your teen grows.</li>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHAT DEMO -->
+<section class="dark">
+  <div class="sec-inner">
+    <div class="kicker reveal">A Glimpse — What the Agent Sounds Like</div>
+    <h2 class="sec-title reveal">This is the conversation your teen <em>builds</em>.</h2>
+    <p class="sec-lead reveal">Here's how the agent weaves the essential of the week into an everyday afterschool check-in — without sounding like a textbook.</p>
+    <div class="chat-demo reveal">
+      <div class="chat-time">4:32 PM — Monday · Essential of the week: Silence &amp; Stillness</div>
+      <div class="chat-msg chat-user">Hey, school was okay. Kind of tired. Got a maths test Thursday.</div>
+      <div class="chat-msg chat-agent">Good to hear from you. Let's be real — tired and a test on Thursday. This week's essential is stillness. Want to try one minute of quiet before we plan, or do you need to talk first?</div>
+      <div class="chat-msg chat-user">Maybe a minute.</div>
+      <div class="chat-msg chat-agent">Alright. Timer starts now. One minute of stillness. I'll wait.</div>
+      <div class="chat-time">4:35 PM</div>
+      <div class="chat-msg chat-agent">Welcome back. How was that? Now let's look at Thursday — want me to draft a study plan, 30 minutes Tuesday, 45 Wednesday, review Thursday morning?</div>
+      <div class="chat-msg chat-user">Yeah, and can you make the morning minute about the test?</div>
+      <div class="chat-msg chat-agent">Done. Your Morning Minute tomorrow will open with: "Thursday's your maths test. You've prepared. Take one breath. Then trust the work." And we'll try another stillness minute at the end — that's your Essential 1 challenge for today.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="dark" id="schedule">
+  <div class="sec-inner">
+    <div class="kicker reveal">Part 3 — How It Works</div>
+    <h2 class="sec-title reveal">On-demand training. <em>Weekly live Q&amp;A.</em></h2>
+    <p class="sec-lead reveal">Your teen works through the training modules at their own pace &mdash; any day, any time. Then every Tuesday at 4:30 PM, join the live Q&amp;A session for help, feedback, and community.</p>
+
+    <div class="schedule-grid">
+      <div class="day-card reveal">
+        <div class="day-name">On-Demand</div>
+        <div class="day-time">Anytime</div>
+        <div class="day-topic">Training modules &mdash; work through the build at your own pace</div>
+      </div>
+      <div class="day-card reveal">
+        <div class="day-name">Tuesday</div>
+        <div class="day-time">4:30 PM</div>
+        <div class="day-topic">Live Q&amp;A session &mdash; bring questions, get help, learn together</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CURRICULUM -->
+<section class="cream">
+  <div class="sec-inner">
+    <div class="kicker reveal">Part 4 — The Modules</div>
+    <h2 class="sec-title reveal">What we build, <em>module by module</em>.</h2>
+    <p class="sec-lead reveal">Each module pairs a build layer with a new essential. Work through them at your own pace. By the final module, the agent teaches all eight &mdash; with personalised activities for each &mdash; and the three daily rituals run on autopilot.</p>
+
+    <div class="week-list">
+      <div class="week-item reveal">
+        <div class="week-num">Module 1</div>
+        <div>
+          <div class="week-title">Foundations + Essential 1: Silence &amp; Stillness</div>
+          <div class="week-desc">Install Hermes on a home computer. Learn what a local-first agent is and why data stays on your device. Set up the Afterschool Chat. The agent learns who your teen is and designs their first personalised Silence &amp; Stillness activity.</div>
+        </div>
+        <div class="week-price">&nbsp;</div>
+      </div>
+      <div class="week-item reveal">
+        <div class="week-num">Module 2</div>
+        <div>
+          <div class="week-title">Planning + Essentials 2 &amp; 3: Body &amp; Wisdom</div>
+          <div class="week-desc">Build the evening planning ritual. The agent now designs Body-as-Temple and Scripture &amp; Wisdom activities tailored to your teen. Plans save locally. The agent connects each essential to the plan for the week.</div>
+        </div>
+        <div class="week-price">&nbsp;</div>
+      </div>
+      <div class="week-item reveal">
+        <div class="week-num">Module 3</div>
+        <div>
+          <div class="week-title">Morning Minute + Essentials 4 &amp; 5: Nature &amp; Digital Defence</div>
+          <div class="week-desc">Configure text-to-speech. The agent generates a one-minute audio briefing overnight, weaving in the essential of the week. Your teen wakes up, presses play, and starts the day with intention. Nature Connection and Digital Self-Defence activities go live.</div>
+        </div>
+        <div class="week-price">&nbsp;</div>
+      </div>
+      <div class="week-item reveal">
+        <div class="week-num">Module 4</div>
+        <div>
+          <div class="week-title">Extend + Essentials 6, 7 &amp; 8: Life Skills, Community, Character</div>
+          <div class="week-desc">The final three essentials are configured. The agent now cycles through all eight, adapting activities as your teen grows. We extend the agent for homework help and research. Your teen learns to write their own agent skills. Certificate of completion.</div>
+        </div>
+        <div class="week-price">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- HOST & SAFEGUARDING -->
+<section class="dark" id="host">
+  <div class="sec-inner">
+    <div class="kicker reveal">Your Host — Safe & Vetted</div>
+    <h2 class="sec-title reveal">Every live session is run by a <em>screened</em> instructor.</h2>
+    <p class="sec-lead reveal">The Afterschool Agent programme is hosted by a safeguarding-cleared facilitator. Before any teen logs on, the host holds the following verified credentials:</p>
+    <div class="feature-grid cred-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon" style="background:rgba(194,96,62,.12);color:var(--terra)">🛡️</div>
+        <div class="feature-tag">Credential 1</div>
+        <h3>Working with Children Check</h3>
+        <p>State-issued clearance confirming the host is approved to work with minors — the baseline requirement for any programme involving young people.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon" style="background:rgba(79,111,158,.15);color:var(--blue)">✅</div>
+        <div class="feature-tag">Credential 2</div>
+        <h3>NDIS Worker Screening</h3>
+        <p>National Disability Insurance Scheme clearance, verifying the host meets the strict conduct and safety standards required to support vulnerable participants.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon" style="background:rgba(217,164,65,.12);color:var(--gold)">❤️</div>
+        <div class="feature-tag">Credential 3</div>
+        <h3>First Aid &amp; CPR</h3>
+        <p>Current accredited training in emergency first aid and cardiopulmonary resuscitation — because a responsible host is prepared for the physical as well as the digital.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon" style="background:rgba(125,138,110,.15);color:var(--sage)">🧠</div>
+        <div class="feature-tag">Credential 4</div>
+        <h3>Youth Mental Health First Aid</h3>
+        <p>Accredited training in recognising and responding to mental health challenges in young people — knowing the signs, how to listen, and when to escalate to professional support.</p>
+      </div>
+    </div>
+    <p class="sec-lead reveal" style="margin-top:2.5rem">Four checks. One promise: your teen learns in a space that is supervised, safe, and accountable.</p>
+  </div>
+</section>
+
+
+<!-- PRICING -->
+<section class="dark" id="pricing">
+  <div class="sec-inner">
+    <div class="kicker reveal">Part 5 — Enrol</div>
+    <h2 class="sec-title reveal"><em>$44.88</em> one-time <span style="font-size:1rem;font-weight:400;color:var(--ink-soft)">/ <em style="color:var(--gold);font-style:italic">$11.22</em> per week</span>. Your agent for life.</h2>
+    <p class="sec-lead reveal">Pay once. Get full access to all training modules, the weekly live Q&amp;A, and the community. The software is free forever &mdash; you're paying for the instruction, the guided build, and the support.</p>
+
+    <div class="pricing-box reveal">
+      <div class="price-amount">$44.88</div>
+      <div class="price-unit">One-Time Payment <span style="font-size:.78rem;color:var(--ink-soft);display:block;margin-top:.3rem">/ <strong style="color:var(--gold)">$11.22</strong> per week</span></div>
+      <ul class="price-include">
+        <li>All on-demand training modules (work at your own pace)</li>
+        <li>Weekly live Q&amp;A session every Tuesday at 4:30 PM</li>
+        <li>One-on-one help during Q&amp;A sessions</li>
+        <li>All eight essentials personalised with activities for your teen</li>
+        <li>Hermes agent software — free and local-first. A one-time $5 OpenCode Go account covers setup and advanced queries.</li>
+        <li>The three daily rituals configured by the final module</li>
+        <li>Text-to-speech morning briefings running automatically</li>
+        <li>A portfolio of eight personalised essential challenges</li>
+        <li>Skills to extend the agent for school and homework</li>
+        <li>Certificate of completion</li>
+      </ul>
+      <a href="mailto:boktoday@gmail.com?subject=Afterschool%20Agent%20Enrolment" class="btn btn-primary" style="width:100%;justify-content:center">Enrol Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- REQUIREMENTS -->
+<section class="dark" id="requirements">
+  <div class="sec-inner">
+    <div class="kicker reveal">Before You Enrol — The Tech Requirements</div>
+    <h2 class="sec-title reveal">What you'll need to <em>set this up</em>.</h2>
+    <p class="sec-lead reveal">This is a self-paced build, not a magic install. To get the most out of the Afterschool Agent programme, you'll need these things in place first. None of them are expensive — but they are real.</p>
+
+    <div class="feature-grid cred-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon" style="background:rgba(194,96,62,.12);color:var(--terra)">💻</div>
+        <div class="feature-tag">Requirement 1</div>
+        <h3>Your Own Laptop</h3>
+        <p>A personal laptop or desktop running <strong>Windows, macOS, or Linux</strong> — one the teen has <strong>full admin access</strong> to. <em>Not a school laptop.</em> School-issued machines typically block installations, sandbox new software, and reset on logout — all of which break the agent.</p>
+        <p style="margin-top:.8rem;font-size:.85rem;color:var(--ink-mute)"><strong>Minimum spec:</strong> 8 GB RAM, 2 GB free SSD storage, modern CPU (any laptop made after 2018).</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon" style="background:rgba(79,111,158,.15);color:var(--blue)">🔑</div>
+        <div class="feature-tag">Requirement 2</div>
+        <h3>OpenCode Go Account — $5</h3>
+        <p>A one-time <strong>$5 top-up</strong> on an <strong>OpenCode Go account</strong> at <code>opencode.ai/zen/go</code>. This is required to <em>set up</em> the agent system and configure advanced features. The $5 covers the initial agent build and personalisation step — after that, the agent runs primarily on the device itself.</p>
+        <p style="margin-top:.8rem;font-size:.85rem;color:var(--ink-mute)">OpenCode Go gives you access to leading open-source models — DeepSeek, Kimi, Qwen, GLM, Grok, and more — all behind one pay-as-you-go gateway.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon" style="background:rgba(125,138,110,.15);color:var(--sage)">🧠</div>
+        <div class="feature-tag">Requirement 3 (Optional but Recommended)</div>
+        <h3>Local AI Model for Ongoing Tasks</h3>
+        <p>Once set up, the agent runs mostly <strong>locally</strong> — no ongoing API bills for everyday use. For the best experience, install a small open-source model (we recommend <strong>LFM2-700M</strong> or similar) directly on the device. It's free, runs offline, and keeps everyday conversations private.</p>
+        <p style="margin-top:.8rem;font-size:.85rem;color:var(--ink-mute)">Keep your $5 OpenCode Go balance topped up as you go for <em>advanced</em> tasks (deep personalisation, weekly curriculum reviews, parent reports). Most families find $5 covers the first few months; ongoing costs depend on how heavy the usage is.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon" style="background:rgba(217,164,65,.12);color:var(--gold)">💬</div>
+        <div class="feature-tag">Requirement 4</div>
+        <h3>Telegram or WhatsApp</h3>
+        <p>The Morning Minute audio briefing and daily check-ins are delivered through <strong>Telegram</strong> or <strong>WhatsApp</strong>. Your teen needs a registered account on one of these services on their phone. Both are free and available on any smartphone.</p>
+        <p style="margin-top:.8rem;font-size:.85rem;color:var(--ink-mute)">The agent sends messages, not the other way around — no bots, no spam, no data collection. Just a good morning and a plan for the day.</p>
+      </div>
+    </div>
+
+    <p class="sec-lead reveal" style="margin-top:2.5rem;text-align:center">The software itself is <strong>free forever</strong>. The agent lives on your device. The cost is for the gateway access during setup and the occasional advanced query — not for everyday use.</p>
+    <p class="sec-lead reveal" style="text-align:center;font-size:.9rem;color:var(--ink-soft);margin-top:.3rem">Get <strong>$5.00 bonus credit</strong> when you sign up with this link.</p>
+    <div class="cta-row reveal" style="margin-top:2rem;justify-content:center;display:flex;flex-wrap:wrap;gap:1rem">
+      <a href="https://opencode.ai/go?ref=6RBASHMZK0" target="_blank" rel="noopener" class="btn btn-primary">Set Up Your $5 OpenCode Go Account →</a>
+      <a href="#pricing" class="btn btn-ghost">See Pricing</a>
+    </div>
+  </div>
+</section>
+
+<!-- UPGRADE -->
+<section class="dark2" id="upgrade">
+  <div class="sec-inner" style="text-align:center">
+    <div class="kicker reveal">Coming September</div>
+    <h2 class="sec-title reveal" style="text-align:center"><span class="hero-underline" style="display:inline-block">Awesome Agent Upgrade</span></h2>
+    <p class="sec-lead reveal" style="max-width:640px;margin:0 auto 2rem">New training module for advanced agent building. Your teen learns to create custom agent skills, connect external tools, deploy local AI models, and build collaborative multi-agent workflows. For graduates who want to go further.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;max-width:500px;margin:0 auto">
+      <span class="pricing-badge" style="background:rgba(217,164,65,.1);border:1px solid rgba(217,164,65,.15);border-radius:100px;padding:.4rem 1rem;font-family:var(--disp);font-size:.72rem;color:var(--gold-soft)">Custom Skills</span>
+      <span class="pricing-badge" style="background:rgba(125,138,110,.1);border:1px solid rgba(125,138,110,.15);border-radius:100px;padding:.4rem 1rem;font-family:var(--disp);font-size:.72rem;color:var(--sage)">Tool Integration</span>
+      <span class="pricing-badge" style="background:rgba(79,111,158,.1);border:1px solid rgba(79,111,158,.15);border-radius:100px;padding:.4rem 1rem;font-family:var(--disp);font-size:.72rem;color:var(--blue)">Multi-Agent</span>
+      <span class="pricing-badge" style="background:rgba(194,96,62,.1);border:1px solid rgba(194,96,62,.15);border-radius:100px;padding:.4rem 1rem;font-family:var(--disp);font-size:.72rem;color:var(--terra)">Local Deploy</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="cream" id="faq">
+  <div class="sec-inner">
+    <div class="kicker reveal">Part 6 — Questions</div>
+    <h2 class="sec-title reveal">Things parents <em>ask</em>.</h2>
+
+    <div class="faq-list">
+      <div class="faq-item reveal" onclick="this.classList.toggle('open')">
+        <div class="faq-q">Does my teen need to know how to code?</div>
+        <div class="faq-a">No. Hermes is a natural-language agent platform — your teen configures it by talking to it and writing plain-English instructions. We teach everything step by step in the live sessions. If they can use a chat app, they can build an agent.</div>
+      </div>
+      <div class="faq-item reveal" onclick="this.classList.toggle('open')">
+              <div class="faq-q">What equipment and accounts do we need?</div>
+              <div class="faq-a">See the full breakdown in the <a href="#requirements">What You'll Need</a> section above. Short version: a personal laptop (not school-issued) with 8 GB RAM, a one-time $5 OpenCode Go account for setup, optionally a local AI model, and a Telegram or WhatsApp account on a phone for the Morning Minute delivery. The software itself is free.</div>
+            </div>
+      <div class="faq-item reveal" onclick="this.classList.toggle('open')">
+        <div class="faq-q">Is my teen's data safe?</div>
+        <div class="faq-a">Yes. Everything runs on your home computer. No data is sent to the cloud. No accounts to create with third parties. The agent's memory, plans, and morning briefings all live on your device. You can delete everything at any time.</div>
+      </div>
+      <div class="faq-item reveal" onclick="this.classList.toggle('open')">
+        <div class="faq-q">What if we miss a session?</div>
+        <div class="faq-a">No problem. The training modules are on-demand, so your teen can work through them any time. The weekly live Q&amp;A is recorded and made available to enrolled teens. Miss a Tuesday? Catch the recording. The programme is designed so you never fall behind &mdash; every module and recording is accessible for as long as you need.</div>
+      </div>
+      <div class="faq-item reveal" onclick="this.classList.toggle('open')">
+        <div class="faq-q">What age is this for?</div>
+        <div class="faq-a">This guide is written for 13-23 year olds. The content is the eight essentials from the onetoeight programme &mdash; silence, body, scripture, nature, digital self-defence, life skills, community, and tested character. The agent build is age-appropriate and doesn't require any prior technical knowledge.</div>
+      </div>
+      <div class="faq-item reveal" onclick="this.classList.toggle('open')">
+        <div class="faq-q">Is this a religious programme?</div>
+        <div class="faq-a">No. The programme is fully secular. The eight essentials are practical foundations &mdash; silence, body, community, nature, digital self-defence, life skills, knowledge, and tested convictions &mdash; that benefit any young person regardless of their background. Your teen tailors the agent to incorporate their own beliefs and values. The agent is theirs to shape. No worldview is pushed, and there's no pressure to think one way or another.</div>
+      </div>
+      <div class="faq-item reveal" onclick="this.classList.toggle('open')">
+        <div class="faq-q">Can siblings join?</div>
+        <div class="faq-a">Yes — one enrolment covers one teen, but siblings can sit in on the webcast and build their own agents on the same computer. Each agent runs independently with its own memory and personality.</div>
+      </div>
+      <div class="faq-item reveal" onclick="this.classList.toggle('open')">
+        <div class="faq-q">What happens after the programme?</div>
+        <div class="faq-a">The agent is yours forever. The software is free. Your teen keeps the three daily rituals running and can extend the agent on their own &mdash; for homework, projects, research, anything. The weekly Q&amp;A remains available for as long as you want to keep attending.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-wordmark">one <em>to</em> eight</div>
+  <div class="footer-links">
+    <a href="../privacy">Privacy</a>
+    <a href="../security">Security</a>
+    <a href="../terms">Terms</a>
+    <a href="../refund-policy">Refund Policy</a>
+  </div>
+  <div class="footer-disclaim">Afterschool Agent is an on-demand training programme with a weekly live Q&amp;A. The Hermes agent software is free and open-source. All live sessions are supervised. No data leaves your device. Pricing is $44.88 one-time / $11.22 per week. No lock-in.</div>
+</footer>
+
+<!-- EARLY ACCESS MODAL -->
+<div class="modal-overlay" id="early-access-modal">
+  <div class="modal-card">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <span class="modal-badge">Coming Mid August</span>
+    <h2 class="modal-title">Register for <em>early access</em>.</h2>
+    <p class="modal-sub">Be first to know when enrolment opens. We'll send you the details and a special early-bird offer.</p>
+    <form id="modal-form" onsubmit="return submitModal(event)">
+      <div class="modal-form-row single">
+        <input type="text" name="name" placeholder="Your name" required autocomplete="name">
+        <input type="email" name="email" placeholder="Email address" required autocomplete="email" style="margin-top:.6rem">
+      </div>
+      <button type="submit" class="modal-btn" id="modal-btn">Register for Early Access</button>
+    </form>
+    <div class="modal-success" id="modal-success">
+      <div class="check">&#10003;</div>
+      <p>You're on the list, <em id="modal-success-name">friend</em>.<br>Watch your inbox &mdash; we'll be in touch when August arrives.</p>
+    </div>
+    <div class="modal-error" id="modal-error">Something went wrong. Please try again.</div>
+    <p class="modal-note">No spam. We never share your details with third parties.</p>
+  </div>
+</div>
+
+<script>
+function toggleNav(){
+  document.getElementById('nav-links').classList.toggle('mobile-open');
+}
+// Close nav on link click (mobile)
+document.querySelectorAll('.nav-links a').forEach(function(el){
+  el.addEventListener('click', function(){
+    document.getElementById('nav-links').classList.remove('mobile-open');
+  });
+});
+// Modal: show after 4 seconds, once per session
+(function(){
+  if (!sessionStorage.getItem('earlyAccessSeen')) {
+    setTimeout(function(){
+      document.getElementById('early-access-modal').classList.add('show');
+    }, 4000);
+  }
+})();
+
+function closeModal(){
+  document.getElementById('early-access-modal').classList.remove('show');
+  sessionStorage.setItem('earlyAccessSeen','1');
+}
+
+// Close on overlay click
+document.getElementById('early-access-modal').addEventListener('click', function(e){
+  if (e.target === this) closeModal();
+});
+
+function submitModal(e){
+  e.preventDefault();
+  var form = document.getElementById('modal-form');
+  var btn = document.getElementById('modal-btn');
+  var success = document.getElementById('modal-success');
+  var error = document.getElementById('modal-error');
+  var name = form.querySelector('input[name="name"]').value;
+  var email = form.querySelector('input[name="email"]').value;
+
+  btn.disabled = true;
+  btn.textContent = 'Registering...';
+  error.classList.remove('show');
+
+  fetch('https://cloud.activepieces.com/api/v1/webhooks/mFlYDmEWcfIOBLkpGcAPN', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name: name, email: email, source: 'afterschool.agency early access modal' })
+  })
+  .then(function(resp){
+    if (resp.ok || resp.status === 200 || resp.status === 201 || resp.status === 204) {
+      form.style.display = 'none';
+      document.getElementById('modal-success-name').textContent = name.split(' ')[0] || 'friend';
+      success.classList.add('show');
+      sessionStorage.setItem('earlyAccessSeen','1');
+    } else {
+      throw new Error('HTTP ' + resp.status);
+    }
+  })
+  .catch(function(){
+    fetch('https://cloud.activepieces.com/api/v1/webhooks/mFlYDmEWcfIOBLkpGcAPN', {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name: name, email: email, source: 'afterschool.agency early access modal' })
+    }).then(function(){
+      form.style.display = 'none';
+      document.getElementById('modal-success-name').textContent = name.split(' ')[0] || 'friend';
+      success.classList.add('show');
+      sessionStorage.setItem('earlyAccessSeen','1');
+    }).catch(function(){
+      btn.disabled = false;
+      btn.textContent = 'Register for Early Access';
+      error.classList.add('show');
+    });
+  });
+
+  return false;
+}
+
+// Custom audio player
+(function(){
+  document.querySelectorAll('.audio-brand').forEach(function(el){
+    var audio = document.createElement('audio');
+    audio.preload = 'metadata';
+    audio.src = el.dataset.src;
+    audio.style.display = 'none';
+    el.appendChild(audio);
+    audio.addEventListener('loadedmetadata', function(){
+      el.querySelector('.time-duration').textContent = formatTime(audio.duration);
+    });
+    audio.addEventListener('timeupdate', function(){
+      var pct = audio.currentTime / (audio.duration || 1) * 100;
+      el.querySelector('.progress-fill').style.width = pct + '%';
+      el.querySelector('.time-current').textContent = formatTime(audio.currentTime);
+    });
+    audio.addEventListener('ended', function(){
+      el.querySelector('.play-icon').style.display = 'block';
+      el.querySelector('.pause-icon').style.display = 'none';
+    });
+  });
+})();
+
+function toggleAudio(btn){
+  var el = btn.closest('.audio-brand');
+  var audio = el.querySelector('audio');
+  if(audio.paused){
+    // Pause any other playing audios
+    document.querySelectorAll('.audio-brand audio').forEach(function(a){ if(a !== audio && !a.paused) a.pause(); });
+    document.querySelectorAll('.audio-brand .pause-icon').forEach(function(i){ i.style.display = 'none'; });
+    document.querySelectorAll('.audio-brand .play-icon').forEach(function(i){ i.style.display = 'block'; });
+    audio.play();
+    btn.querySelector('.play-icon').style.display = 'none';
+    btn.querySelector('.pause-icon').style.display = 'block';
+  } else {
+    audio.pause();
+    btn.querySelector('.play-icon').style.display = 'block';
+    btn.querySelector('.pause-icon').style.display = 'none';
+  }
+}
+
+function seekAudio(e, bar){
+  var rect = bar.getBoundingClientRect();
+  var pct = (e.clientX - rect.left) / rect.width;
+  var el = bar.closest('.audio-brand');
+  var audio = el.querySelector('audio');
+  audio.currentTime = pct * audio.duration;
+}
+
+function formatTime(s){
+  var m = Math.floor(s / 60);
+  var sec = Math.floor(s % 60);
+  return m + ':' + (sec < 10 ? '0' : '') + sec;
+}
+</script>
+
+<script>
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}})
+},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
+
+<!-- agency-deploy-1785328517.6497374 -->
