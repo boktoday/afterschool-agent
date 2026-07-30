@@ -692,6 +692,11 @@ footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,
 
 /* Chat bubble motif */
 
+
+/* Glimpse section background */
+.glimpse-section{position:relative;overflow:hidden}
+.glimpse-section::before{content:"";position:absolute;inset:0;background:url('https://jovial-arbor-pmwd.here.now/images/ch4-digital-defence-1.png') center/cover no-repeat;opacity:.15;pointer-events:none}
+.glimpse-section .sec-inner{position:relative;z-index:2}
 .chat-demo{max-width:340px;margin:2rem auto 0;background:rgba(13,18,32,.8);border:1px solid rgba(217,164,65,.12);border-radius:16px;padding:1.5rem;font-size:.82rem;line-height:1.6}
 
 
@@ -1386,7 +1391,7 @@ footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,
 
 <!-- CHAT DEMO -->
 
-<section class="dark">
+<section class="dark glimpse-section">
 
   <div class="sec-inner">
 
