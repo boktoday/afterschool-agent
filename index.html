@@ -387,7 +387,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(14px);-
 @media(min-width:901px){.hero-logo-desktop{display:block}}
 @media(max-width:900px){.hero-logo-desktop{display:none}}
 
-.hero-logo-svg{width:400px;height:auto;display:block;margin:0 auto}
+.hero-logo-svg{width:min(400px,90%);max-width:100%;height:auto;display:block;margin:0 auto}
 
 .eyebrow{font-family:var(--disp);font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1.8rem;display:inline-block;border:1px solid rgba(217,164,65,.28);padding:.4rem 1.1rem;border-radius:100px}
 
@@ -949,9 +949,9 @@ footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,
 
       <span class="eyebrow">On-Demand Training + Weekly Live Q&amp;A</span>
 
-      <div class="hero-time" style="font-size:clamp(2.8rem,6.5vw,4.8rem)">In a world full of <br>AI agents <em>online</em>,</div>
+      <div class="hero-time">In a world full of <br>AI agents <em>online</em>,</div>
 
-      <div class="hero-time" style="font-size:clamp(2.8rem,6.5vw,4.8rem);margin-bottom:1.5rem">we give young people <span class="hero-underline">agency in real life</span>.</div>
+      <div class="hero-time" style="margin-bottom:1.5rem">we give young people <span class="hero-underline">agency in real life</span>.</div>
 
       <h1>Your teen builds their own <em>AI agent</em>. One that teaches life skills and guides them to grow.</h1>
 
@@ -969,7 +969,7 @@ footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,
 
     <div class="hero-right" style="display:flex;flex-direction:column;align-items:center;gap:1rem">
 
-      <svg class="hero-logo-desktop" viewBox="0 0 320 160" xmlns="http://www.w3.org/2000/svg" aria-label="Afterschool Agent" style="width:560px;height:auto;margin-bottom:.5rem">
+      <svg class="hero-logo-desktop" viewBox="0 0 320 160" xmlns="http://www.w3.org/2000/svg" aria-label="Afterschool Agent" style="width:min(560px,90%);max-width:100%;height:auto;margin-bottom:.5rem">
         <text x="160" y="75" text-anchor="middle" font-family="Georgia, serif" font-size="135" font-weight="700" fill="#d9a441">A<tspan dx="-3" fill="#e8c87a">A</tspan></text>
         <line x1="30" y1="115" x2="290" y2="115" stroke="#d9a441" stroke-width="3"/>
         <circle cx="160" cy="115" r="6" fill="#c2603e"/>
