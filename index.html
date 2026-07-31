@@ -718,7 +718,12 @@ footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,
 .enrol-section{position:relative;overflow:hidden}
 .enrol-section::before{content:"";position:absolute;inset:0;background:url('https://smooth-thistle-jepf.here.now/images/ch5-community-1.png') center/cover no-repeat;opacity:.22;pointer-events:none}
 .enrol-section .sec-inner{position:relative;z-index:2}
-.chat-demo{max-width:340px;margin:2rem auto 0;background:rgba(13,18,32,.8);border:1px solid rgba(217,164,65,.12);border-radius:0;padding:1.5rem;font-size:.82rem;line-height:1.6}
+.chat-demo{max-width:400px;margin:2rem auto 0;aspect-ratio:9/18;background:#0f1622;border:1px solid rgba(255,255,255,.06);border-radius:0;box-shadow:0 0 80px rgba(217,164,65,.08),0 25px 70px rgba(0,0,0,.5);overflow:hidden;font-size:.82rem;line-height:1.6;display:flex;flex-direction:column;position:relative}
+.chat-demo .chat-body{flex:1;overflow:hidden;padding:1rem .9rem;display:flex;flex-direction:column;justify-content:flex-end;gap:.45rem}
+.chat-demo .chat-msg{max-width:78%;padding:.55rem .85rem;border-radius:0;font-family:var(--disp);font-size:.82rem;line-height:1.5;position:relative;word-wrap:break-word}
+.chat-demo .chat-msg.chat-user{align-self:flex-end;background:rgba(79,111,158,.25);color:var(--dawn);border-top-right-radius:4px}
+.chat-demo .chat-msg.chat-agent{align-self:flex-start;background:#182533;color:var(--gold);border-top-left-radius:4px}
+.chat-demo .chat-time{font-family:var(--disp);font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:.3rem}
 
 
 
@@ -1441,23 +1446,71 @@ footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,
 
     <div class="chat-demo reveal">
 
-      <div class="chat-time">4:32 PM — Monday · Essential of the week: Silence &amp; Stillness</div>
+      <!-- Telegram header -->
+      <div class="tg-header">
 
-      <div class="chat-msg chat-user">Hey, school was okay. Kind of tired. Got a maths test Thursday.</div>
+        <div class="tg-avatar"><svg viewBox="0 0 200 400" width="18" height="36" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M100,25 L100,360"/><path d="M68,55 L100,15"/><path d="M38,120 C55,117 75,119 100,119 C125,119 145,117 162,120"/><path d="M100,118 C140,118 165,155 160,190 C156,222 130,245 100,245 C70,245 44,222 40,190 C35,155 60,118 100,118"/><path d="M100,245 C135,245 155,280 150,315 C146,345 125,360 100,360 C75,360 54,345 50,315 C45,280 65,245 100,245"/></svg></div>
 
-      <div class="chat-msg chat-agent">Good to hear from you. Let's be real — tired and a test on Thursday. This week's essential is stillness. Want to try one minute of quiet before we plan, or do you need to talk first?</div>
+        <div class="tg-info">
 
-      <div class="chat-msg chat-user">Maybe a minute.</div>
+          <div class="tg-name">Afterschool Agent</div>
 
-      <div class="chat-msg chat-agent">Alright. Timer starts now. One minute of stillness. I'll wait.</div>
+          <div class="tg-status">online</div>
 
-      <div class="chat-time">4:35 PM</div>
+        </div>
 
-      <div class="chat-msg chat-agent">Welcome back. How was that? Now let's look at Thursday — want me to draft a study plan, 30 minutes Tuesday, 45 Wednesday, review Thursday morning?</div>
+      </div>
 
-      <div class="chat-msg chat-user">Yeah, and can you make the morning minute about the test?</div>
+      <!-- messages -->
+      <div class="chat-body">
 
-      <div class="chat-msg chat-agent">Done. Your Morning Minute tomorrow will open with: "Thursday's your maths test. You've prepared. Take one breath. Then trust the work." And we'll try another stillness minute at the end — that's your Essential 1 challenge for today.</div>
+        <div class="chat-time">4:32 PM — Monday · Essential of the week: Silence &amp; Stillness</div>
+
+        <div class="msg agent" style="animation-delay:.5s">Good afternoon, Alex. How was school today? <span class="msg-time">4:30 PM</span></div>
+
+        <div class="msg user" style="animation-delay:1.2s">Pretty good, but maths test Thursday 😬 <span class="msg-time">4:31 PM</span></div>
+
+        <div class="typing-dots" style="animation-delay:1.9s"><span></span><span></span><span></span></div>
+
+        <div class="msg agent" style="animation-delay:2.4s">Let's prep together. First — three minutes of stillness to clear your head. <span class="msg-time">4:32 PM</span></div>
+
+        <div class="msg user" style="animation-delay:3.2s">ok, done. that actually helped. <span class="msg-time">4:35 PM</span></div>
+
+        <div class="msg agent" style="animation-delay:3.8s">Here's your study plan: 30 min tonight, 45 min Wednesday, review Thursday morning. Sound fair? <span class="msg-time">4:35 PM</span></div>
+
+        <div class="msg user" style="animation-delay:4.5s">yes. can you remind me tomorrow? <span class="msg-time">4:36 PM</span></div>
+
+        <div class="msg agent" style="animation-delay:5.2s">Done. Your Morning Minute will open with: "Thursday is your maths test. You've prepared. Take one breath. Trust the work." <span class="msg-time">4:37 PM</span></div>
+
+        <!-- Voice message -->
+        <div class="voice-msg" style="animation-delay:5.8s">
+
+          <div class="voice-msg-inner">
+
+            <div class="voice-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+
+            <div class="voice-wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+            <div class="voice-duration">0:59</div>
+
+          </div>
+
+          <div class="voice-caption">Morning Minute — Thursday's test briefing</div>
+
+        </div>
+
+      </div>
+
+      <!-- Telegram input bar -->
+      <div class="input-bar">
+
+        <div class="emoji-btn">😊</div>
+
+        <div class="placeholder">Message</div>
+
+        <div class="send">↑</div>
+
+      </div>
 
     </div>
 
