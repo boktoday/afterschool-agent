@@ -725,6 +725,21 @@ footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,
 .chat-demo .chat-msg.chat-agent{align-self:flex-start;background:#182533;color:var(--gold);border-top-left-radius:4px}
 .chat-demo .chat-time{font-family:var(--disp);font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:.3rem}
 
+/* Glow progression grid */
+.glow-grid{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;gap:1.2rem;align-items:stretch;margin-top:3rem}
+.glow-card{background:rgba(19,26,46,.6);border:1px solid rgba(217,164,65,.1);padding:1.8rem 1.5rem;transition:all .3s;position:relative;overflow:hidden}
+.glow-card:hover{border-color:rgba(217,164,65,.35);transform:translateY(-3px)}
+.glow-stage{font-family:var(--disp);font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.glow-icon{width:48px;height:48px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:1rem}
+.glow-icon .lucide-icon{width:1.5em;height:1.5em}
+.glow-card h4{font-family:var(--serif);font-size:1.05rem;font-weight:600;margin-bottom:.5rem;color:var(--dawn);line-height:1.25}
+.glow-card p{font-size:.88rem;line-height:1.65;color:var(--ink-soft)}
+.glow-tag{display:inline-block;margin-top:1rem;font-family:var(--disp);font-size:.58rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(217,164,65,.25);padding:.3rem .7rem}
+.glow-arrow{align-self:center;display:flex}
+.glow-arrow-down{display:none}
+@media(max-width:1100px){.glow-grid{grid-template-columns:1fr auto 1fr;gap:1rem}.glow-arrow-down{display:flex;align-self:center}}
+@media(max-width:700px){.glow-grid{grid-template-columns:1fr}.glow-arrow{display:none}.glow-arrow-down{display:flex;justify-content:center;margin:.2rem 0}}
+
 
 
 /* Eight Essentials grid */
@@ -1444,84 +1459,54 @@ footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,
 
     <p class="sec-lead reveal">Here's how the agent weaves the essential of the week into an everyday afterschool check-in — without sounding like a textbook.</p>
 
-    <div class="chat-demo reveal">
+    <div class="glow-grid reveal">
 
-      <!-- Telegram header -->
-      <div class="tg-header">
-
-        <div class="tg-avatar"><svg viewBox="0 0 200 400" width="18" height="36" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M100,25 L100,360"/><path d="M68,55 L100,15"/><path d="M38,120 C55,117 75,119 100,119 C125,119 145,117 162,120"/><path d="M100,118 C140,118 165,155 160,190 C156,222 130,245 100,245 C70,245 44,222 40,190 C35,155 60,118 100,118"/><path d="M100,245 C135,245 155,280 150,315 C146,345 125,360 100,360 C75,360 54,345 50,315 C45,280 65,245 100,245"/></svg></div>
-
-        <div class="tg-info">
-
-          <div class="tg-name">Afterschool Agent</div>
-
-          <div class="tg-status">online</div>
-
-        </div>
-
+      <div class="glow-card">
+        <div class="glow-stage">Week 1 · Meet</div>
+        <div class="glow-icon" style="background:rgba(217,164,65,.12);color:var(--gold)"><i data-lucide="user-round" class="lucide-icon"></i></div>
+        <h4>The agent gets to know your teen</h4>
+        <p>Simple daily check-ins. How was school? What's on tonight? The agent learns their schedule, their triggers, their interests — and what "a bad day" actually means to them.</p>
+        <div class="glow-tag">Asks · Notices · Remembers</div>
       </div>
 
-      <!-- messages -->
-      <div class="chat-body">
+      <div class="glow-arrow"><svg viewBox="0 0 40 24" width="40" height="24"><path d="M2 12h32M28 5l8 7-8 7" fill="none" stroke="#d9a441" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="glow-arrow-down"><svg viewBox="0 0 24 40" width="24" height="40"><path d="M12 2v32M5 28l7 8 7-8" fill="none" stroke="#d9a441" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
 
-        <div class="chat-time">4:32 PM — Monday · Essential of the week: Silence &amp; Stillness</div>
-
-        <div class="msg agent" style="animation-delay:.5s">Hey Alex. How was the day? <span class="msg-time">4:30 PM</span></div>
-
-        <div class="msg user" style="animation-delay:1.2s">long. teacher wouldn't stop talking and I'm still thinking about it <span class="msg-time">4:31 PM</span></div>
-
-        <div class="typing-dots" style="animation-delay:1.9s"><span></span><span></span><span></span></div>
-
-        <div class="msg agent" style="animation-delay:2.4s">That sounds like a lot to carry. Before we unpack it — this week's essential is stillness. Want to try one minute of quiet first? Just breathe, no phones. <span class="msg-time">4:32 PM</span></div>
-
-        <div class="msg user" style="animation-delay:3.2s">ok. minute starts now... <span class="msg-time">4:33 PM</span></div>
-
-        <div class="typing-dots" style="animation-delay:3.8s"><span></span><span></span><span></span></div>
-
-        <div class="msg agent" style="animation-delay:4.3s">Welcome back. How was that? <span class="msg-time">4:35 PM</span></div>
-
-        <div class="msg user" style="animation-delay:4.9s">weird but... my head feels quieter. like the day stopped following me around <span class="msg-time">4:35 PM</span></div>
-
-        <div class="msg agent" style="animation-delay:5.5s">That's the point. The noise was never the problem — carrying it without ever putting it down was. Tomorrow: one minute again, same time. Sound good? <span class="msg-time">4:36 PM</span></div>
-
-        <div class="msg user" style="animation-delay:6.1s">deal <span class="msg-time">4:36 PM</span></div>
-
-        <div class="msg agent" style="animation-delay:6.5s">Done. Your Morning Minute will open with: "Today starts with one quiet minute. You've got this." <span class="msg-time">4:37 PM</span></div>
-
-        <!-- Voice message -->
-        <div class="voice-msg" style="animation-delay:7.1s">
-
-          <div class="voice-msg-inner">
-
-            <div class="voice-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-
-            <div class="voice-wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-
-            <div class="voice-duration">0:47</div>
-
-          </div>
-
-          <div class="voice-caption">Morning Minute — tomorrow's stillness reminder</div>
-
-        </div>
-
+      <div class="glow-card">
+        <div class="glow-stage">Week 2 · Patterns</div>
+        <div class="glow-icon" style="background:rgba(79,111,158,.15);color:var(--blue)"><i data-lucide="trending-up" class="lucide-icon"></i></div>
+        <h4>It starts spotting the patterns</h4>
+        <p>Tired on Mondays. Maths anxiety on Thursdays. Focus dips after lunch. The agent quietly connects the dots across conversations and starts planning around them — not against them.</p>
+        <div class="glow-tag">Patterns · Predicts · Prepares</div>
       </div>
 
-      <!-- Telegram input bar -->
-      <div class="input-bar">
+      <div class="glow-arrow"><svg viewBox="0 0 40 24" width="40" height="24"><path d="M2 12h32M28 5l8 7-8 7" fill="none" stroke="#d9a441" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="glow-arrow-down"><svg viewBox="0 0 24 40" width="24" height="40"><path d="M12 2v32M5 28l7 8 7-8" fill="none" stroke="#d9a441" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
 
-        <div class="emoji-btn">😊</div>
+      <div class="glow-card">
+        <div class="glow-stage">Week 3 · Personalise</div>
+        <div class="glow-icon" style="background:rgba(125,138,110,.15);color:var(--sage)"><i data-lucide="wand-2" class="lucide-icon"></i></div>
+        <h4>The essentials become <em>theirs</em></h4>
+        <p>Stillness becomes a two-minute reset before maths revision. Body-as-temple becomes a movement break that fits their sport. The curriculum stops being generic — it's tailored to their world, one conversation at a time.</p>
+        <div class="glow-tag">Tailors · Adapts · Individualises</div>
+      </div>
 
-        <div class="placeholder">Message</div>
+      <div class="glow-arrow"><svg viewBox="0 0 40 24" width="40" height="24"><path d="M2 12h32M28 5l8 7-8 7" fill="none" stroke="#d9a441" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="glow-arrow-down"><svg viewBox="0 0 24 40" width="24" height="40"><path d="M12 2v32M5 28l7 8 7-8" fill="none" stroke="#d9a441" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
 
-        <div class="send">↑</div>
-
+      <div class="glow-card">
+        <div class="glow-stage">Week 4+ · Autopilot</div>
+        <div class="glow-icon" style="background:rgba(194,96,62,.12);color:var(--terra)"><i data-lucide="sparkles" class="lucide-icon"></i></div>
+        <h4>The agent runs the daily rhythm</h4>
+        <p>Morning Minute speaks their day into focus. After-school check-in plans the evening. The eight essentials unfold week by week — each one delivered the way <em>this</em> teen actually learns.</p>
+        <div class="glow-tag">Delivers · Grows · Stays local</div>
       </div>
 
     </div>
 
-  </div>
+    <p class="sec-lead reveal" style="margin-top:2.5rem;text-align:center;max-width:680px">Every conversation feeds the next. Nothing is sent to the cloud — the learning lives on your teen's device, with them, for as long as they keep it.</p>
 
+  </div>
 </section>
 
 
