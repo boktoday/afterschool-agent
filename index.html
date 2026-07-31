@@ -740,6 +740,18 @@ footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,
 @media(max-width:1100px){.glow-grid{grid-template-columns:1fr auto 1fr;gap:1rem}.glow-arrow-down{display:flex;align-self:center}}
 @media(max-width:700px){.glow-grid{grid-template-columns:1fr}.glow-arrow{display:none}.glow-arrow-down{display:flex;justify-content:center;margin:.2rem 0}}
 
+/* Ascent infographic */
+.ascent-wrap{margin-top:3rem;position:relative}
+.ascent-svg{width:100%;max-width:1000px;display:block;margin:0 auto;height:auto}
+.ascent-path{stroke-dasharray:6,4;animation:ascent-flow 30s linear infinite}
+@keyframes ascent-flow{to{stroke-dashoffset:-200}}
+.ascent-star{animation:ascent-pulse 3s ease-in-out infinite}
+@keyframes ascent-pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.15)}}
+@media(max-width:760px){
+  .ascent-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-left:-1.5rem;margin-right:-1.5rem;padding:0 1.5rem}
+  .ascent-svg{min-width:720px}
+}
+
 
 
 /* Eight Essentials grid */
@@ -1459,49 +1471,77 @@ footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,
 
     <p class="sec-lead reveal">Here's how the agent weaves the essential of the week into an everyday afterschool check-in — without sounding like a textbook.</p>
 
-    <div class="glow-grid reveal">
+    <div class="ascent-wrap reveal">
+      <svg viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg" class="ascent-svg" role="img" aria-label="How the agent's relationship with your teen deepens over four weeks">
+        <defs>
+          <linearGradient id="ascentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#d9a441"/>
+            <stop offset="35%" stop-color="#4f6f9e"/>
+            <stop offset="70%" stop-color="#7d8a6e"/>
+            <stop offset="100%" stop-color="#c2603e"/>
+          </linearGradient>
+          <radialGradient id="peakGlow" cx="50%" cy="0%" r="60%">
+            <stop offset="0%" stop-color="#c2603e" stop-opacity=".3"/>
+            <stop offset="100%" stop-color="#c2603e" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
 
-      <div class="glow-card">
-        <div class="glow-stage">Week 1 · Meet</div>
-        <div class="glow-icon" style="background:rgba(217,164,65,.12);color:var(--gold)"><i data-lucide="user-round" class="lucide-icon"></i></div>
-        <h4>The agent gets to know your teen</h4>
-        <p>Simple daily check-ins. How was school? What's on tonight? The agent learns their schedule, their triggers, their interests — and what "a bad day" actually means to them.</p>
-        <div class="glow-tag">Asks · Notices · Remembers</div>
-      </div>
+        <!-- peak glow -->
+        <ellipse cx="500" cy="140" rx="420" ry="140" fill="url(#peakGlow)"/>
 
-      <div class="glow-arrow"><svg viewBox="0 0 40 24" width="40" height="24"><path d="M2 12h32M28 5l8 7-8 7" fill="none" stroke="#d9a441" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <div class="glow-arrow-down"><svg viewBox="0 0 24 40" width="24" height="40"><path d="M12 2v32M5 28l7 8 7-8" fill="none" stroke="#d9a441" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <!-- the winding path -->
+        <path d="M 80 460 Q 220 380 280 320 T 420 240 T 560 180 T 720 140 T 900 100"
+              fill="none" stroke="url(#ascentGrad)" stroke-width="3" stroke-linecap="round" stroke-dasharray="6,4" class="ascent-path"/>
 
-      <div class="glow-card">
-        <div class="glow-stage">Week 2 · Patterns</div>
-        <div class="glow-icon" style="background:rgba(79,111,158,.15);color:var(--blue)"><i data-lucide="trending-up" class="lucide-icon"></i></div>
-        <h4>It starts spotting the patterns</h4>
-        <p>Tired on Mondays. Maths anxiety on Thursdays. Focus dips after lunch. The agent quietly connects the dots across conversations and starts planning around them — not against them.</p>
-        <div class="glow-tag">Patterns · Predicts · Prepares</div>
-      </div>
+        <!-- WEEK 1 -->
+        <g transform="translate(80,460)">
+          <circle r="22" fill="#131a2e" stroke="#d9a441" stroke-width="2.5"/>
+          <text y="4" text-anchor="middle" font-family="Manrope, sans-serif" font-size="11" fill="#f6efee" font-weight="700">1</text>
+          <text x="40" y="-16" font-family="Manrope, sans-serif" font-size="10" fill="#d9a441" letter-spacing="1.5" font-weight="700">WEEK 1 · MEET</text>
+          <text x="40" y="0" font-family="Fraunces, Georgia, serif" font-size="13" fill="#f6efee" font-weight="500">The agent gets to know your teen.</text>
+          <text x="40" y="18" font-family="Manrope, sans-serif" font-size="10" fill="rgba(246,239,238,.6)">Daily check-ins. Learns their schedule, their triggers,</text>
+          <text x="40" y="33" font-family="Manrope, sans-serif" font-size="10" fill="rgba(246,239,238,.6)">their interests — and what "a bad day" means to them.</text>
+          <text x="40" y="52" font-family="Manrope, sans-serif" font-size="8.5" fill="#d9a441" letter-spacing="1">ASKS · NOTICES · REMEMBERS</text>
+        </g>
 
-      <div class="glow-arrow"><svg viewBox="0 0 40 24" width="40" height="24"><path d="M2 12h32M28 5l8 7-8 7" fill="none" stroke="#d9a441" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <div class="glow-arrow-down"><svg viewBox="0 0 24 40" width="24" height="40"><path d="M12 2v32M5 28l7 8 7-8" fill="none" stroke="#d9a441" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <!-- WEEK 2 -->
+        <g transform="translate(280,320)">
+          <circle r="22" fill="#131a2e" stroke="#4f6f9e" stroke-width="2.5"/>
+          <text y="4" text-anchor="middle" font-family="Manrope, sans-serif" font-size="11" fill="#f6efee" font-weight="700">2</text>
+          <text x="40" y="-16" font-family="Manrope, sans-serif" font-size="10" fill="#4f6f9e" letter-spacing="1.5" font-weight="700">WEEK 2 · PATTERNS</text>
+          <text x="40" y="0" font-family="Fraunces, Georgia, serif" font-size="13" fill="#f6efee" font-weight="500">It starts spotting the patterns.</text>
+          <text x="40" y="18" font-family="Manrope, sans-serif" font-size="10" fill="rgba(246,239,238,.6)">Tired on Mondays. Maths anxiety on Thursdays. Focus dips</text>
+          <text x="40" y="33" font-family="Manrope, sans-serif" font-size="10" fill="rgba(246,239,238,.6)">after lunch. It quietly plans around them — not against them.</text>
+          <text x="40" y="52" font-family="Manrope, sans-serif" font-size="8.5" fill="#4f6f9e" letter-spacing="1">PATTERNS · PREDICTS · PREPARES</text>
+        </g>
 
-      <div class="glow-card">
-        <div class="glow-stage">Week 3 · Personalise</div>
-        <div class="glow-icon" style="background:rgba(125,138,110,.15);color:var(--sage)"><i data-lucide="wand-2" class="lucide-icon"></i></div>
-        <h4>The essentials become <em>theirs</em></h4>
-        <p>Stillness becomes a two-minute reset before maths revision. Body-as-temple becomes a movement break that fits their sport. The curriculum stops being generic — it's tailored to their world, one conversation at a time.</p>
-        <div class="glow-tag">Tailors · Adapts · Individualises</div>
-      </div>
+        <!-- WEEK 3 -->
+        <g transform="translate(560,180)">
+          <circle r="22" fill="#131a2e" stroke="#7d8a6e" stroke-width="2.5"/>
+          <text y="4" text-anchor="middle" font-family="Manrope, sans-serif" font-size="11" fill="#f6efee" font-weight="700">3</text>
+          <text x="40" y="-16" font-family="Manrope, sans-serif" font-size="10" fill="#7d8a6e" letter-spacing="1.5" font-weight="700">WEEK 3 · PERSONALISE</text>
+          <text x="40" y="0" font-family="Fraunces, Georgia, serif" font-size="13" fill="#f6efee" font-weight="500">The essentials become <tspan font-style="italic" fill="#e8c87a">theirs</tspan>.</text>
+          <text x="40" y="18" font-family="Manrope, sans-serif" font-size="10" fill="rgba(246,239,238,.6)">Stillness becomes a reset before maths revision. Body-as-temple</text>
+          <text x="40" y="33" font-family="Manrope, sans-serif" font-size="10" fill="rgba(246,239,238,.6)">becomes a movement break that fits their sport.</text>
+          <text x="40" y="52" font-family="Manrope, sans-serif" font-size="8.5" fill="#7d8a6e" letter-spacing="1">TAILORS · ADAPTS · INDIVIDUALISES</text>
+        </g>
 
-      <div class="glow-arrow"><svg viewBox="0 0 40 24" width="40" height="24"><path d="M2 12h32M28 5l8 7-8 7" fill="none" stroke="#d9a441" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <div class="glow-arrow-down"><svg viewBox="0 0 24 40" width="24" height="40"><path d="M12 2v32M5 28l7 8 7-8" fill="none" stroke="#d9a441" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <!-- WEEK 4 -->
+        <g transform="translate(900,100)">
+          <circle r="26" fill="#131a2e" stroke="#c2603e" stroke-width="3"/>
+          <text y="4" text-anchor="middle" font-family="Manrope, sans-serif" font-size="12" fill="#f6efee" font-weight="700">4</text>
+          <text x="-60" y="-16" text-anchor="end" font-family="Manrope, sans-serif" font-size="10" fill="#c2603e" letter-spacing="1.5" font-weight="700">WEEK 4+ · AUTOPILOT</text>
+          <text x="-60" y="0" text-anchor="end" font-family="Fraunces, Georgia, serif" font-size="13" fill="#f6efee" font-weight="500">The agent runs the daily rhythm.</text>
+          <text x="-60" y="18" text-anchor="end" font-family="Manrope, sans-serif" font-size="10" fill="rgba(246,239,238,.6)">Morning Minute speaks their day into focus. After-school check-in</text>
+          <text x="-60" y="33" text-anchor="end" font-family="Manrope, sans-serif" font-size="10" fill="rgba(246,239,238,.6)">plans the evening. The eight essentials unfold week by week.</text>
+          <text x="-60" y="52" text-anchor="end" font-family="Manrope, sans-serif" font-size="8.5" fill="#c2603e" letter-spacing="1">DELIVERS · GROWS · STAYS LOCAL</text>
+        </g>
 
-      <div class="glow-card">
-        <div class="glow-stage">Week 4+ · Autopilot</div>
-        <div class="glow-icon" style="background:rgba(194,96,62,.12);color:var(--terra)"><i data-lucide="sparkles" class="lucide-icon"></i></div>
-        <h4>The agent runs the daily rhythm</h4>
-        <p>Morning Minute speaks their day into focus. After-school check-in plans the evening. The eight essentials unfold week by week — each one delivered the way <em>this</em> teen actually learns.</p>
-        <div class="glow-tag">Delivers · Grows · Stays local</div>
-      </div>
-
+        <!-- summit star -->
+        <g transform="translate(940,60)">
+          <path d="M 0 -12 L 3 -3 L 12 0 L 3 3 L 0 12 L -3 3 L -12 0 L -3 -3 Z" fill="#d9a441" class="ascent-star"/>
+        </g>
+      </svg>
     </div>
 
     <p class="sec-lead reveal" style="margin-top:2.5rem;text-align:center;max-width:680px">Every conversation feeds the next. Nothing is sent to the cloud — the learning lives on your teen's device, with them, for as long as they keep it.</p>
