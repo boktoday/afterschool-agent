@@ -464,6 +464,10 @@ section{padding:6rem 1.5rem;position:relative}
 
 .pricing-box{max-width:480px;margin:2rem auto 0;background:rgba(19,26,46,.6);border:1px solid rgba(217,164,65,.18);border-radius:0;padding:3rem 2.5rem;text-align:center}
 
+.pricing-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem;align-items:start;margin-top:2rem}
+.pricing-grid .pricing-box{margin:0;width:100%;max-width:none}
+@media(max-width:760px){.pricing-grid{grid-template-columns:1fr;gap:1.5rem}}
+
 .cream .pricing-box{background:#fff;border:1px solid rgba(194,96,62,.15);box-shadow:0 8px 30px rgba(0,0,0,.06)}
 
 .price-amount{font-family:var(--disp);font-size:clamp(3rem,8vw,4.5rem);font-weight:700;letter-spacing:-.03em;color:var(--gold);line-height:1}
