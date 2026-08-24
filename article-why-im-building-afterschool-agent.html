@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Why I&#x27;m building Afterschool Agent &mdash; Afterschool Agent</title>
+<meta name="description" content="A founder&#x27;s story about the most useful thing I&#x27;ve built in twenty-five years. A founder's story about the most useful thing I've built in twenty-five years.">
+<meta property="og:title" content="Why I&#x27;m building Afterschool Agent">
+<meta property="og:description" content="A founder&#x27;s story about the most useful thing I&#x27;ve built in twenty-five years.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0b0d12;
+  --bg-soft: #11141b;
+  --ink: #ece8df;
+  --ink-soft: rgba(236,232,223,0.78);
+  --ink-mute: rgba(236,232,223,0.55);
+  --accent: #e8c467;
+  --accent-2: #f5e4a3;
+  --rule: rgba(236,232,223,0.10);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 19px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+.shell { max-width: 720px; margin: 0 auto; padding: 3rem 1.4rem 5rem; }
+header.masthead {
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 1.4rem;
+  margin-bottom: 2.6rem;
+  display: flex; align-items: center; justify-content: space-between;
+  font-family: 'Inter', sans-serif;
+}
+header.masthead .brand {
+  font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; font-size: 0.78rem;
+  color: var(--accent);
+}
+header.masthead .meta { color: var(--ink-mute); font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; }
+h1.title {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 600; font-size: clamp(2.2rem, 5vw, 3.2rem);
+  line-height: 1.12; letter-spacing: -0.01em; margin: 0 0 1rem;
+  color: var(--ink);
+}
+p.deck {
+  font-family: 'Fraunces', Georgia, serif; font-style: italic;
+  font-size: 1.18rem; color: var(--ink-soft);
+  margin: 0 0 2.4rem; line-height: 1.5;
+}
+article p { margin: 0 0 1.2rem; color: var(--ink-soft); }
+article p strong, article li strong { color: var(--ink); font-weight: 600; }
+article h3 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 600;
+  font-size: 1.45rem;
+  color: var(--ink);
+  margin: 2.6rem 0 1rem;
+  letter-spacing: -0.005em;
+}
+article h3::before {
+  content: ''; display: block; width: 36px; height: 2px;
+  background: var(--accent); margin-bottom: 0.8rem;
+}
+article ul {
+  margin: 0.4rem 0 1.4rem 0; padding-left: 1.2rem;
+  color: var(--ink-soft);
+}
+article li { margin-bottom: 0.5rem; }
+article li::marker { color: var(--accent); }
+article a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(232,196,103,0.35); }
+article a:hover { border-bottom-color: var(--accent); }
+.signoff { margin-top: 3rem; padding-top: 1.6rem; border-top: 1px solid var(--rule); }
+footer.colophon {
+  margin-top: 4rem; padding-top: 1.4rem; border-top: 1px solid var(--rule);
+  font-size: 0.82rem; color: var(--ink-mute);
+  display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between;
+}
+footer.colophon a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px dotted var(--rule); }
+footer.colophon a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.cta {
+  display: inline-block; margin-top: 1.2rem; padding: 0.75rem 1.2rem;
+  background: var(--accent); color: #15171c; border-radius: 999px;
+  font-weight: 600; border: none; border-bottom: none;
+}
+.cta:hover { background: var(--accent-2); }
+@media (max-width: 540px) {
+  body { font-size: 17.5px; }
+  .shell { padding: 2rem 1.1rem 4rem; }
+}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="masthead">
+  <span class="brand">Afterschool Agent</span>
+  <span class="meta">Essay &middot; 7 Aug 2026</span>
+</header>
+
+<h1 class="title">Why I&#x27;m building Afterschool Agent</h1>
+<p class="deck">A founder&#x27;s story about the most useful thing I&#x27;ve built in twenty-five years.</p>
+
+<article>
+<p>Let me be honest. I've been around long enough to know when I'm looking at something that matters. Afterschool Agent matters. Not because it's clever. Because the timing is now or never, and the kids who need it most are the ones we keep losing to the algorithm.</p>
+<p>Here's the story.</p>
+<p><h3>I started in tech when tech was a thing you did, not a thing that did you</h3></p>
+<p>Twenty-five years ago, I built software for a living. Back then, the worry was whether the printer would work. Then the worry was whether the website would load. Then the worry was whether the kid would look at the screen instead of the road.</p>
+<p>The worry kept changing shape. The through-line stayed the same: tools that change us faster than we change ourselves.</p>
+<p>I've watched three cycles of this. The web. The mobile explosion. The social media quake. Each one promised to give young people more power. Each one, on balance, gave the <em>system</em> more power over them. The kids got better at using the tool. The tool got better at using the kids.</p>
+<p>We're in the fourth cycle now. AI. And this one's different. This is the first one where the machine doesn't just watch what you do. It learns what you'd do, and it does it before you.</p>
+<p>I'm not saying that to frighten anyone. I'm saying it because most people I meet, smart people, busy people, good parents, are not yet seeing it. They're still thinking about AI the way they thought about the internet in 1996. Useful. Distant. A thing for other people.</p>
+<p>It's not distant. It's here, on your kid's phone, this week.</p>
+<p><h3>Here's the number that stopped me in my tracks</h3></p>
+<p>The OECD estimates around <strong>9% of jobs</strong> in advanced economies are at high risk of automation from generative AI. For young workers, that number is closer to <strong>25%</strong>. Within five years, the entry-level jobs that used to teach teenagers how to be adults, how to show up, how to handle a customer, how to file a tax return, how to argue politely with a manager, are being hollowed out from underneath them.</p>
+<p>That's the macro number.</p>
+<p>Here's the micro number, the one I keep coming back to. When I sit with a Year 9 kid and ask, "What do you think an AI agent is?", the answer I hear most often is: "Something that does my homework."</p>
+<p>When I ask, "What could an AI agent be?", I get a shrug. They have no model for the answer. They've been taught to use the tool. They haven't been taught to <em>build</em> with it.</p>
+<p>That's the gap. And that's the gap Afterschool Agent was built to close.</p>
+<p><h3>The thesis, in one sentence</h3></p>
+<p><strong>Young people need to be the builders of AI agents, not the consumers of them.</strong></p>
+<p>If your teen spends the next three years <em>using</em> AI, they're going to be fine at school and lost at work. If they spend the next three months <em>building</em> one, they have a skill that won't be obsolete in 18.</p>
+<p>Here's the thing, and I'll keep saying it until someone proves me wrong. The only AI skill that matters in the next eighteen months is the one where you're the human in the loop. The audit. The quality check. The "is this actually right?" moment. Everything else is going to be either automated or commoditised inside two years. The person who can <em>build</em> and <em>judge</em> the work of a machine, that person is going to be okay.</p>
+<p>The person who can only prompt a machine? That person is competing with every other prompter on earth, and most of them are not in your suburb.</p>
+<p><h3>So what is Afterschool Agent, really?</h3></p>
+<p>Strip the marketing off and here's what it is.</p>
+<p>Your teen sits down with a laptop. They follow on-demand training modules, at their own pace, in their own time. Each module walks them through one piece of the build. By the end of the first hour, they've got an agent that does a small, real thing. By the end of the course, they've got a personal AI agent that knows them, runs locally on their device, and teaches them the eight essentials of being a young adult in 2026.</p>
+<p>The eight essentials come from onetoeight. That's the programme I founded a few years ago after watching too many bright kids lose their footing between Year 9 and Year 12. Identity. Digital self-defence. Real-world skills. Mental health. Relationships. Purpose. Money. Faith (or whatever word they want to use for the search for meaning). The agent doesn't lecture them on these. It walks them through personalised activities the agent itself has designed. The teen shapes the agent. The agent shapes the teen. That's the loop we want.</p>
+<p>Then, every Monday at 5:00 PM, we hop on a live Q&A together. The cohort brings their questions, their stuck points, their "this isn't working" moments, and we work through them in real time. For one hour. No slides. No deck. Just kids building, with a human in the room.</p>
+<p><h3>Why Hermes, and why local-first</h3></p>
+<p>I'm going to be direct about this because parents ask, and they should.</p>
+<p>Most AI tools your teen could use right now are cloud-based. The kid types a question, the question leaves the device, gets processed on someone else's server, and the answer comes back. Somewhere in the middle, that conversation is being logged, analysed, and used to train the next version of the model.</p>
+<p>That's not what I want for my daughter. It's not what I want for yours.</p>
+<p><strong>Hermes is local-first.</strong> The agent runs on the teen's own laptop or desktop. The data stays on the device. The only time anything leaves is when the agent needs a heavier model for a specific job, and even then, the teen can see it happen and choose whether to allow it.</p>
+<p>The set-up is a one-time $5 OpenCode Go account. After that, no subscription, no data leaving for everyday use, no monthly drip of someone else's idea of who your kid is.</p>
+<p>Here's what that means in practice. A teenager can ask their agent, "I'm being bullied online, what do I do?", and that conversation stays between them and the device. They can ask, "How do I tell Mum I'm failing maths?", and the agent walks them through it without that question being logged on a server in California.</p>
+<p>I cannot overstate how much I think this matters. Privacy is not a feature for teenagers. It's the precondition for trust. Without trust, the agent is just another search engine with a friendly face.</p>
+<p><h3>The thing I didn't expect: the cohort dynamic</h3></p>
+<p>When I built the first version, I thought the magic would be in the technology. The training modules, the build steps, the local-first setup. That's all important. But it's not the magic.</p>
+<p>The magic is the Monday call.</p>
+<p>I've watched kids who'd never spoken in a class discussion confidently screen-share their broken agent in front of six other teens. I've watched a kid from Western Sydney help a kid from Penang debug the same problem they'd both been stuck on for a week. I've watched a quiet Year 10 boy, who I genuinely worried about, turn into the most helpful person in the room because he'd hit a problem two days earlier and worked it out himself.</p>
+<p>This is what school used to be. This is what scouts used to be. This is what the church youth group used to be. A small group of kids, with a slightly older human in the room, building something together and figuring out who they are in the process.</p>
+<p>We have very little of that left in young people's lives. So we built it.</p>
+<p><h3>Two price points, deliberately</h3></p>
+<p>I made a choice early on that I've stuck with, even though my accountant raised an eyebrow.</p>
+<p><ul> <li><strong>$44.88</strong> self-paced, on-demand, lifetime access. You watch the modules, you build the agent, you join the Monday calls as long as the calls keep running. No subscription. No upsell. No "premium tier."</li> <li><strong>$488.22</strong> masterclass cohort, capped at ten teens, with me in the room for the build. Six weeks. We go deeper. The cohort becomes a small community inside the bigger community. That's the one in the <strong>buzz.xyz</strong> community, where the teens keep talking to each other long after the course is over.</li> </ul></p>
+<p>The $44.88 number isn't random. It's deliberately specific so it doesn't feel like a SaaS subscription. It's a textbook price. It's a school-camp price. It's the price a working family can afford without thinking twice.</p>
+<p>The $488.22 is a small-business investment. It's for the parent who wants their teen to walk out the other side with a portfolio piece, not just a finished module. The cohort cap is the point. Ten kids, max. Real attention.</p>
+<p><h3>Here's what I'm not going to do</h3></p>
+<p>Let me be clear about the things this isn't.</p>
+<p>It's not a course that turns your teen into an AI engineer. That'd be dishonest. An AI engineer is a professional role, with years of study behind it. We're not pretending.</p>
+<p>It's not a replacement for school. Teachers matter. Subjects matter. The agent is a tool for thinking, not a substitute for being taught.</p>
+<p>It's not a screen-time reduction programme. Your teen is going to spend time on a screen. I'd rather that time be spent building something they own than scrolling something they don't.</p>
+<p>And it's not a faith programme. It comes out of onetoeight, which has a Christian spine, and the original guide is a faith document. But the Afterschool Agent itself is fully secular. The teen tailors the agent to their own beliefs, their own values, their own family's worldview. You wouldn't want it any other way, and neither would I.</p>
+<p><h3>The honest risk</h3></p>
+<p>I'm not going to pretend this is finished. It isn't.</p>
+<p>The training modules will get better. The agent platform will move. Hermes itself is moving fast, and we're keeping pace. The cohorts will shift as I learn what works. The eight essentials will probably be refined, partly by me and partly by the kids themselves, who keep telling me what they actually need.</p>
+<p>What I do know is the direction. Young people need to build, not just consume. They need to do it on devices that respect them. They need to do it alongside other young people doing the same thing, with a slightly older human in the room who isn't trying to sell them anything.</p>
+<p>That's Afterschool Agent. That's what we've built. That's what we're still building.</p>
+<p><h3>The Bottom Line: Are you on the building side or the consuming side?</h3></p>
+<p>The question isn't whether your teen should use AI. They already are. The question is which side of the divide they're going to stand on in three years.</p>
+<p><ul> <li>On one side: kids who can prompt a chatbot and call it a skill.</li> <li>On the other side: kids who can build, audit, and judge the work of a machine, and explain to a future employer why their judgement was right.</li> </ul></p>
+<p>The first group is going to be fine in 2027. The second group is going to be fine for the rest of their working lives.</p>
+<p><strong>Let's get them building.</strong></p>
+<p>You can find the programme at <a class="cta" href="https://store.onetoeight.guide/" target="_blank" rel="noopener">Get the Agent — $44.88</a>
+</div>
+
+<footer class="colophon">
+  <span>&copy; 2026 Brendan O&rsquo;Keefe &middot; onetoeight.org</span>
+  <span>
+    <a href="https://www.afterschool.agency">afterschool.agency</a> &middot;
+    <a href="https://onetoeight.org">onetoeight</a> &middot;
+    <a href="mailto:boktoday@gmail.com">email</a>
+  </span>
+</footer>
+</div>
+</body>
+</html>
