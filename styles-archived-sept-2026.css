@@ -15,11 +15,11 @@
 
   --blue:#4f6f9e;
 
-  --serif:'Switzer',system-ui,sans-serif;
+  --serif:'Fraunces',Georgia,serif;
 
-  --disp:'Switzer',system-ui,sans-serif;
+  --disp:'Space Grotesk',system-ui,sans-serif;
 
-  --body:'Switzer',system-ui,sans-serif;
+  --body:'Inter',system-ui,sans-serif;
 
 }
 
@@ -787,32 +787,4 @@ footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,
 .lms-btn:hover{background:var(--gold-soft);transform:translateY(-1px)}
 .lms-btn .arrow{transition:transform .2s}
 .lms-btn:hover .arrow{transform:translateX(4px)}
-
-/* ===== Afterschool Type System — Expedition (Tanker display + Switzer) =====
-   Tanker is a single-weight (400) condensed display face with no italic.
-   Assign it to the true display moments, force its natural weight, and
-   neutralise synthesized italic/bold so it stays crisp. */
-.hero h1,
-.hero-time,
-.sec-title,
-.price-amount,
-.modal-title,
-.lms-title,
-.cta-section h2{
-  font-family:'Tanker','Switzer',sans-serif;
-  font-weight:400;
-  font-style:normal;
-  letter-spacing:.005em;
-}
-.hero h1 em,
-.hero-time em,
-.sec-title em,
-.modal-title em{
-  font-style:normal;
-}
-/* the hero italic-accent words keep their gold, emphasis via colour not slant */
-.hero h1 em,.hero-time em{color:#d9a441;}
-.sec-title em{color:#d9a441;}
-/* keep the brand nav wordmark as a serif-ish lockup */
-footer .footer-wordmark{font-family:'Tanker','Switzer',sans-serif;font-weight:400;}
 
