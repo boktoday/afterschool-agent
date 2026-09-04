@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Founder's Cohort &#8212; Build Your Own AI Agent &#183; One to Eight</title>
+<meta name="description" content="Four afternoons in the Australian school holidays. 13 to 23 year olds across Australia build their own local-first AI agent, one module at a time. Founder's cohort pricing: $88.88.">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=tanker@400&f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#0d1220; --night2:#131a2e; --night3:#1a2340;
+  --dawn:#f6efe3; --dawn2:#efe6d6; --paper:#fbf7ee;
+  --ink:#232a3d; --ink-soft:#5a6278;
+  --terra:#c2603e; --terra-deep:#9c4a2e;
+  --sage:#7d8a6e; --sage-deep:#5f6d52;
+  --gold:#d9a441; --gold-soft:#e8c87a;
+  --blue:#4f6f9e;
+  --serif:'Switzer', system-ui, sans-serif;
+  --sans:'Switzer', system-ui, -apple-system, sans-serif;
+  --disp:'Switzer', system-ui, sans-serif;
+}
+
+/* Afterschool Type System &#8212; Tanker (display, single-weight 400) + Switzer (body)
+   Mirrors afterschool.agency styles.css. Tanker has no italic/bold: force 400/normal,
+   do emphasis by colour. Assign Tanker only to true display moments. */
+*{box-sizing:border-box; margin:0; padding:0;}
+body{background:var(--night); color:var(--paper); font-family:var(--sans); line-height:1.6; -webkit-font-smoothing:antialiased;}
+a{color:inherit; text-decoration:none;}
+.nav{display:flex; align-items:center; justify-content:space-between; padding:20px 28px; border-bottom:1px solid rgba(246,239,227,.12); max-width:1120px; margin:0 auto;}
+.nav .wordmark{display:flex; align-items:baseline; gap:8px; font-family:var(--serif); font-size:21px;}
+.nav .wordmark em{color:var(--gold-soft); font-style:italic;}
+.nav .wordmark .num{font-family:var(--disp); font-size:15px; color:var(--gold);}
+.nav .back{font-family:var(--disp); font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:#a39c8c;}
+.nav .back:hover{color:var(--gold-soft);}
+.hero{position:relative; margin:0 auto; padding:96px 28px 60px; text-align:center; overflow:hidden; background:
+    linear-gradient(rgba(13,18,32,.55), rgba(13,18,32,.45) 30%, rgba(13,18,32,.88) 92%),
+    url('img/hero-goldenhour.jpg') center 20% / cover no-repeat;
+  border-bottom:1px solid rgba(246,239,227,.08);}
+@media(min-width:900px){.hero{min-height:640px; display:flex; flex-direction:column; justify-content:center;}}
+.hero .hwrap{width:100%;}
+.hero .badge{display:inline-flex; align-items:center; gap:10px; font-family:var(--disp); font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); border:1px solid rgba(217,164,65,.4); padding:8px 16px; margin-bottom:26px;}
+.hero .badge .dot{width:8px; height:8px; border-radius:50%; background:var(--gold); animation:pulse 1.6s infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hero h1{font-family:'Tanker','Switzer',sans-serif; font-weight:400; font-style:normal; font-size:clamp(38px,5.6vw,62px); line-height:1.0; letter-spacing:.005em; max-width:18ch; margin:0 auto;}
+.hero h1 em{color:var(--gold); font-style:normal; font-weight:400;}
+.hero .sub{font-size:18px; color:#d3c9b6; max-width:52ch; margin:24px auto 0;}
+.hero .meta{margin-top:30px; font-family:var(--disp); font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:#a39c8c; }
+.hero .intro-audio{display:inline-flex; align-items:center; gap:14px; margin-top:30px; padding:12px 18px 12px 22px; border:1px solid rgba(217,164,65,.3); background:rgba(217,164,65,.06);}
+.hero .intro-audio .ial{font-family:var(--disp); font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--gold-soft);}
+.hero audio{width:min(340px, 100%);}
+.pricecard{max-width:1120px; margin:-30px auto 0; padding:0 28px;}
+.price{display:grid; grid-template-columns:1fr 1fr; gap:22px;}
+.price .box{background:var(--night2); border:1px solid rgba(246,239,227,.12); padding:30px 28px;}
+@media(max-width:720px){.price{grid-template-columns:1fr;}}
+.price .pop{background:var(--gold); color:var(--night); border-color:var(--gold);}
+.price .pop em{color:var(--night);}
+.price .lbl{font-family:var(--disp); font-size:11px; letter-spacing:.2em; text-transform:uppercase; margin-bottom:14px;}
+.price .pop .lbl{color:var(--night); opacity:.7;}
+.price .amt{font-family:'Tanker','Switzer',sans-serif; font-weight:400; font-style:normal; font-size:clamp(44px,6vw,68px); line-height:1; letter-spacing:.005em;}
+.price .amt small{font-family:var(--disp); font-size:22px; color:var(--gold-soft); margin-right:4px;}
+.price .pop .amt small{color:var(--night);}
+.price .was{font-family:var(--disp); font-size:13px; color:#a39c8c; text-decoration:line-through; margin-top:6px;}
+.price .pop .was{color:var(--night); opacity:.6;}
+.price p{font-size:14.5px; color:#c9bfae; margin-top:14px;}
+.price .pop p{color:var(--night);}
+.price .cta{display:inline-block; margin-top:20px; font-family:var(--disp); font-size:13px; letter-spacing:.1em; text-transform:uppercase; padding:13px 22px; border:1px solid var(--gold); color:var(--gold);}
+.price .pop .cta{background:var(--night); color:var(--gold); border-color:var(--night);}
+.price .pop .cta:hover{opacity:.9;}
+section.body{max-width:1120px; margin:0 auto; padding:50px 28px;}
+section.cream{background:var(--dawn); color:var(--ink);}
+section.cream .kicker{color:var(--terra-deep);}
+section.cream p{color:var(--ink-soft);}
+.container{max-width:1120px; margin:0 auto; padding:50px 28px;}
+.kicker{display:flex; align-items:center; gap:12px; font-family:var(--disp); font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); margin-bottom:16px;}
+.kicker .bar{width:32px; height:2px; background:var(--gold);}
+section.cream .kicker .bar{background:var(--terra);}
+h2{font-family:'Tanker','Switzer',sans-serif; font-weight:400; font-style:normal; font-size:clamp(28px,3.6vw,42px); letter-spacing:.005em; margin-bottom:24px; line-height:1.05;}
+h2 em{font-style:normal; font-weight:400; color:var(--gold);}
+section.cream h2 em{color:var(--terra);}
+.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:18px;}
+section.cream .card{background:#fff; border:1px solid rgba(35,42,61,.12);}
+.card{border:1px solid rgba(246,239,227,.12); padding:24px; border-radius:0;}
+.card .n{font-family:var(--disp); font-size:13px; letter-spacing:.1em; color:var(--gold);}
+section.cream .card .n{color:var(--terra-deep);}
+.card h4{font-family:'Switzer',system-ui,sans-serif; font-weight:600; font-size:20px; margin:10px 0 8px;}
+.card p{font-size:14.5px; color:#c4bbab;}
+section.cream .card p{color:var(--ink-soft);}
+.rule{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:22px; margin-top:8px;}
+.rule .step{counter-increment:rule;}
+.rule .step .cn{font-family:var(--disp); font-size:15px; color:var(--gold); margin-bottom:8px;}
+section.cream .rule .step .cn{color:var(--terra);}
+.rule p{font-size:15px; max-width:38ch;}
+.callout{border-left:3px solid var(--gold); background:rgba(217,164,65,.08); padding:20px 24px; margin-top:26px;}
+.callout b{font-family:var(--disp); font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); display:block; margin-bottom:6px;}
+.callout p{color:#d3c9b6; font-size:15px;}
+
+/* ---------- REQUEST-A-SEAT CTA ---------- */
+.seatcta{max-width:1120px; margin:0 auto; padding:0 28px 60px;}
+.seatcard{text-align:center; background:var(--gold); color:var(--night); padding:52px 32px;}
+.seatcard .srl{font-family:var(--disp); font-size:11px; letter-spacing:.24em; text-transform:uppercase; margin-bottom:16px;}
+.seatcard h2{font-family:'Tanker','Switzer',sans-serif; font-weight:400; font-style:normal; font-size:clamp(30px,4.4vw,50px); line-height:1.0; letter-spacing:.005em; margin:0 auto 14px; max-width:20ch;}
+.seatcard h2 em{font-style:normal; font-weight:400; color:var(--night);}
+.seatcard .sd{font-size:16px; color:var(--night); opacity:.82; max-width:60ch; margin:0 auto 30px;}
+.seatbtn{display:inline-block; background:var(--night); color:var(--gold); font-family:var(--disp); font-size:14px; letter-spacing:.12em; text-transform:uppercase; padding:17px 34px; text-decoration:none;}
+.seatbtn:hover{background:var(--night3); }
+.seatnote{max-width:56ch; margin:22px auto 0; font-size:13.5px; color:var(--night); opacity:.75;}
+.seatnote b{opacity:1;}
+.footer{max-width:1120px; margin:0 auto; padding:44px 28px 40px; border-top:1px solid rgba(246,239,227,.1); text-align:center; font-size:12.5px; color:#6d6a61;}
+.footer .fwm{font-family:'Tanker','Switzer',sans-serif; font-weight:400; font-style:normal; font-size:clamp(20px,2.6vw,24px); letter-spacing:.005em; color:var(--paper); margin-bottom:14px;}
+.footer .fwm em{color:var(--gold-soft); font-style:normal;}
+.footer-links{display:flex; justify-content:center; gap:26px; flex-wrap:wrap; margin:2px 0 18px; font-family:var(--disp); font-size:11px; letter-spacing:.12em; text-transform:uppercase;}
+.footer-links a{color:#a39c8c;}
+.footer-links a:hover{color:var(--gold-soft);}
+.footer .disclaim{max-width:74ch; margin:6px auto 0; color:#6d6a61;}
+/* emphasis by colour, never slant (Tanker/Switzer have no loaded italics) */
+em{font-style:normal;}
+.nav em{color:var(--gold);}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="back" href="../" style="font-family:'Switzer',system-ui,sans-serif;font-weight:600;font-size:15px;font-style:normal;letter-spacing:-.01em;text-transform:none;color:var(--paper);display:inline-flex;align-items:center;gap:8px"><span style="color:var(--gold);font-weight:600;font-size:16px">&#8592;</span> Afterschool Agent</a>
+  <a class="back" href="https://onetoeight.org/" target="_blank" rel="noopener">one <em>to</em> eight</a>
+</nav>
+
+<header class="hero">
+  <div class="hwrap">
+    <span class="badge"><span class="dot"></span>Founder's Cohort &#183; Australian School Holidays</span>
+    <h1>Young people build their <em>own</em> AI agent.</h1>
+    <p class="sub">Not another app to consume. Their own local-first agent, built across four afternoons, that teaches life skills and grows with them.</p>
+    <div class="intro-audio">
+      <span class="ial">Listen &#8212; hear it straight from the founder</span>
+      <audio controls preload="metadata" src="audio/00-intro.ogg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="meta" style="margin-top:24px">Ages 13&#8211;23 &#183; Four modules</div>
+    <div class="meta" style="margin-top:8px;color:var(--gold-soft)">Tue &amp; Thu &#183; 4&#8211;5pm &#183; Both weeks of the September 2026 school holidays</div>
+  </div>
+</header>
+
+<div class="pricecard">
+  <div class="price">
+    <div class="box">
+      <div class="lbl">Bring a friend</div>
+      <div class="amt"><small>&#36;</small>88.88</div>
+      <div class="was">was &#36;148.88</div>
+      <p>You and a friend each pay &#36;88.88 up front. When you <b>both</b> complete the program, you <b>each</b> earn a <b>&#36;10 OpenRouter.ai credit voucher</b> to power your agent.</p>
+    </div>
+    <div class="box pop">
+      <div class="lbl">Solo enrolment</div>
+      <div class="amt"><small>&#36;</small>88.88</div>
+      <div class="was">was &#36;148.88</div>
+      <p>Founder's cohort launch price. This is the founding group rate &#8212; it rises toward the full &#36;148.88 as the founding places fill.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="kicker"><span class="bar"></span><span>What they build</span></div>
+  <h2>Four modules. Eight essentials. <em>Their real-world skill.</em></h2>
+  <div class="grid">
+    <div class="card"><div class="n">Module 1</div><h4>Foundations</h4><p>Install the agent and learn what local-first means. Their data stays on their device. First silence activity, built for them.</p></div>
+    <div class="card"><div class="n">Module 2</div><h4>Planning</h4><p>Build the evening planner. Body and Wisdom activities tailored to their life. A plan they can see and edit.</p></div>
+    <div class="card"><div class="n">Module 3</div><h4>The Morning Minute</h4><p>Set up voice. They wake up to a short briefing that speaks to them, in a channel they chose.</p></div>
+    <div class="card"><div class="n">Module 4</div><h4>Extend</h4><p>All eight essentials live. Support for homework and research. And they learn to write their own skills.</p></div>
+  </div>
+  <div class="callout"><b>In a world full of AI agents</b><p>We give young people agency in real life. Building their own agent is the real-world skill.</p></div>
+</div>
+
+<section class="body cream">
+  <div class="container" style="padding:0">
+    <div class="kicker" style="color:var(--terra-deep)"><span class="bar"></span><span>The bring-a-friend deal, clearly</span></div>
+    <h2>Both finish. <em>Both win.</em></h2>
+    <div class="rule">
+      <div class="step"><div class="cn">01</div><p>You and a friend each pay <b>&#36;88.88</b> up front.</p></div>
+      <div class="step"><div class="cn">02</div><p>You both build your agents across the four holiday afternoons.</p></div>
+      <div class="step"><div class="cn">03</div><p>When you <b>both</b> complete, you <b>each</b> earn a <b>&#36;10 OpenRouter.ai credit voucher</b> to power your agent.<br><span style="font-size:13px;opacity:.7">The voucher is the glue that keeps you both showing up &#8212; finish together, and you both fund the brain of your agents.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="body" style="background:var(--night2);border-top:1px solid rgba(246,239,227,.08);border-bottom:1px solid rgba(246,239,227,.08)">
+  <div class="container" style="padding:0">
+    <div class="kicker"><span class="bar"></span><span>Your Host &#8212; Safe &amp; Vetted</span></div>
+    <h2>Every live session is run by a <em>screened</em> instructor.</h2>
+    <p style="color:#c9bfae;max-width:74ch">The Afterschool Agent Founders Cohort is hosted by a safeguarding-cleared facilitator. Before any young person joins, the host holds the following verified credentials:</p>
+    <div class="grid" style="margin-top:30px">
+      <div class="card">
+        <div class="n">Credential 1</div>
+        <h4>Working with Children Check</h4>
+        <p>State-issued clearance confirming the host is approved to work with minors &#8212; the baseline requirement for any programme involving young people.</p>
+      </div>
+      <div class="card">
+        <div class="n">Credential 2</div>
+        <h4>NDIS Worker Screening</h4>
+        <p>National Disability Insurance Scheme clearance, verifying the host meets the strict conduct and safety standards required to support vulnerable participants.</p>
+      </div>
+      <div class="card">
+        <div class="n">Credential 3</div>
+        <h4>First Aid &amp; CPR</h4>
+        <p>Current accredited training in emergency first aid and cardiopulmonary resuscitation &#8212; because a responsible host is prepared for the physical as well as the digital.</p>
+      </div>
+      <div class="card">
+        <div class="n">Credential 4</div>
+        <h4>Youth Mental Health First Aid</h4>
+        <p>Accredited training in recognising and responding to mental health challenges in young people &#8212; knowing the signs, how to listen, and when to escalate to professional support.</p>
+      </div>
+    </div>
+    <div class="callout"><b>Four checks, one promise</b><p>Every young person learns in a space that is supervised, safe, and accountable.</p></div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="kicker"><span class="bar"></span><span>Why a Founder's Cohort</span></div>
+  <h2>This is a test. <em>You are a founder's guest.</em></h2>
+  <p style="color:#d3c9b6;max-width:72ch">This is a small, founding group at the launch price, while we find the edges with real students and real parents. It is priced, not free, because a committed family is one that shows up across all four sessions. Founder's guests get the four-session workshop plus early access to what we build next.</p>
+</div>
+
+<div class="seatcta">
+  <div class="seatcard">
+    <div class="srl">Founder's Cohort &#183; Founding group</div>
+    <h2>Want your young person in the <em>founding group?</em></h2>
+    <p class="sd">Four afternoons, ages 13 to 23. Tue &amp; Thu, 4&#8211;5pm, both weeks of the September 2026 school holidays. Bring a friend, and when you <b>both</b> complete you <b>each</b> earn a &#36;10 OpenRouter.ai credit voucher.</p>
+    <a class="seatbtn" href="mailto:go@getonetoeight.org?subject=Founder%27s%20Cohort%20Seat&amp;body=Hi%20Brendan%2C%0A%0AI%27d%20like%20to%20request%20a%20founder%27s%20cohort%20seat.%0AThe%20young%20person%27s%20age%20and%20school%20year%3A%20___%0ABringing%20a%20friend%3F%20(their%20name%2Fage)%3A%20___%0A%0AThanks%2C%0A___(parent%20name)">Request a seat</a>
+    <p class="seatnote">Send a short email and Brendan will reply confirming your seat is held, answer any questions, and send the payment link. <b>No payment is taken here</b> &#8212; the seat is only confirmed after a real conversation.</p>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="fwm">one <em>to</em> eight</div>
+  <div class="footer-links">
+    <a href="../privacy">Privacy</a>
+    <a href="../security">Security</a>
+    <a href="../terms">Terms</a>
+    <a href="../refund-policy">Refund Policy</a>
+  </div>
+  <div class="disclaim">Founder's Cohort &#183; Afterschool Agent &#183; &#36;88.88 founding price. The Afterschool Agent programme is on-demand training with a weekly live session. The Hermes agent software is free and open source. All live sessions are supervised. No data leaves your device.</div>
+</footer>
+</body>
+</html>
