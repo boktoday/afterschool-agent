@@ -360,9 +360,9 @@ canvas.walking{cursor:wait}
 
 <div class="topbar">
 
-  <div class="brand">one <em>to</em> eight <span class="sep">Â·</span> <span style="color:var(--dawn2)">Afterschool Agent</span></div>
+  <div class="brand">one <em>to</em> eight <span class="sep">·</span> <span style="color:var(--dawn2)">Afterschool Agent</span></div>
 
-  <div class="badge" id="badge">3D Â· eight doorways</div>
+  <div class="badge" id="badge">3D · eight doorways</div>
 
 </div>
 
@@ -370,7 +370,7 @@ canvas.walking{cursor:wait}
 
 <header class="hero" id="hero">
 
-  <div class="kicker" id="kicker">Eight Essentials Â· Eight doorways</div>
+  <div class="kicker" id="kicker">Eight Essentials · Eight doorways</div>
 
   <h1 id="hero-title">The only way out is <em>through</em>.</h1>
 
@@ -404,7 +404,7 @@ canvas.walking{cursor:wait}
 
 
 
-<div class="hint" id="hint">Drag to orbit Â· Click a doorway, move up close, click to go through</div>
+<div class="hint" id="hint">Drag to orbit · Click a doorway, move up close, click to go through</div>
 
 
 
@@ -466,7 +466,7 @@ const ESSENTIALS = [
 
     desc:'A child who can sit in silence has an inner life no algorithm can reach.',
 
-    hero:{ kicker:'01 Â· Silence', title:'Sit still. <em>There is nothing to do.</em>', sub:'Five minutes. Phone in another room. Eyes open, then closed.' },
+    hero:{ kicker:'01 · Silence', title:'Sit still. <em>There is nothing to do.</em>', sub:'Five minutes. Phone in another room. Eyes open, then closed.' },
 
     built:true },
 
@@ -474,7 +474,7 @@ const ESSENTIALS = [
 
     desc:'Sleep, food, water, movement, sunlight. The body is the instrument.',
 
-    hero:{ kicker:'02 Â· Body', title:'The body is the <em>instrument</em>, not the obstacle.', sub:'Sleep. Food. Water. Movement. Sunlight. Five daily practices, each a doorway.' },
+    hero:{ kicker:'02 · Body', title:'The body is the <em>instrument</em>, not the obstacle.', sub:'Sleep. Food. Water. Movement. Sunlight. Five daily practices, each a doorway.' },
 
     built:true },
 
@@ -482,7 +482,7 @@ const ESSENTIALS = [
 
     desc:'Cook, fix, build, budget. The discipline of finishing, by hand.',
 
-    hero:{ kicker:'03 Â· Skills', title:'Real things <em>get made here</em>.', sub:'Cook. Fix. Build. Budget. The discipline of finishing, by hand, with your own effort.' },
+    hero:{ kicker:'03 · Skills', title:'Real things <em>get made here</em>.', sub:'Cook. Fix. Build. Budget. The discipline of finishing, by hand, with your own effort.' },
 
     built:true },
 
@@ -490,7 +490,7 @@ const ESSENTIALS = [
 
     desc:'See the system clearly. Make the trade consciously. Local-first.',
 
-    hero:{ kicker:'04 Â· Digital Self-Defence', title:'See the system <em>clearly</em>.', sub:'Privacy is the precondition for trust. Local-first. Four practices: see, trade, store, protect.' },
+    hero:{ kicker:'04 · Digital Self-Defence', title:'See the system <em>clearly</em>.', sub:'Privacy is the precondition for trust. Local-first. Four practices: see, trade, store, protect.' },
 
     built:true },
 
@@ -498,7 +498,7 @@ const ESSENTIALS = [
 
     desc:'At least three people you could call at 2am.',
 
-    hero:{ kicker:'05 Â· Real Community', title:'Three people you can call at <em>2am</em>.', sub:'Most teenagers have none. Start small. One friend, one real conversation a week.' },
+    hero:{ kicker:'05 · Real Community', title:'Three people you can call at <em>2am</em>.', sub:'Most teenagers have none. Start small. One friend, one real conversation a week.' },
 
     built:true },
 
@@ -506,7 +506,7 @@ const ESSENTIALS = [
 
     desc:'A body of facts you can recall with the phone off.',
 
-    hero:{ kicker:'06 Â· Knowledge Without Wi-Fi', title:'A body of facts you can <em>recall</em> with the phone off.', sub:'One topic you care about. Thirty minutes a day. Memory is the immune system of the mind.' },
+    hero:{ kicker:'06 · Knowledge Without Wi-Fi', title:'A body of facts you can <em>recall</em> with the phone off.', sub:'One topic you care about. Thirty minutes a day. Memory is the immune system of the mind.' },
 
     built:true },
 
@@ -514,7 +514,7 @@ const ESSENTIALS = [
 
     desc:'Forty-five minutes outside, three times a week.',
 
-    hero:{ kicker:'07 Â· Nature', title:'Forty-five <em>minutes</em> outside. Three times a week.', sub:'The screen will still be there when you get back.' },
+    hero:{ kicker:'07 · Nature', title:'Forty-five <em>minutes</em> outside. Three times a week.', sub:'The screen will still be there when you get back.' },
 
     built:true },
 
@@ -522,7 +522,7 @@ const ESSENTIALS = [
 
     desc:'A conviction you hold even when it costs you something.',
 
-    hero:{ kicker:'08 Â· Tested Faith', title:'A conviction you hold <em>even when it costs you</em>.', sub:'The content can be anything honest. The structure of having one is the immune system.' },
+    hero:{ kicker:'08 · Tested Faith', title:'A conviction you hold <em>even when it costs you</em>.', sub:'The content can be anything honest. The structure of having one is the immune system.' },
 
     built:true },
 
@@ -11125,13 +11125,13 @@ canvas.addEventListener('click', () => {
 
         document.getElementById('hero-sub').textContent = 'Walk your character through. Click a doorway, move up close, click to go through.';
 
-        document.getElementById('kicker').textContent = 'Eight Essentials Â· Eight doorways';
+        document.getElementById('kicker').textContent = 'Eight Essentials · Eight doorways';
 
-        document.getElementById('badge').textContent = '3D Â· eight doorways';
+        document.getElementById('badge').textContent = '3D · eight doorways';
 
         document.getElementById('cta').style.display = 'block';
 
-        document.getElementById('hint').textContent = 'Drag to orbit Â· Click a doorway, move up close, click to go through';
+        document.getElementById('hint').textContent = 'Drag to orbit · Click a doorway, move up close, click to go through';
 
         fadeIn();
 
@@ -11331,7 +11331,7 @@ document.getElementById('tip-enter').addEventListener('click', () => {
 
     document.getElementById('kicker').textContent = e.hero.kicker;
 
-    document.getElementById('badge').textContent = `${e.n} / 08 Â· ${e.t} Â· inside`;
+    document.getElementById('badge').textContent = `${e.n} / 08 · ${e.t} · inside`;
 
     document.getElementById('cta').style.display = 'none';
 
@@ -11865,7 +11865,7 @@ function tick(){
 
     }
 
-    // breathing — the character visibly breathes (scale y Â±1.5%, ~0.3Hz)
+    // breathing — the character visibly breathes (scale y ±1.5%, ~0.3Hz)
 
     const breath = 1 + Math.sin(t * 1.9) * 0.008;
 
