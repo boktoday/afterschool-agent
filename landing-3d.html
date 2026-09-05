@@ -18,11 +18,9 @@
 
 <meta property="og:type" content="website">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://api.fontshare.com">
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=tanker@400&f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -60,9 +58,9 @@
 
   --blue:#4f6f9e;
 
-  --serif:'Fraunces',Georgia,serif;
+  --serif:'Tanker','Switzer',sans-serif;
 
-  --disp:'Inter',-apple-system,sans-serif;
+  --disp:'Switzer',-apple-system,sans-serif;
 
 }
 
@@ -94,7 +92,7 @@ canvas.walking{cursor:wait}
 
 .brand{font-family:var(--serif);font-size:1.05rem;letter-spacing:.005em}
 
-.brand em{color:var(--gold);font-style:italic;font-weight:500}
+.brand em{color:var(--gold);font-style:normal;font-weight:400}
 
 .brand .sep{color:var(--ink-mute);margin:0 .5rem;font-weight:300}
 
@@ -150,7 +148,7 @@ canvas.walking{cursor:wait}
 
 }
 
-.hero h1 em{font-style:italic;color:var(--gold)}
+.hero h1 em{font-style:normal;color:var(--gold)}
 
 .hero .sub{
 
@@ -206,7 +204,7 @@ canvas.walking{cursor:wait}
 
 .tip .num{font-family:var(--serif);font-size:.78rem;color:var(--accent,var(--gold));letter-spacing:.08em;margin-bottom:.2rem}
 
-.tip h3{font-family:var(--serif);font-weight:500;font-size:1.2rem;line-height:1.2;margin-bottom:.3rem}
+.tip h3{font-family:var(--serif);font-weight:400;font-style:normal;font-size:1.2rem;line-height:1.2;margin-bottom:.3rem}
 
 .tip .desc{font-size:.85rem;line-height:1.45;color:rgba(246,239,238,.78);margin-bottom:.7rem}
 
@@ -310,7 +308,7 @@ canvas.walking{cursor:wait}
 
 .loader .ld-title{font-family:var(--serif);font-size:1.2rem;color:var(--dawn);font-weight:400}
 
-.loader .ld-title em{color:var(--gold);font-style:italic}
+.loader .ld-title em{color:var(--gold);font-style:normal}
 
 .loader .ld-bar{width:160px;height:2px;background:rgba(246,239,238,.1);border-radius:2px;overflow:hidden}
 
@@ -926,7 +924,7 @@ function makeDoorway(e, angle){
 
   nctx.fillStyle = '#f6efe3';
 
-  nctx.font = '600 78px Fraunces, Georgia, serif';
+  nctx.font = '400 78px Tanker, sans-serif';
 
   nctx.textAlign = 'center'; nctx.textBaseline = 'middle';
 
@@ -980,7 +978,7 @@ function makeDoorway(e, angle){
 
     tctx.fillStyle = '#d9a441';
 
-    tctx.font = '500 38px Inter, system-ui';
+    tctx.font = '500 38px Switzer, sans-serif';
 
     tctx.textAlign = 'center'; tctx.textBaseline = 'middle';
 
@@ -1966,7 +1964,7 @@ function buildSilence(){
 
   rctx.fillStyle = '#d9a441';
 
-  rctx.font = '500 38px Fraunces, Georgia, serif';
+  rctx.font = '400 38px Tanker, sans-serif';
 
   rctx.textAlign = 'center'; rctx.textBaseline = 'middle';
 
@@ -2408,7 +2406,7 @@ function buildBody(){
 
     lctx.fillStyle = '#232a3d';
 
-    lctx.font = '500 30px Fraunces, Georgia, serif';
+    lctx.font = '400 30px Tanker, sans-serif';
 
     lctx.textAlign = 'center'; lctx.textBaseline = 'middle';
 
@@ -2636,7 +2634,7 @@ function buildBody(){
 
   rctx.fillStyle = '#d9a441';
 
-  rctx.font = '500 38px Fraunces, Georgia, serif';
+  rctx.font = '400 38px Tanker, sans-serif';
 
   rctx.textAlign = 'center'; rctx.textBaseline = 'middle';
 
@@ -3722,7 +3720,7 @@ function buildSkills(){
 
     lctx.fillStyle = '#fbf7ee';
 
-    lctx.font = '500 30px Fraunces, Georgia, serif';
+    lctx.font = '400 30px Tanker, sans-serif';
 
     lctx.textAlign = 'center'; lctx.textBaseline = 'middle';
 
@@ -3806,7 +3804,7 @@ function buildSkills(){
 
   rctx.fillStyle = '#d9a441';
 
-  rctx.font = '500 38px Fraunces, Georgia, serif';
+  rctx.font = '400 38px Tanker, sans-serif';
 
   rctx.textAlign = 'center'; rctx.textBaseline = 'middle';
 
@@ -5113,7 +5111,7 @@ function buildDigital(){
 
     lctx.fillStyle = '#fbf7ee';
 
-    lctx.font = '500 28px Fraunces, Georgia, serif';
+    lctx.font = '400 28px Tanker, sans-serif';
 
     lctx.textAlign = 'center'; lctx.textBaseline = 'middle';
 
@@ -5201,7 +5199,7 @@ function buildDigital(){
 
   rctx.fillStyle = '#6fb0d0';
 
-  rctx.font = '500 38px Fraunces, Georgia, serif';
+  rctx.font = '400 38px Tanker, sans-serif';
 
   rctx.textAlign = 'center'; rctx.textBaseline = 'middle';
 
@@ -5563,7 +5561,7 @@ function makeDigitalLocal(){
 
   bctx.fillStyle = '#6fb0d0';
 
-  bctx.font = '700 48px Inter, system-ui, sans-serif';
+  bctx.font = '700 48px Switzer, sans-serif';
 
   bctx.textAlign = 'center'; bctx.textBaseline = 'middle';
 
@@ -6109,7 +6107,7 @@ function buildCommunity(){
 
     lctx.fillStyle = '#fbf7ee';
 
-    lctx.font = '500 28px Fraunces, Georgia, serif';
+    lctx.font = '400 28px Tanker, sans-serif';
 
     lctx.textAlign = 'center'; lctx.textBaseline = 'middle';
 
@@ -6197,7 +6195,7 @@ function buildCommunity(){
 
   rctx.fillStyle = '#e8c87a';
 
-  rctx.font = '500 38px Fraunces, Georgia, serif';
+  rctx.font = '400 38px Tanker, sans-serif';
 
   rctx.textAlign = 'center'; rctx.textBaseline = 'middle';
 
@@ -6401,7 +6399,7 @@ function makeCommunityConversation(){
 
   nctx.fillStyle = '#e8c87a';
 
-  nctx.font = '700 28px Inter, system-ui, sans-serif';
+  nctx.font = '700 28px Switzer, sans-serif';
 
   nctx.textAlign = 'center'; nctx.textBaseline = 'middle';
 
@@ -6521,7 +6519,7 @@ function makeCommunityThree2am(){
 
   bctx.fillStyle = '#fbf7ee';
 
-  bctx.font = '700 56px Fraunces, Georgia, serif';
+  bctx.font = '400 56px Tanker, sans-serif';
 
   bctx.textAlign = 'center'; bctx.textBaseline = 'middle';
 
@@ -6597,7 +6595,7 @@ function makeCommunityShowUp(){
 
   sctx.fillStyle = '#9c4a2e';
 
-  sctx.font = '700 56px Fraunces, Georgia, serif';
+  sctx.font = '400 56px Tanker, sans-serif';
 
   sctx.textAlign = 'center'; sctx.textBaseline = 'middle';
 
@@ -6709,7 +6707,7 @@ function makeCommunityBuild(){
 
   pctx.fillStyle = '#d9a441';
 
-  pctx.font = '700 56px Fraunces, Georgia, serif';
+  pctx.font = '400 56px Tanker, sans-serif';
 
   pctx.textAlign = 'center'; pctx.textBaseline = 'middle';
 
@@ -7285,7 +7283,7 @@ function buildKnowledge(){
 
     lctx.fillStyle = '#fbf7ee';
 
-    lctx.font = '500 28px Fraunces, Georgia, serif';
+    lctx.font = '400 28px Tanker, sans-serif';
 
     lctx.textAlign = 'center'; lctx.textBaseline = 'middle';
 
@@ -7389,7 +7387,7 @@ function buildKnowledge(){
 
   rctx.fillStyle = '#d9a441';
 
-  rctx.font = '500 38px Fraunces, Georgia, serif';
+  rctx.font = '400 38px Tanker, sans-serif';
 
   rctx.textAlign = 'center'; rctx.textBaseline = 'middle';
 
@@ -7621,7 +7619,7 @@ function makeKnowledgeThirty(){
 
   fctx.fillStyle = '#6e4a2d';
 
-  fctx.font = 'bold 36px Fraunces, Georgia, serif';
+  fctx.font = '400 36px Tanker, sans-serif';
 
   fctx.textAlign = 'center'; fctx.textBaseline = 'middle';
 
@@ -7661,7 +7659,7 @@ function makeKnowledgeThirty(){
 
   fctx.fillStyle = '#c2603e';
 
-  fctx.font = 'bold 48px Fraunces, Georgia, serif';
+  fctx.font = '400 48px Tanker, sans-serif';
 
   fctx.fillText('30', 256, 380);
 
@@ -7845,7 +7843,7 @@ function makeKnowledgePalace(){
 
     sctx.fillStyle = '#6e4a2d';
 
-    sctx.font = 'bold 80px Fraunces, Georgia, serif';
+    sctx.font = '400 80px Tanker, sans-serif';
 
     sctx.textAlign = 'center'; sctx.textBaseline = 'middle';
 
@@ -8089,7 +8087,7 @@ function makeKnowledgeTest(){
 
   nctx.fillStyle = '#c2603e';
 
-  nctx.font = '700 32px Inter, system-ui, sans-serif';
+  nctx.font = '700 32px Switzer, sans-serif';
 
   nctx.textAlign = 'center'; nctx.textBaseline = 'middle';
 
@@ -8483,7 +8481,7 @@ function buildNature(){
 
     lctx.fillStyle = '#232a3d';
 
-    lctx.font = '500 28px Fraunces, Georgia, serif';
+    lctx.font = '400 28px Tanker, sans-serif';
 
     lctx.textAlign = 'center'; lctx.textBaseline = 'middle';
 
@@ -8575,7 +8573,7 @@ function buildNature(){
 
   rctx.fillStyle = '#5f6d52';
 
-  rctx.font = '500 38px Fraunces, Georgia, serif';
+  rctx.font = '400 38px Tanker, sans-serif';
 
   rctx.textAlign = 'center'; rctx.textBaseline = 'middle';
 
@@ -8753,13 +8751,13 @@ function makeNatureFortyFive(){
 
   lctx.fillStyle = '#9c4a2e';
 
-  lctx.font = 'bold 90px Fraunces, Georgia, serif';
+  lctx.font = '400 90px Tanker, sans-serif';
 
   lctx.textAlign = 'center'; lctx.textBaseline = 'middle';
 
   lctx.fillText('45', 128, 110);
 
-  lctx.font = 'bold 36px Inter, system-ui';
+  lctx.font = '700 36px Switzer, sans-serif';
 
   lctx.fillText('MIN', 128, 170);
 
@@ -8967,7 +8965,7 @@ function makeNaturePhoneOff(){
 
   octx.fillStyle = '#232a3d';
 
-  octx.font = 'bold 80px Inter, system-ui, sans-serif';
+  octx.font = '700 80px Switzer, sans-serif';
 
   octx.textAlign = 'center'; octx.textBaseline = 'middle';
 
@@ -9123,7 +9121,7 @@ function makeNatureLookUp(){
 
   sctx.fillStyle = '#fbf7ee';
 
-  sctx.font = '700 56px Fraunces, Georgia, serif';
+  sctx.font = '400 56px Tanker, sans-serif';
 
   sctx.textAlign = 'center'; sctx.textBaseline = 'middle';
 
@@ -9981,7 +9979,7 @@ function buildFaith(){
 
     lctx.fillStyle = '#fbf7ee';
 
-    lctx.font = '500 28px Fraunces, Georgia, serif';
+    lctx.font = '400 28px Tanker, sans-serif';
 
     lctx.textAlign = 'center'; lctx.textBaseline = 'middle';
 
@@ -10069,7 +10067,7 @@ function buildFaith(){
 
   rctx.fillStyle = '#9c4a2e';
 
-  rctx.font = '500 38px Fraunces, Georgia, serif';
+  rctx.font = '400 38px Tanker, sans-serif';
 
   rctx.textAlign = 'center'; rctx.textBaseline = 'middle';
 
