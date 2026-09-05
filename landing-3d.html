@@ -160,7 +160,7 @@ canvas.walking{cursor:wait}
 
 
 
-/* Tooltip â appears when character approaches a doorway */
+/* Tooltip — appears when character approaches a doorway */
 
 .tip{
 
@@ -388,9 +388,9 @@ canvas.walking{cursor:wait}
 
   <div class="desc" id="tip-desc">A child who can sit in silence has an inner life no algorithm can reach.</div>
 
-  <button id="tip-enter">Walk through â</button>
+  <button id="tip-enter">Walk through →</button>
 
-  <button id="tip-close" class="ghost">Ã</button>
+  <button id="tip-close" class="ghost">×</button>
 
 </div>
 
@@ -594,7 +594,7 @@ controls.target.set(0, 1.5, 0);
 
 scene.add(new THREE.AmbientLight(0x3a4760, 0.85));
 
-// hemisphere light â warms the bottoms of the stones so they don't go black
+// hemisphere light — warms the bottoms of the stones so they don't go black
 
 scene.add(new THREE.HemisphereLight(0xfff2c8, 0x2a2418, 0.6));
 
@@ -614,7 +614,7 @@ scene.add(fillLight);
 
 // ============================================================
 
-//  STATE â what's built, what's being displayed
+//  STATE — what's built, what's being displayed
 
 // ============================================================
 
@@ -822,7 +822,7 @@ function makeDoorway(e, angle){
 
   g.add(pillarR);
 
-  // top lintel â slightly arched effect by tilting the ends slightly using a wider block
+  // top lintel — slightly arched effect by tilting the ends slightly using a wider block
 
   const lintel = stone(2.9, 0.7, 0.7);
 
@@ -830,7 +830,7 @@ function makeDoorway(e, angle){
 
   g.add(lintel);
 
-  // capstone accent â in essential colour
+  // capstone accent — in essential colour
 
   const cap = new THREE.Mesh(
 
@@ -862,7 +862,7 @@ function makeDoorway(e, angle){
 
 
 
-  // a glowing floor disc inside the doorway (the threshold) â this lights
+  // a glowing floor disc inside the doorway (the threshold) — this lights
 
   // the bottom of the frame from inside, so the doorway reads as "open"
 
@@ -884,7 +884,7 @@ function makeDoorway(e, angle){
 
 
 
-  // soft point light at the threshold â picks up the bottom of the frame
+  // soft point light at the threshold — picks up the bottom of the frame
 
   const thresholdLight = new THREE.PointLight(e.c, 0.8, 6, 1.6);
 
@@ -948,7 +948,7 @@ function makeDoorway(e, angle){
 
 
 
-  // "not built" marker â a translucent barrier
+  // "not built" marker — a translucent barrier
 
   if (!e.built) {
 
@@ -1090,7 +1090,7 @@ function makeCharacter(){
 
 
 
-// Prayer variant â same body as makeCharacter, but the arms are folded
+// Prayer variant — same body as makeCharacter, but the arms are folded
 
 // into a prayer pose: elbows forward, hands pressed together at the chest,
 
@@ -1254,7 +1254,7 @@ function makeSeatedCharacter(){
 
   // ---- shins: vertical, from floor up to seat-top ----
 
-  // shin length â 0.94 (seat height), so they're tall thin boxes in front of the seat
+  // shin length ≈ 0.94 (seat height), so they're tall thin boxes in front of the seat
 
   const shinL = box(0.16, 0.94, 0.18, PANTS);
 
@@ -1378,7 +1378,7 @@ function makeSeatedCharacter(){
 
   head.position.set(0, 1.04, -0.04);
 
-  head.rotation.x = -0.04;  // very slight downward nod â looking at nothing in particular
+  head.rotation.x = -0.04;  // very slight downward nod — looking at nothing in particular
 
   person.add(head);
 
@@ -1420,7 +1420,7 @@ function makeSeatedCharacter(){
 
 // ============================================================
 
-//  BUILD: ESSENTIAL SCENE â SILENCE
+//  BUILD: ESSENTIAL SCENE — SILENCE
 
 // ============================================================
 
@@ -1456,7 +1456,7 @@ function buildSilence(){
 
 
 
-  // room shell â a large box open on the camera side (you can see inside)
+  // room shell — a large box open on the camera side (you can see inside)
 
   const roomW = 14, roomD = 12, roomH = 6;
 
@@ -1508,7 +1508,7 @@ function buildSilence(){
 
   scene.add(sideR);
 
-  // ceiling â slightly higher than the camera can see, gives the "warm lit room" feel
+  // ceiling — slightly higher than the camera can see, gives the "warm lit room" feel
 
   const ceiling = new THREE.Mesh(new THREE.PlaneGeometry(roomW, roomD),
 
@@ -1522,7 +1522,7 @@ function buildSilence(){
 
 
 
-  // a window on the back wall â cut with a bright plane behind it
+  // a window on the back wall — cut with a bright plane behind it
 
   // simpler: a glowing rectangle on the back wall
 
@@ -1538,7 +1538,7 @@ function buildSilence(){
 
   scene.add(win);
 
-  // window frame â thin wood
+  // window frame — thin wood
 
   const winFrame = (w, h, x, y) => {
 
@@ -1642,7 +1642,7 @@ function buildSilence(){
 
   scene.add(soil);
 
-  // leaves â three drooping cones
+  // leaves — three drooping cones
 
   const leafMat = new THREE.MeshStandardMaterial({ color: 0x5f6d52, roughness: 0.9 });
 
@@ -1682,7 +1682,7 @@ function buildSilence(){
 
   chair.add(seat);
 
-  // back rest â vertical
+  // back rest — vertical
 
   const backRest = new THREE.Mesh(new THREE.BoxGeometry(1.0, 1.2, 0.08), wood);
 
@@ -1712,7 +1712,7 @@ function buildSilence(){
 
 
 
-  // light shaft through window â translucent volumetric plane
+  // light shaft through window — translucent volumetric plane
 
   const shaft = new THREE.Mesh(
 
@@ -1838,7 +1838,7 @@ function buildSilence(){
 
   }
 
-  // an open book lying face-down on the table â dropped to sit still
+  // an open book lying face-down on the table — dropped to sit still
 
   const dropBook = new THREE.Mesh(
 
@@ -1876,7 +1876,7 @@ function buildSilence(){
 
 
 
-  // character â seated on the chair, facing the window
+  // character — seated on the chair, facing the window
 
   character3D = makeSeatedCharacter();
 
@@ -1906,7 +1906,7 @@ function buildSilence(){
 
 
 
-  // ===== exit portal â a darker rectangle on the opposite wall =====
+  // ===== exit portal — a darker rectangle on the opposite wall =====
 
   const exitFrame = new THREE.Group();
 
@@ -2016,7 +2016,7 @@ function buildSilence(){
 
       const enterBtn = document.getElementById('tip-enter');
 
-      enterBtn.textContent = 'Ã';
+      enterBtn.textContent = '×';
 
       enterBtn.disabled = false;
 
@@ -2044,7 +2044,7 @@ function buildSilence(){
 
 // ============================================================
 
-//  BUILD: ESSENTIAL SCENE â BODY (sleep, food, water, movement, sun)
+//  BUILD: ESSENTIAL SCENE — BODY (sleep, food, water, movement, sun)
 
 // ============================================================
 
@@ -2308,7 +2308,7 @@ function buildBody(){
 
 
 
-  // wildflowers â small coloured spheres
+  // wildflowers — small coloured spheres
 
   const flowerColors = [0xd9a441, 0xe8c87a, 0xc2603e, 0xffffff];
 
@@ -2656,7 +2656,7 @@ function buildBody(){
 
 
 
-  // body-coloured point lights around the ring â soft warm
+  // body-coloured point lights around the ring — soft warm
 
   stations.forEach(s => {
 
@@ -2756,7 +2756,7 @@ function showBodyStationTip(station){
 
   const enterBtn = document.getElementById('tip-enter');
 
-  enterBtn.textContent = 'Ã close';
+  enterBtn.textContent = '× close';
 
   enterBtn.disabled = false;
 
@@ -2838,7 +2838,7 @@ function makeSleepStation(){
 
   g.add(ridge);
 
-  // open front flap â a dark triangle so you can see the sleeping bag inside
+  // open front flap — a dark triangle so you can see the sleeping bag inside
 
   const flap = new THREE.Mesh(
 
@@ -2852,7 +2852,7 @@ function makeSleepStation(){
 
   g.add(flap);
 
-  // sleeping bag â a long pillow shape on the ground in front
+  // sleeping bag — a long pillow shape on the ground in front
 
   const bag = new THREE.Mesh(
 
@@ -2890,7 +2890,7 @@ function makeSleepStation(){
 
 function makeWaterStation(){
 
-  // a shallow circular pool â disc with a water-coloured inner disc
+  // a shallow circular pool — disc with a water-coloured inner disc
 
   const g = new THREE.Group();
 
@@ -2970,7 +2970,7 @@ function makeMovementStation(){
 
   const g = new THREE.Group();
 
-  // mat â a thin elongated box
+  // mat — a thin elongated box
 
   const mat = new THREE.Mesh(
 
@@ -3002,7 +3002,7 @@ function makeMovementStation(){
 
   g.add(stripe);
 
-  // kettlebell â sphere + handle
+  // kettlebell — sphere + handle
 
   const bell = new THREE.Mesh(
 
@@ -3080,7 +3080,7 @@ function makeFoodStation(){
 
   }
 
-  // bread â a flat ellipsoid-ish loaf
+  // bread — a flat ellipsoid-ish loaf
 
   const bread = new THREE.Mesh(
 
@@ -3280,7 +3280,7 @@ function showBodyTip(){
 
   document.getElementById('tip-num').textContent = '02';
 
-  document.getElementById('tip-title').textContent = 'Body â five daily practices';
+  document.getElementById('tip-title').textContent = 'Body — five daily practices';
 
   document.getElementById('tip-desc').innerHTML = 'Sleep. Food. Water. Movement. Sunlight. ' +
 
@@ -3288,7 +3288,7 @@ function showBodyTip(){
 
   const enterBtn = document.getElementById('tip-enter');
 
-  enterBtn.textContent = 'Ã close';
+  enterBtn.textContent = '× close';
 
   enterBtn.disabled = false;
 
@@ -3308,7 +3308,7 @@ function showBodyTip(){
 
 }
 
-function showSceneTip({ n, title, body, accent = '#c2603e', dismissLabel = 'Ã close' }){
+function showSceneTip({ n, title, body, accent = '#c2603e', dismissLabel = '× close' }){
 
   // generic intro card for inner-scene first entry
 
@@ -3348,7 +3348,7 @@ function showSceneTip({ n, title, body, accent = '#c2603e', dismissLabel = 'Ã
 
 // ============================================================
 
-//  BUILD: ESSENTIAL SCENE â SKILLS (cook, fix, build, budget)
+//  BUILD: ESSENTIAL SCENE — SKILLS (cook, fix, build, budget)
 
 //  A warm wood-panelled workshop with overhead light + window
 
@@ -3852,7 +3852,7 @@ function buildSkills(){
 
     n: '03',
 
-    title: 'Skills â finish something with your hands',
+    title: 'Skills — finish something with your hands',
 
     body: 'Cook. Fix. Build. Budget. ' +
 
@@ -3884,7 +3884,7 @@ const SKILLS_PRACTICES = {
 
     n: '03.2', t: 'Fix',
 
-    d: 'Mending is slower than replacing and much more satisfying. Learn to fix one thing a month â a torn shirt, a squeaky hinge, a leaking tap. The lamp on the wall took a week to repair, and I still feel proud.',
+    d: 'Mending is slower than replacing and much more satisfying. Learn to fix one thing a month — a torn shirt, a squeaky hinge, a leaking tap. The lamp on the wall took a week to repair, and I still feel proud.',
 
   },
 
@@ -3934,7 +3934,7 @@ function showSkillsStationTip(station){
 
   const enterBtn = document.getElementById('tip-enter');
 
-  enterBtn.textContent = 'Ã close';
+  enterBtn.textContent = '× close';
 
   enterBtn.disabled = false;
 
@@ -4399,7 +4399,7 @@ function makeGrowStation(){
 
     g.add(soil);
 
-    // three leaves â taller for the middle plant, droopier on the sides
+    // three leaves — taller for the middle plant, droopier on the sides
 
     const leafHeight = idx === 1 ? 0.55 : 0.45;
 
@@ -4503,7 +4503,7 @@ function makeGrowStation(){
 
 
 
-  // ===== overhead grow light â chases the plant greens upward =====
+  // ===== overhead grow light — chases the plant greens upward =====
 
   // hanging cord
 
@@ -4519,7 +4519,7 @@ function makeGrowStation(){
 
   g.add(cord);
 
-  // the light shade â a cone shedding downward light
+  // the light shade — a cone shedding downward light
 
   const shade = new THREE.Mesh(
 
@@ -4539,7 +4539,7 @@ function makeGrowStation(){
 
   g.add(shade);
 
-  // the light pool â a glowing disc under the shade just above the plants
+  // the light pool — a glowing disc under the shade just above the plants
 
   const lightPool = new THREE.Mesh(
 
@@ -4557,7 +4557,7 @@ function makeGrowStation(){
 
   g.add(lightPool);
 
-  // the grow light itself â a point light shedding warm-spectrum light down
+  // the grow light itself — a point light shedding warm-spectrum light down
 
   const growLight = new THREE.PointLight(0xfff2c8, 0.9, 6, 1.5);
 
@@ -4747,7 +4747,7 @@ function showDigitalTip(){
 
   document.getElementById('tip-num').textContent = '04';
 
-  document.getElementById('tip-title').textContent = 'Digital Self-Defence â four moves';
+  document.getElementById('tip-title').textContent = 'Digital Self-Defence — four moves';
 
   document.getElementById('tip-desc').innerHTML = 'See the system. Trade consciously. ' +
 
@@ -4757,7 +4757,7 @@ function showDigitalTip(){
 
   const enterBtn = document.getElementById('tip-enter');
 
-  enterBtn.textContent = 'Ã close';
+  enterBtn.textContent = '× close';
 
   enterBtn.disabled = false;
 
@@ -4781,7 +4781,7 @@ function showDigitalTip(){
 
 // ============================================================
 
-//  BUILD: ESSENTIAL SCENE â DIGITAL SELF-DEFENCE
+//  BUILD: ESSENTIAL SCENE — DIGITAL SELF-DEFENCE
 
 //  A dim blue-lit bedroom, one laptop, four practices
 
@@ -5135,7 +5135,7 @@ function buildDigital(){
 
 
 
-  // character â between chair and camera, facing the desk
+  // character — between chair and camera, facing the desk
 
   character3D = makeCharacter();
 
@@ -5147,7 +5147,7 @@ function buildDigital(){
 
 
 
-  // exit portal â between character and camera
+  // exit portal — between character and camera
 
   const exitFrame = new THREE.Group();
 
@@ -5755,17 +5755,17 @@ function showCommunityTip(){
 
   document.getElementById('tip-num').textContent = '05';
 
-  document.getElementById('tip-title').textContent = 'Real Community â start with one';
+  document.getElementById('tip-title').textContent = 'Real Community — start with one';
 
   document.getElementById('tip-desc').innerHTML = 'At least three people you could call at 2am. ' +
 
-    'Most teenagers have none. Start small â one friend, one real conversation a week. ' +
+    'Most teenagers have none. Start small — one friend, one real conversation a week. ' +
 
     'Walk to any station to look closer. Or sit in a chair.';
 
   const enterBtn = document.getElementById('tip-enter');
 
-  enterBtn.textContent = 'Ã close';
+  enterBtn.textContent = '× close';
 
   enterBtn.disabled = false;
 
@@ -5789,7 +5789,7 @@ function showCommunityTip(){
 
 // ============================================================
 
-//  BUILD: ESSENTIAL SCENE â REAL COMMUNITY
+//  BUILD: ESSENTIAL SCENE — REAL COMMUNITY
 
 //  A warm low-lit circle, eight empty chairs, a candle, five practices
 
@@ -5829,7 +5829,7 @@ function buildCommunity(){
 
 
 
-  // floor â warm wood
+  // floor — warm wood
 
   const floorMat = new THREE.MeshStandardMaterial({ color: 0x6e4a2d, roughness: 0.9 });
 
@@ -5901,7 +5901,7 @@ function buildCommunity(){
 
     chair.add(back);
 
-    // cushion â coloured square on the seat
+    // cushion — coloured square on the seat
 
     const cushion = new THREE.Mesh(
 
@@ -5945,11 +5945,11 @@ function buildCommunity(){
 
     // chair pivot is at world (x, 0, z); pivot the character so its feet are
 
-    // just above the seat (y = 0.50 â top of seat box)
+    // just above the seat (y = 0.50 — top of seat box)
 
     teen.position.set(x, 0.50, z);
 
-    teen.rotation.y = -angle + Math.PI/2;  // facing inward (same as the chair's outward facing â rotation set when chair was added already faces inward)
+    teen.rotation.y = -angle + Math.PI/2;  // facing inward (same as the chair's outward facing — rotation set when chair was added already faces inward)
 
     // Actually the chair.rotation.y was set to `-angle + Math.PI/2` which makes the seat face the centre (the back is at -0.22 local z, which points away from centre). The character should face the centre, same as the chair faces.
 
@@ -5957,7 +5957,7 @@ function buildCommunity(){
 
 
 
-    // soft point light at each chair â gives the circle a held feel
+    // soft point light at each chair — gives the circle a held feel
 
     const pl = new THREE.PointLight(0xfff0c8, 0.18, 4, 2);
 
@@ -5997,7 +5997,7 @@ function buildCommunity(){
 
   scene.add(candleHolder);
 
-  // candle â wax cylinder
+  // candle — wax cylinder
 
   const candleWax = new THREE.Mesh(
 
@@ -6015,7 +6015,7 @@ function buildCommunity(){
 
   scene.add(candleWax);
 
-  // flame â a small glowing sphere
+  // flame — a small glowing sphere
 
   const flame = new THREE.Mesh(
 
@@ -6143,7 +6143,7 @@ function buildCommunity(){
 
 
 
-  // ====== EXIT PORTAL â camera-side, in front of character ======
+  // ====== EXIT PORTAL — camera-side, in front of character ======
 
   const exitFrame = new THREE.Group();
 
@@ -6299,7 +6299,7 @@ function makeCommunityFriend(){
 
     g.add(handle);
 
-    // steam â small white spheres drifting up
+    // steam — small white spheres drifting up
 
     for (let j = 0; j < 3; j++) {
 
@@ -6435,7 +6435,7 @@ function makeCommunityThree2am(){
 
   positions.forEach(([x, y, z]) => {
 
-    // lantern body â small cylinder + handle
+    // lantern body — small cylinder + handle
 
     const body = new THREE.Mesh(
 
@@ -6567,7 +6567,7 @@ function makeCommunityShowUp(){
 
   g.add(fT);
 
-  // a glowing threshold â warm light pouring out
+  // a glowing threshold — warm light pouring out
 
   const threshold = new THREE.Mesh(
 
@@ -6653,7 +6653,7 @@ function makeCommunityBuild(){
 
   }
 
-  // a grid pattern on the table â 5x5 squares
+  // a grid pattern on the table — 5x5 squares
 
   for (let i = 0; i < 5; i++) {
 
@@ -6743,7 +6743,7 @@ function showKnowledgeTip(){
 
   document.getElementById('tip-num').textContent = '06';
 
-  document.getElementById('tip-title').textContent = 'Knowledge Without Wi-Fi â own one topic';
+  document.getElementById('tip-title').textContent = 'Knowledge Without Wi-Fi — own one topic';
 
   document.getElementById('tip-desc').innerHTML = 'A body of facts you can recall with the phone off. ' +
 
@@ -6753,7 +6753,7 @@ function showKnowledgeTip(){
 
   const enterBtn = document.getElementById('tip-enter');
 
-  enterBtn.textContent = 'Ã close';
+  enterBtn.textContent = '× close';
 
   enterBtn.disabled = false;
 
@@ -6777,7 +6777,7 @@ function showKnowledgeTip(){
 
 // ============================================================
 
-//  BUILD: ESSENTIAL SCENE â KNOWLEDGE WITHOUT WI-FI
+//  BUILD: ESSENTIAL SCENE — KNOWLEDGE WITHOUT WI-FI
 
 //  A library: wood, books, ladder, reading lamp, five practices
 
@@ -6791,7 +6791,7 @@ function buildKnowledge(){
 
 
 
-  // dim parchment lighting â warm cream walls, darker ceiling
+  // dim parchment lighting — warm cream walls, darker ceiling
 
   scene.background = new THREE.Color(0x1a1208);
 
@@ -6801,7 +6801,7 @@ function buildKnowledge(){
 
   scene.add(new THREE.AmbientLight(0xffe4b0, 0.32));
 
-  // hemisphere â warm from above (lamps), cool from below
+  // hemisphere — warm from above (lamps), cool from below
 
   scene.add(new THREE.HemisphereLight(0xffeec0, 0x1a1208, 0.4));
 
@@ -6815,7 +6815,7 @@ function buildKnowledge(){
 
 
 
-  // floor â warm plank pattern
+  // floor — warm plank pattern
 
   const floorMat = new THREE.MeshStandardMaterial({ color: 0x6e4a2d, roughness: 0.9 });
 
@@ -6829,7 +6829,7 @@ function buildKnowledge(){
 
 
 
-  // a wide circular rug â old library carpet
+  // a wide circular rug — old library carpet
 
   const rug = new THREE.Mesh(
 
@@ -6859,7 +6859,7 @@ function buildKnowledge(){
 
   scene.add(back);
 
-  // front wall (no shelves â behind camera, plain)
+  // front wall (no shelves — behind camera, plain)
 
   const front = new THREE.Mesh(new THREE.PlaneGeometry(28, wallH), wallMat);
 
@@ -6885,7 +6885,7 @@ function buildKnowledge(){
 
 
 
-  // ceiling â dark wood
+  // ceiling — dark wood
 
   const ceiling = new THREE.Mesh(new THREE.PlaneGeometry(28, 28),
 
@@ -6925,7 +6925,7 @@ function buildKnowledge(){
 
 
 
-    // books on the back wall â fill the shelf
+    // books on the back wall — fill the shelf
 
     for (let i = -11; i <= 11; i++) {
 
@@ -7143,7 +7143,7 @@ function buildKnowledge(){
 
   desk.add(bookBase);
 
-  // page texture â flat sheet tilted up
+  // page texture — flat sheet tilted up
 
   const pages = new THREE.Mesh(
 
@@ -7307,7 +7307,7 @@ function buildKnowledge(){
 
 
 
-  // ====== CHARACTER â stands centre, holding a small book ======
+  // ====== CHARACTER — stands centre, holding a small book ======
 
   character3D = makeCharacter();
 
@@ -7335,7 +7335,7 @@ function buildKnowledge(){
 
 
 
-  // ====== EXIT PORTAL â camera-side ======
+  // ====== EXIT PORTAL — camera-side ======
 
   const exitFrame = new THREE.Group();
 
@@ -7503,7 +7503,7 @@ function makeKnowledgeTopic(){
 
   const wood = new THREE.MeshStandardMaterial({ color: 0x6e4a2d, roughness: 0.85 });
 
-  // reading stand â angled top, like a music stand
+  // reading stand — angled top, like a music stand
 
   const stand = new THREE.Group();
 
@@ -7597,7 +7597,7 @@ function makeKnowledgeThirty(){
 
   const g = new THREE.Group();
 
-  // clock face â a circle with roman numerals
+  // clock face — a circle with roman numerals
 
   const faceCanvas = document.createElement('canvas');
 
@@ -7615,7 +7615,7 @@ function makeKnowledgeThirty(){
 
   fctx.beginPath(); fctx.arc(256, 256, 240, 0, Math.PI*2); fctx.stroke();
 
-  // numerals â drawn manually with simple Roman glyphs
+  // numerals — drawn manually with simple Roman glyphs
 
   fctx.fillStyle = '#6e4a2d';
 
@@ -7643,7 +7643,7 @@ function makeKnowledgeThirty(){
 
   fctx.beginPath(); fctx.arc(256, 256, 10, 0, Math.PI*2); fctx.fill();
 
-  // hands â pointing at roughly 10:10 (classic)
+  // hands — pointing at roughly 10:10 (classic)
 
   fctx.strokeStyle = '#232a3d';
 
@@ -7771,7 +7771,7 @@ function makeKnowledgePalace(){
 
   const g = new THREE.Group();
 
-  // back wall â pale
+  // back wall — pale
 
   const wall = new THREE.Mesh(
 
@@ -7785,15 +7785,15 @@ function makeKnowledgePalace(){
 
   g.add(wall);
 
-  // five alcoves â small arched cutouts filled with light
+  // five alcoves — small arched cutouts filled with light
 
-  const alcoveSymbols = ['Î ', 'Î£', 'Î', 'Î', 'Î©'];
+  const alcoveSymbols = ['Π', 'Σ', 'Δ', 'Θ', 'Ω'];
 
   for (let i = 0; i < 5; i++) {
 
     const x = -1.0 + i * 0.5;
 
-    // the alcove â a vertical slot with a soft glow
+    // the alcove — a vertical slot with a soft glow
 
     const arch = new THREE.Mesh(
 
@@ -7875,7 +7875,7 @@ function makeKnowledgePalace(){
 
   g.add(base);
 
-  // a low light inside each alcove â feels warm
+  // a low light inside each alcove — feels warm
 
   return g;
 
@@ -7909,7 +7909,7 @@ function makeKnowledgeWide(){
 
   }
 
-  // a jumble of books â varied heights, widths, leaning, stacked
+  // a jumble of books — varied heights, widths, leaning, stacked
 
   const colours = [0xc2603e, 0x9c4a2e, 0x4f6f9e, 0x7d8a6e, 0xd9a441, 0x5a3a25, 0x6e4a2d];
 
@@ -7947,7 +7947,7 @@ function makeKnowledgeWide(){
 
   }
 
-  // a few lying flat on top of the standing books â uncategorised
+  // a few lying flat on top of the standing books — uncategorised
 
   for (let i = 0; i < 4; i++) {
 
@@ -8071,7 +8071,7 @@ function makeKnowledgeTest(){
 
   g.add(chair);
 
-  // NO PHONE sprite â explicit
+  // NO PHONE sprite — explicit
 
   const nc = document.createElement('canvas');
 
@@ -8123,7 +8123,7 @@ function showNatureTip(){
 
   document.getElementById('tip-num').textContent = '07';
 
-  document.getElementById('tip-title').textContent = 'Nature â be there';
+  document.getElementById('tip-title').textContent = 'Nature — be there';
 
   document.getElementById('tip-desc').innerHTML = 'Forty-five minutes outside, three times a week. ' +
 
@@ -8133,7 +8133,7 @@ function showNatureTip(){
 
   const enterBtn = document.getElementById('tip-enter');
 
-  enterBtn.textContent = 'Ã close';
+  enterBtn.textContent = '× close';
 
   enterBtn.disabled = false;
 
@@ -8157,7 +8157,7 @@ function showNatureTip(){
 
 // ============================================================
 
-//  BUILD: ESSENTIAL SCENE â NATURE
+//  BUILD: ESSENTIAL SCENE — NATURE
 
 //  Open landscape at dawn. Five practices. Less is more.
 
@@ -8379,7 +8379,7 @@ function buildNature(){
 
 
 
-  // ====== FEW TREES â far away, framing not crowding ======
+  // ====== FEW TREES — far away, framing not crowding ======
 
   const treeSpots = [
 
@@ -8517,11 +8517,11 @@ function buildNature(){
 
   // the character's arms in our standard makeCharacter are outstretched (T-pose).
 
-  // which is actually perfect for "Nature" â open arms, breathing.
+  // which is actually perfect for "Nature" — open arms, breathing.
 
 
 
-  // ====== EXIT PORTAL â placed naturally as a wooden gate in the trees ======
+  // ====== EXIT PORTAL — placed naturally as a wooden gate in the trees ======
 
   const exitFrame = new THREE.Group();
 
@@ -8675,7 +8675,7 @@ function makeNatureFortyFive(){
 
   const g = new THREE.Group();
 
-  // the dial face â a wide circle
+  // the dial face — a wide circle
 
   const face = new THREE.Mesh(
 
@@ -8689,7 +8689,7 @@ function makeNatureFortyFive(){
 
   g.add(face);
 
-  // hour marks around the dial (small ticks) â done as 12 small box markers
+  // hour marks around the dial (small ticks) — done as 12 small box markers
 
   for (let i = 0; i < 12; i++) {
 
@@ -8711,7 +8711,7 @@ function makeNatureFortyFive(){
 
   }
 
-  // the gnomon (slanted stick) â points up and to the north
+  // the gnomon (slanted stick) — points up and to the north
 
   const gnomon = new THREE.Mesh(
 
@@ -8801,11 +8801,11 @@ function makeNatureThreeX(){
 
   const g = new THREE.Group();
 
-  // first stone â close, large
+  // first stone — close, large
 
-  // second stone â middle, medium
+  // second stone — middle, medium
 
-  // third stone â far, small
+  // third stone — far, small
 
   const stones = [
 
@@ -8819,7 +8819,7 @@ function makeNatureThreeX(){
 
   stones.forEach((s, i) => {
 
-    // irregular polygon for each stone â 5-6 sided
+    // irregular polygon for each stone — 5-6 sided
 
     const sides = 6 + Math.floor(Math.random()*2);
 
@@ -8909,7 +8909,7 @@ function makeNaturePhoneOff(){
 
   g.add(rock);
 
-  // phone lying face-down â same as in landing-3d-v2
+  // phone lying face-down — same as in landing-3d-v2
 
   const phoneBody = new THREE.Mesh(
 
@@ -9015,7 +9015,7 @@ function makeNatureLookUp(){
 
   g.add(trunk);
 
-  // canopy â a few stacked spheres
+  // canopy — a few stacked spheres
 
   const canopyMat = new THREE.MeshStandardMaterial({ color: 0x5f6d52, roughness: 0.9, flatShading: true });
 
@@ -9031,7 +9031,7 @@ function makeNatureLookUp(){
 
   });
 
-  // a small bird perched on a branch â body + head + beak
+  // a small bird perched on a branch — body + head + beak
 
   const bird = new THREE.Group();
 
@@ -9059,7 +9059,7 @@ function makeNatureLookUp(){
 
   bird.add(headB);
 
-  // beak â small triangle-ish cone
+  // beak — small triangle-ish cone
 
   const beak = new THREE.Mesh(
 
@@ -9099,7 +9099,7 @@ function makeNatureLookUp(){
 
 
 
-  // a small "look up" inscription â a wooden sign nailed to the trunk
+  // a small "look up" inscription — a wooden sign nailed to the trunk
 
   const sign = new THREE.Mesh(
 
@@ -9151,7 +9151,7 @@ function makeNatureLookUp(){
 
 function makeNatureWind(){
 
-  // a windsock on a post, fabric trailing east â windsock has rings + cloth
+  // a windsock on a post, fabric trailing east — windsock has rings + cloth
 
   const g = new THREE.Group();
 
@@ -9233,7 +9233,7 @@ function makeNatureWind(){
 
   g.add(ring3);
 
-  // a fabric cone between ring1 and the post â clear "windsock" shape
+  // a fabric cone between ring1 and the post — clear "windsock" shape
 
   const fabric = new THREE.Mesh(
 
@@ -9307,7 +9307,7 @@ function showFaithTip(){
 
   document.getElementById('tip-num').textContent = '08';
 
-  document.getElementById('tip-title').textContent = 'Tested Faith â the last essential';
+  document.getElementById('tip-title').textContent = 'Tested Faith — the last essential';
 
   document.getElementById('tip-desc').innerHTML = 'A conviction you hold even when it costs you something. ' +
 
@@ -9319,7 +9319,7 @@ function showFaithTip(){
 
   const enterBtn = document.getElementById('tip-enter');
 
-  enterBtn.textContent = 'Ã close';
+  enterBtn.textContent = '× close';
 
   enterBtn.disabled = false;
 
@@ -9343,7 +9343,7 @@ function showFaithTip(){
 
 // ============================================================
 
-//  BUILD: ESSENTIAL SCENE â TESTED FAITH
+//  BUILD: ESSENTIAL SCENE — TESTED FAITH
 
 //  A stone sanctuary at dawn. Light through tall windows.
 
@@ -9395,7 +9395,7 @@ function buildFaith(){
 
 
 
-  // floor â cool grey stone, large smooth slabs
+  // floor — cool grey stone, large smooth slabs
 
   const floorMat = new THREE.MeshStandardMaterial({ color: 0x3a3a44, roughness: 0.9 });
 
@@ -9443,7 +9443,7 @@ function buildFaith(){
 
 
 
-  // ceiling â dark, with subtle vault ribs
+  // ceiling — dark, with subtle vault ribs
 
   const ceiling = new THREE.Mesh(new THREE.PlaneGeometry(26, 26),
 
@@ -9455,7 +9455,7 @@ function buildFaith(){
 
 
 
-  // ====== STONE COLUMNS â two rows flanking the aisle ======
+  // ====== STONE COLUMNS — two rows flanking the aisle ======
 
   const columnMat = new THREE.MeshStandardMaterial({ color: 0x4a4a56, roughness: 0.9 });
 
@@ -9595,7 +9595,7 @@ function buildFaith(){
 
 
 
-  // ====== TALL ARCHED WINDOWS on the back wall â light spilling in ======
+  // ====== TALL ARCHED WINDOWS on the back wall — light spilling in ======
 
   const windowCount = 5;
 
@@ -9641,7 +9641,7 @@ function buildFaith(){
 
 
 
-    // frame â side stiles, bottom bar, and a curved arch moulding
+    // frame — side stiles, bottom bar, and a curved arch moulding
 
     const stileL = new THREE.Mesh(new THREE.BoxGeometry(0.08, winH, 0.1), frameMat);
 
@@ -9659,7 +9659,7 @@ function buildFaith(){
 
     scene.add(barBot);
 
-    // arched moulding â a half-torus over the top
+    // arched moulding — a half-torus over the top
 
     const archMould = new THREE.Mesh(
 
@@ -9843,7 +9843,7 @@ function buildFaith(){
 
 
 
-  // ====== PRAYER-CANDLE RACK â a wall of small votives behind the altar ======
+  // ====== PRAYER-CANDLE RACK — a wall of small votives behind the altar ======
 
   const rack = new THREE.Group();
 
@@ -9861,7 +9861,7 @@ function buildFaith(){
 
   }
 
-  // votive candles â 8 per shelf, most lit, a few unlit (honest)
+  // votive candles — 8 per shelf, most lit, a few unlit (honest)
 
   const litPattern = [true, true, false, true, true, true, false, true];
 
@@ -10003,7 +10003,7 @@ function buildFaith(){
 
 
 
-  // ====== CHARACTER â stands on the aisle, facing the altar, hands in prayer ======
+  // ====== CHARACTER — stands on the aisle, facing the altar, hands in prayer ======
 
   character3D = makePrayingCharacter();
 
@@ -10015,7 +10015,7 @@ function buildFaith(){
 
 
 
-  // ====== EXIT PORTAL â camera-side, a stone arch ======
+  // ====== EXIT PORTAL — camera-side, a stone arch ======
 
   const exitFrame = new THREE.Group();
 
@@ -10129,7 +10129,7 @@ function makeFaithConviction(){
 
   const g = new THREE.Group();
 
-  // the stone â tall, rough-hewn
+  // the stone — tall, rough-hewn
 
   const stone = new THREE.Mesh(
 
@@ -10145,7 +10145,7 @@ function makeFaithConviction(){
 
   g.add(stone);
 
-  // a single chiselled groove â a thin dark line down the face
+  // a single chiselled groove — a thin dark line down the face
 
   const mark = new THREE.Mesh(
 
@@ -10159,7 +10159,7 @@ function makeFaithConviction(){
 
   g.add(mark);
 
-  // a second shorter mark â like a "I" or a tally
+  // a second shorter mark — like a "I" or a tally
 
   const mark2 = new THREE.Mesh(
 
@@ -10173,7 +10173,7 @@ function makeFaithConviction(){
 
   g.add(mark2);
 
-  // base â a flat stone the menhir sits on
+  // base — a flat stone the menhir sits on
 
   const base = new THREE.Mesh(
 
@@ -10195,13 +10195,13 @@ function makeFaithConviction(){
 
 function makeFaithExamined(){
 
-  // a low lectern with an open book and a candle â "examined, not inherited"
+  // a low lectern with an open book and a candle — "examined, not inherited"
 
   const g = new THREE.Group();
 
   const wood = new THREE.MeshStandardMaterial({ color: 0x6e4a2d, roughness: 0.85 });
 
-  // lectern â a slanted top on a post
+  // lectern — a slanted top on a post
 
   const top = new THREE.Mesh(new THREE.BoxGeometry(0.8, 0.05, 0.55), wood);
 
@@ -10223,7 +10223,7 @@ function makeFaithExamined(){
 
   g.add(base);
 
-  // open book on the lectern â pages tilted up
+  // open book on the lectern — pages tilted up
 
   const bookBase = new THREE.Mesh(new THREE.BoxGeometry(0.55, 0.04, 0.4),
 
@@ -10303,7 +10303,7 @@ function makeFaithExamined(){
 
 function makeFaithPressure(){
 
-  // a stone that has been split but still stands â "held under pressure"
+  // a stone that has been split but still stands — "held under pressure"
 
   const g = new THREE.Group();
 
@@ -10353,7 +10353,7 @@ function makeFaithPressure(){
 
   g.add(crack);
 
-  // a small patch of light at the split â "the light gets in"
+  // a small patch of light at the split — "the light gets in"
 
   const glow = new THREE.Mesh(
 
@@ -10375,7 +10375,7 @@ function makeFaithPressure(){
 
 function makeFaithCentre(){
 
-  // a single chair, a single lit candle in a dark alcove â the quiet centre
+  // a single chair, a single lit candle in a dark alcove — the quiet centre
 
   const g = new THREE.Group();
 
@@ -10449,7 +10449,7 @@ function makeFaithCentre(){
 
 function makeFaithQuestion(){
 
-  // a spiral of stones leading inward â "the question that lasts"
+  // a spiral of stones leading inward — "the question that lasts"
 
   const g = new THREE.Group();
 
@@ -10527,7 +10527,7 @@ function makeFaithQuestion(){
 
 // ============================================================
 
-//  TEENAGER BUILDER â varied skin, hair, hair-style, clothing
+//  TEENAGER BUILDER — varied skin, hair, hair-style, clothing
 
 // ============================================================
 
@@ -10537,7 +10537,7 @@ function makeTeenager(idx){
 
   const presets = [
 
-    { // 0 â light skin, dark hair pulled back, shirt + jeans
+    { // 0 — light skin, dark hair pulled back, shirt + jeans
 
       skin: 0xf2c9a0, hair: 0x2d1f17,
 
@@ -10547,7 +10547,7 @@ function makeTeenager(idx){
 
     },
 
-    { // 1 â dark skin, short natural hair, hoodie
+    { // 1 — dark skin, short natural hair, hoodie
 
       skin: 0x8a5a3c, hair: 0x0d0808,
 
@@ -10557,7 +10557,7 @@ function makeTeenager(idx){
 
     },
 
-    { // 2 â medium-olive skin, long black hair, dress
+    { // 2 — medium-olive skin, long black hair, dress
 
       skin: 0xd9a574, hair: 0x1a1410,
 
@@ -10567,7 +10567,7 @@ function makeTeenager(idx){
 
     },
 
-    { // 3 â tan skin, buzz cut, casual t-shirt
+    { // 3 — tan skin, buzz cut, casual t-shirt
 
       skin: 0xb88a5e, hair: 0x3a2814,
 
@@ -10577,7 +10577,7 @@ function makeTeenager(idx){
 
     },
 
-    { // 4 â fair skin, red curly hair, plaid shirt
+    { // 4 — fair skin, red curly hair, plaid shirt
 
       skin: 0xeac2a0, hair: 0xa04020,
 
@@ -10587,7 +10587,7 @@ function makeTeenager(idx){
 
     },
 
-    { // 5 â deep brown skin, head wrap, bright top
+    { // 5 — deep brown skin, head wrap, bright top
 
       skin: 0x6e3f24, hair: 0x1a0a04,
 
@@ -10637,7 +10637,7 @@ function makeTeenager(idx){
 
 
 
-  // shoes on the chair seat â small, mostly hidden
+  // shoes on the chair seat — small, mostly hidden
 
   const shoeL = box(0.18, 0.10, 0.30, 0x232a3d);
 
@@ -10657,7 +10657,7 @@ function makeTeenager(idx){
 
 
 
-  // shins (seated â angled forward)
+  // shins (seated — angled forward)
 
   const shinL = box(0.16, 0.45, 0.16, PANTS);
 
@@ -10677,7 +10677,7 @@ function makeTeenager(idx){
 
 
 
-  // thighs (seated â horizontal)
+  // thighs (seated — horizontal)
 
   const thighL = box(0.18, 0.18, 0.55, PANTS);
 
@@ -10831,7 +10831,7 @@ function makeTeenager(idx){
 
   } else if (opt.hairStyle === 'long') {
 
-    // long hair over shoulders â wider, longer block behind
+    // long hair over shoulders — wider, longer block behind
 
     const cap = box(0.38, 0.18, 0.38, HAIR);
 
@@ -10867,7 +10867,7 @@ function makeTeenager(idx){
 
   } else if (opt.hairStyle === 'buzz') {
 
-    // very short â just a faint cap
+    // very short — just a faint cap
 
     const cap = box(0.38, 0.06, 0.36, HAIR);
 
@@ -10879,7 +10879,7 @@ function makeTeenager(idx){
 
   } else if (opt.hairStyle === 'curly') {
 
-    // curly â a few spheres on top
+    // curly — a few spheres on top
 
     for (let i = 0; i < 6; i++) {
 
@@ -10905,7 +10905,7 @@ function makeTeenager(idx){
 
   } else if (opt.hairStyle === 'wrap') {
 
-    // head wrap â a folded cloth over the crown
+    // head wrap — a folded cloth over the crown
 
     const wrap = new THREE.Mesh(
 
@@ -11015,9 +11015,9 @@ canvas.addEventListener('pointermove', e => {
 
 canvas.addEventListener('click', () => {
 
-  // hub: clicking a doorway â walk to it
+  // hub: clicking a doorway → walk to it
 
-  // any inner scene: clicking the exit â return to hub
+  // any inner scene: clicking the exit → return to hub
 
   if (activeScene === 'skills') {
 
@@ -11165,7 +11165,7 @@ function walkToDoor(idx){
 
   if (!e.built) {
 
-    // not built yet â just show tooltip in place, don't walk
+    // not built yet — just show tooltip in place, don't walk
 
     showTip(idx, door.position);
 
@@ -11173,7 +11173,7 @@ function walkToDoor(idx){
 
   }
 
-  // set target â the position just in front of the doorway (toward centre)
+  // set target — the position just in front of the doorway (toward centre)
 
   const angle = (idx / ESSENTIALS.length) * Math.PI * 2 - Math.PI/2;
 
@@ -11243,7 +11243,7 @@ function showTip(idx, pos){
 
   } else {
 
-    enterBtn.textContent = 'Walk through â';
+    enterBtn.textContent = 'Walk through →';
 
     enterBtn.disabled = false;
 
@@ -11445,7 +11445,7 @@ function tick(){
 
     // SKIP if the user has clicked "Walk through" (tipDoorIdx cleared) OR
 
-    // the fade overlay is on â otherwise the tick loop will yank the
+    // the fade overlay is on — otherwise the tick loop will yank the
 
     // tooltip open right after the user committed to entering.
 
@@ -11689,7 +11689,7 @@ function tick(){
 
   if (activeScene === 'skills') {
 
-    // approach a station â auto-show its practice tooltip (when idle)
+    // approach a station → auto-show its practice tooltip (when idle)
 
     if (!characterTarget && scene.userData.stations) {
 
@@ -11739,7 +11739,7 @@ function tick(){
 
     }
 
-    // grow light pulse â slow breathing of the indoor light over the plants
+    // grow light pulse — slow breathing of the indoor light over the plants
 
     if (scene.userData.growLight) {
 
@@ -11807,7 +11807,7 @@ function tick(){
 
   if (activeScene === 'body') {
 
-    // approach a station â auto-show its practice tooltip (when idle)
+    // approach a station → auto-show its practice tooltip (when idle)
 
     if (!characterTarget && scene.userData.stations) {
 
@@ -11865,7 +11865,7 @@ function tick(){
 
     }
 
-    // breathing â the character visibly breathes (scale y Â±1.5%, ~0.3Hz)
+    // breathing — the character visibly breathes (scale y Â±1.5%, ~0.3Hz)
 
     const breath = 1 + Math.sin(t * 1.9) * 0.008;
 
@@ -11875,7 +11875,7 @@ function tick(){
 
     if (scene.userData.bodyBirds) scene.userData.bodyBirds.forEach(b => b.update(t));
 
-    // water shimmer â oscillate opacity on any mesh tagged 'shimmer'
+    // water shimmer — oscillate opacity on any mesh tagged 'shimmer'
 
     scene.traverse(o => {
 
