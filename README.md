@@ -13,7 +13,7 @@ A single self-contained HTML landing page for the Afterschool Agent programme, p
 - On-demand training modules — work at your own pace
 - Weekly live Q&A every Tuesday at 4:30 PM
 - $44.88 one-time payment
-- Fully secular — your teen tailors the agent to their own beliefs
+- Fully secular — your young person tailors the agent to their own beliefs
 - Local-first AI agent on [Hermes](https://hermes-agent.nousresearch.com/)
 
 ## Files

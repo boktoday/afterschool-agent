@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Afterschool Agent — the world your teen is reaching for</title>
+<title>Afterschool Agent — the world your young person is reaching for</title>
 <meta name="description" content="A two-part 3D experience. Walk through the Eight Essentials, then watch a young person reach for the real world — phone down, plants and animals close, the screen behind them.">
-<meta property="og:title" content="Afterschool Agent — the world your teen is reaching for">
+<meta property="og:title" content="Afterschool Agent — the world your young person is reaching for">
 <meta property="og:description" content="Two 3D scenes. Eight monoliths. A young person, arms out, reaching.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,7 +69,7 @@ canvas:active{cursor:grabbing}
   transition:opacity .5s ease;
 }
 
-/* ----- Section 2: the world your teen is reaching for ----- */
+/* ----- Section 2: the world your young person is reaching for ----- */
 #scene2{
   position:relative;
   height:100vh;
@@ -219,7 +219,7 @@ canvas:active{cursor:grabbing}
 
   <header class="hero" id="hero1">
     <div class="kicker">Eight Essentials · One courtyard</div>
-    <h1>Your teen builds their own <em>AI agent</em>.</h1>
+    <h1>Your young person builds their own <em>AI agent</em>.</h1>
     <p class="sub">Walk through the eight monoliths. Click one to enter. Each one is a practice, not a lecture.</p>
   </header>
 
@@ -251,7 +251,7 @@ canvas:active{cursor:grabbing}
   <canvas id="canvas2"></canvas>
 
   <header class="hero" id="hero2">
-    <div class="kicker">The world your teen is reaching for</div>
+    <div class="kicker">The world your young person is reaching for</div>
     <h1>This is what it looks like when the <em>screen goes down</em>.</h1>
     <p class="sub">A young person, arms out, in a field of plants and animals. The phone on the ground. The world right there.</p>
   </header>
@@ -261,7 +261,7 @@ canvas:active{cursor:grabbing}
     <div class="num">One practice</div>
     <h3>Put it down. Look up.</h3>
     <div class="quote">"Forty-five minutes outside, three times a week. Non-negotiable. It works because it works."</div>
-    <div class="desc">The screen is not the enemy. The screen is a tool. The point is that it is one tool, not the centre of the day. Afterschool Agent runs on the teen's own laptop — local-first — so the rest of their time is theirs.</div>
+    <div class="desc">The screen is not the enemy. The screen is a tool. The point is that it is one tool, not the centre of the day. Afterschool Agent runs on the young person's own laptop — local-first — so the rest of their time is theirs.</div>
   </div>
 
   <div class="cta">
@@ -295,10 +295,10 @@ import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js'
 // ============================================================
 const ESSENTIALS = [
   { n:'01', t:'Silence',                  c:0xd9a441, desc:'A child who can sit in silence has an inner life no algorithm can reach. Five minutes a day. Phone in another room. Eyes open, then closed.', q:'"The first essential. The one everything else stands on."' },
-  { n:'02', t:'Body',                     c:0x7d8a6e, desc:'Sleep, food, water, movement, sunlight. The body is the instrument. The single most leveraged change for a teenager is sleep.', q:'"A young person who lives in their body is harder to flatten into a feed."' },
-  { n:'03', t:'Skills',                   c:0xc2603e, desc:'Cook, fix, build, budget. The discipline of finishing, by hand, with your own effort. Cooking is the highest-leverage starter skill.', q:'"Skills build identity. A teenager who can make dinner is not the same person as one who cannot."' },
+  { n:'02', t:'Body',                     c:0x7d8a6e, desc:'Sleep, food, water, movement, sunlight. The body is the instrument. The single most leveraged change for a young person is sleep.', q:'"A young person who lives in their body is harder to flatten into a feed."' },
+  { n:'03', t:'Skills',                   c:0xc2603e, desc:'Cook, fix, build, budget. The discipline of finishing, by hand, with your own effort. Cooking is the highest-leverage starter skill.', q:'"Skills build identity. A young person who can make dinner is not the same person as one who cannot."' },
   { n:'04', t:'Digital Self-Defence',     c:0x4f6f9e, desc:'See the system clearly. Know what you are trading your attention for. Make the trade consciously. Local-first. Privacy is the precondition for trust.', q:'"The local-first agent is the most forward-thinking thing being built."' },
-  { n:'05', t:'Real Community',           c:0xe8c87a, desc:'At least three people you could call at 2am. Most teenagers have none. Start small. One friend, one real conversation a week.', q:'"Belonging comes from a room, not a stranger\'s DM."' },
+  { n:'05', t:'Real Community',           c:0xe8c87a, desc:'At least three people you could call at 2am. Most young people have none. Start small. One friend, one real conversation a week.', q:'"Belonging comes from a room, not a stranger\'s DM."' },
   { n:'06', t:'Knowledge Without Wi-Fi',  c:0xf6efe3, desc:'A body of facts you can recall with the phone off. One topic you care about. Thirty minutes a day. Memory is the immune system of the mind.', q:'"Rented knowledge is the new illiteracy."' },
   { n:'07', t:'Nature',                   c:0x5f6d52, desc:'Forty-five minutes outside, three times a week. Non-negotiable. The screen will still be there when you get back.', q:'"It works because it works, not because you understand why."' },
   { n:'08', t:'Tested Faith',             c:0x9c4a2e, desc:'A conviction you hold even when it costs you something. The content can be anything honest. The structure of having one is the immune system.', q:'"A young person with a conviction they hold under pressure is a person no algorithm can drill."' },
@@ -722,7 +722,7 @@ person.add(eyeR);
 // slightly tilt the head up (looking forward + up — reaching for the world)
 person.rotation.y = -0.15;
 
-// central small mound under the teen — a soft pedestal of grass
+// central small mound under the young person — a soft pedestal of grass
 const moundGeo = new THREE.CircleGeometry(2.5, 32);
 moundGeo.rotateX(-Math.PI/2);
 const moundMat = new THREE.MeshStandardMaterial({ color: 0x5f6d52, roughness: 1 });
@@ -892,7 +892,7 @@ const birds = [
   new Bird(0, 9.5, 0, 0.19, 6.2),
 ];
 
-// ----- Butterflies near the teen -----
+// ----- Butterflies near the young person -----
 const butterflies = [];
 for (let i = 0; i < 6; i++) {
   const wingMat = new THREE.MeshStandardMaterial({
@@ -1024,7 +1024,7 @@ function tick(){
   composer1.render();
 
   // ---- scene 2 ----
-  // slow orbit of the camera around the teen when nothing is being dragged
+  // slow orbit of the camera around the young person when nothing is being dragged
   if (!controls2._userInteracting) {
     const slow = Math.sin(t * 0.05) * 0.3;
     camera2.position.x = 9 * Math.cos(slow + 0.6);
@@ -1041,7 +1041,7 @@ function tick(){
   // birds
   birds.forEach(b => b.update(t));
 
-  // butterflies — gentle figure-8 around the teen
+  // butterflies — gentle figure-8 around the young person
   butterflies.forEach((b) => {
     const u = b.userData;
     const a = t * u.speed + u.angle;
