@@ -602,7 +602,7 @@ The software itself is free forever. The agent lives on your device. The cost is
 
 [See Pricing](#pricing)
 
-Coming September
+Coming October
 
 
 ##  Awesome Agent Upgrade
