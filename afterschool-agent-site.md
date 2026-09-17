@@ -316,7 +316,7 @@ Afterschool Agent is an on-demand training programme with a weekly live Q&A. The
 
 ×
 
-Coming Early September
+Coming Early October
 
 
 ##  Register for early access.
@@ -328,7 +328,7 @@ Register for Early Access
 ✓
 
 You're on the list, friend.
-Watch your inbox. We'll be in touch by end of August.
+Watch your inbox. We'll be in touch by end of September.
 
 Something went wrong. Please try again.
 
