@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0d1220">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23d9a441'/%3E%3Cstop offset='100%25' stop-color='%23e8c87a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='6' fill='%230d1220'/%3E%3Ctext x='8' y='24' font-family='Georgia,serif' font-size='22' font-weight='700' fill='url(%23g)' text-anchor='middle'%3E1%3C/text%3E%3Cline x1='3' y1='26' x2='13' y2='26' stroke='url(%23g)' stroke-width='1.2' stroke-linecap='round'/%3E%3Ctext x='18' y='18' font-family='Georgia,serif' font-size='9' fill='rgba(217,164,65,.35)' text-anchor='middle'%3E%E2%86%92%3C/text%3E%3Ctext x='25' y='24' font-family='Georgia,serif' font-size='22' font-weight='700' fill='url(%23g)' text-anchor='middle'%3E8%3C/text%3E%3Cline x1='20' y1='26' x2='30' y2='26' stroke='url(%23g)' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E">
+<meta name="color-scheme" content="dark">
+<meta name="robots" content="noindex, nofollow">
+<title>Register Your Interest - Afterschool Agent</title>
+<meta name="description" content="Register your interest for the after-school groups or the post-school cohort. Places go to the interest list first.">
+<link rel="stylesheet" href="styles.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=tanker@400&f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
+<style>
+/* Register page: form card (page-local, mirrors the site's gold modal surface) */
+.reg-card{position:relative;background:linear-gradient(145deg,#d9a441 0%,#e8c87a 50%,#d9a441 100%);color:var(--night);padding:2.6rem 2.4rem 2.2rem;box-shadow:0 30px 80px rgba(0,0,0,.45);overflow:hidden}
+.reg-glow{position:absolute;top:-45%;right:-25%;width:340px;height:340px;background:radial-gradient(circle,rgba(255,255,255,.4),transparent 70%);pointer-events:none}
+.reg-card form{position:relative;z-index:1}
+.reg-label{display:block;font-family:var(--disp);font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(13,18,32,.72);margin:1.15rem 0 .45rem}
+.reg-card form .reg-label:first-child{margin-top:0}
+.reg-opt{font-weight:400;letter-spacing:.06em;color:rgba(13,18,32,.5)}
+.reg-input,.reg-select,.reg-textarea{width:100%;box-sizing:border-box;background:rgba(255,255,255,.55);border:1.5px solid rgba(13,18,32,.18);border-radius:0;padding:.85rem 1rem;font-size:.95rem;font-family:var(--body);color:var(--night);outline:none;transition:border-color .2s,background .2s}
+.reg-input:focus,.reg-select:focus,.reg-textarea:focus{border-color:var(--terra-deep);background:rgba(255,255,255,.85)}
+.reg-input::placeholder,.reg-textarea::placeholder{color:rgba(13,18,32,.4)}
+.reg-select-wrap{position:relative}
+.reg-select{appearance:none;-webkit-appearance:none;padding-right:2.6rem;cursor:pointer}
+.reg-select-wrap::after{content:'';position:absolute;right:1rem;top:50%;width:13px;height:9px;transform:translateY(-50%);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 L6 6.5 L11 1.5' fill='none' stroke='%234c362d' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-size:contain;background-repeat:no-repeat;pointer-events:none}
+.reg-textarea{resize:vertical;min-height:6.5rem}
+.reg-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.reg-seg{display:flex;border:1.5px solid rgba(13,18,32,.25);background:rgba(255,255,255,.35)}
+.reg-seg-opt{flex:1;position:relative;cursor:pointer;display:block}
+.reg-seg-opt input{position:absolute;opacity:0;pointer-events:none}
+.reg-seg-opt span{display:block;text-align:center;padding:.72rem .5rem;font-family:var(--disp);font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(13,18,32,.65);transition:all .2s;user-select:none}
+.reg-seg-opt + .reg-seg-opt span{border-left:1.5px solid rgba(13,18,32,.25)}
+.reg-seg-opt input:checked + span{background:var(--night);color:var(--dawn)}
+.reg-seg-opt input:focus-visible + span{outline:2px solid var(--terra-deep);outline-offset:-2px}
+.reg-btn{width:100%;margin-top:1.5rem;background:var(--night);color:var(--dawn);border:none;border-radius:0;padding:1rem 1.5rem;font-family:var(--disp);font-weight:700;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:all .25s}
+.reg-btn:hover{background:var(--night2);transform:translateY(-1px)}
+.reg-btn:disabled{opacity:.65;cursor:wait;transform:none}
+.reg-note{position:relative;z-index:1;font-size:.78rem;color:rgba(13,18,32,.55);margin:.9rem 0 0;text-align:center;line-height:1.5}
+.reg-error,.reg-connect{position:relative;z-index:1;display:none;margin:.9rem 0 0;text-align:center;font-size:.85rem;font-weight:600;background:rgba(255,255,255,.45);padding:.75rem 1rem}
+.reg-error{border:1.5px solid var(--terra-deep);color:var(--terra-deep)}
+.reg-connect{border:1.5px solid var(--sage-deep);color:var(--sage-deep)}
+.reg-error.show,.reg-connect.show{display:block}
+.reg-success{display:none;position:relative;z-index:1;text-align:center;padding:1.6rem 0 .4rem}
+.reg-success.show{display:block}
+.reg-check{width:56px;height:56px;margin:0 auto 1.1rem;border:2px solid rgba(13,18,32,.75);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.35rem;color:var(--night)}
+.reg-success p{font-size:1rem;line-height:1.65;margin:0}
+</style>
+</head>
+<body>
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="https://onetoeight.org" target="_blank" rel="noopener" class="wordmark">Afterschool Agent <span class="by">by one <em>to</em> eight</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html#essentials">The Eight</a></li>
+      <li><a href="index.html#rituals">The Rituals</a></li>
+      <li><a href="learn-more.html#schedule">Schedule</a></li>
+      <li><a href="learn-more.html#pricing">Pricing</a></li>
+      <li><a href="learn-more.html#requirements">Requirements</a></li>
+      <li><a href="learn-more.html#faq">FAQ</a></li>
+      <li><a href="/landing-3d">Go 3D</a></li>
+      <li><a href="https://store.onetoeight.guide/" target="_blank" rel="noopener" style="display:inline-block;background:var(--gold);color:var(--night);padding:.5rem 1rem;font-family:var(--disp);font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;border-radius:0">Store</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- INTRO -->
+<section class="dark subpage-intro" style="padding-top:7rem">
+  <div class="sec-inner" style="max-width:760px">
+    <div class="kicker reveal" style="justify-content:center">Register Your Interest</div>
+    <h2 class="sec-title reveal">Tell us which programme suits <em>your young person</em>.</h2>
+    <p class="sec-lead reveal" style="margin-left:auto;margin-right:auto">Both programmes are small by design, and the first places go to the interest list. Leave your details and we will be in touch as the first groups open.</p>
+  </div>
+</section>
+<!-- FORM -->
+<section class="dark" style="padding:2.5rem 0 5.5rem">
+  <div class="sec-inner" style="max-width:620px">
+    <div class="reg-card reveal">
+      <div class="reg-glow" aria-hidden="true"></div>
+      <form id="reg-form">
+        <label class="reg-label">Is the young person over 18?</label>
+        <div class="reg-seg" role="radiogroup" aria-label="Is the young person over 18?">
+          <label class="reg-seg-opt"><input type="radio" name="over18" value="no" required><span>Not yet</span></label>
+          <label class="reg-seg-opt"><input type="radio" name="over18" value="yes"><span>Yes, 18 or over</span></label>
+        </div>
+        <label class="reg-label" for="reg-name">Your name</label>
+        <input class="reg-input" type="text" id="reg-name" name="name" placeholder="Parent or guardian name" required autocomplete="name">
+        <label class="reg-label" for="reg-email">Email</label>
+        <input class="reg-input" type="email" id="reg-email" name="email" placeholder="you@example.com" required autocomplete="email">
+        <label class="reg-label" for="reg-programme">Which programme?</label>
+        <div class="reg-select-wrap">
+          <select class="reg-select" id="reg-programme" name="programme" required>
+            <option value="" disabled selected>Choose a programme</option>
+            <option value="after-school">While they're at high school (after-school groups)</option>
+            <option value="post-school">After high school (post-school cohort)</option>
+            <option value="masterclass">The 4-week Masterclass cohort</option>
+            <option value="unsure">Not sure yet</option>
+          </select>
+        </div>
+        <label class="reg-label" for="reg-message">Anything we should know? <span class="reg-opt">Optional</span></label>
+        <textarea class="reg-textarea" id="reg-message" name="message" rows="3" placeholder="Questions, timing, anything else."></textarea>
+        <input type="text" name="website" class="reg-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" class="reg-btn" id="reg-btn">Register interest</button>
+      </form>
+      <p class="reg-note">No spam. We never share your details with third parties.</p>
+      <p class="reg-connect" id="reg-connect">Almost ready: this form is being connected right now. Please try again shortly.</p>
+      <div class="reg-error" id="reg-error">Something went wrong. Please try again.</div>
+      <div class="reg-success" id="reg-success">
+        <div class="reg-check">&#10003;</div>
+        <p>You're on the list, <strong id="reg-success-name">friend</strong>.<br>We will be in touch about the <span id="reg-success-prog">first groups</span> as places open.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-wordmark">one <em>to</em> eight</div>
+  <div class="footer-links">
+    <a href="../privacy">Privacy</a>
+    <a href="../security">Security</a>
+    <a href="../terms">Terms</a>
+    <a href="../refund-policy">Refund Policy</a>
+  </div>
+  <div class="footer-disclaim">Afterschool Agent is a training programme with live sessions. The Hermes agent software is free and open-source. All live sessions are supervised. No data leaves your device. Pricing is $44.88 one-time / $11.22 per week. No lock-in.</div>
+</footer>
+<script>
+function toggleNav(){
+  document.getElementById('nav-links').classList.toggle('mobile-open');
+}
+document.querySelectorAll('.nav-links a').forEach(function(el){
+  el.addEventListener('click', function(){
+    document.getElementById('nav-links').classList.remove('mobile-open');
+  });
+});
+</script>
+<script>
+// Register form. WEBHOOK_URL: paste the ActivePieces endpoint here when it arrives.
+(function(){
+  var WEBHOOK_URL = "https://cloud.activepieces.com/api/v1/webhooks/tBkbJcEi4Ak48qC5pjDXa";
+  var form = document.getElementById('reg-form');
+  var btn = document.getElementById('reg-btn');
+  var note = document.querySelector('.reg-note');
+  var connect = document.getElementById('reg-connect');
+  var error = document.getElementById('reg-error');
+  var success = document.getElementById('reg-success');
+  var successName = document.getElementById('reg-success-name');
+  var successProg = document.getElementById('reg-success-prog');
+  var nameInput = document.getElementById('reg-name');
+  function applyMode(){
+    var picked = form.querySelector('input[name="over18"]:checked');
+    nameInput.placeholder = (picked && picked.value === 'yes') ? 'Your name' : 'Parent or guardian name';
+  }
+  form.querySelectorAll('input[name="over18"]').forEach(function(r){ r.addEventListener('change', applyMode); });
+  applyMode();
+  var PLABELS = {
+    'after-school': 'after-school groups',
+    'post-school': 'post-school cohort',
+    'masterclass': 'Masterclass cohort',
+    'unsure': 'first groups'
+  };
+  // preselect via ?programme=... (e.g. from the learn-more pricing box)
+  try {
+    var pre = new URLSearchParams(location.search).get('programme');
+    if (pre && form.querySelector('option[value="' + pre + '"]')) { form.programme.value = pre; }
+  } catch (e) {}
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var fd = new FormData(form);
+    if (fd.get('website')) { return false; } // honeypot: silently drop bots
+    var name = (fd.get('name') || '').trim();
+    var email = (fd.get('email') || '').trim();
+    var programme = fd.get('programme') || '';
+    var message = (fd.get('message') || '').trim();
+    error.classList.remove('show');
+    connect.classList.remove('show');
+    if (!WEBHOOK_URL) { connect.classList.add('show'); return false; }
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+    var payload = {
+      name: name,
+      email: email,
+      programme: programme,
+      over18: fd.get('over18') || '',
+      message: message,
+      source: 'afterschool.agency register page (preview-two-programs)',
+      at: new Date().toISOString()
+    };
+    function done(){
+      form.style.display = 'none';
+      note.style.display = 'none';
+      successName.textContent = name.split(' ')[0] || 'friend';
+      successProg.textContent = PLABELS[programme] || 'first groups';
+      success.classList.add('show');
+    }
+    fetch(WEBHOOK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+    .then(function(resp){
+      if (resp.ok || resp.status === 200 || resp.status === 201 || resp.status === 204) { done(); }
+      else { throw new Error('HTTP ' + resp.status); }
+    })
+    .catch(function(){
+      fetch(WEBHOOK_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+      .then(done)
+      .catch(function(){
+        btn.disabled = false;
+        btn.textContent = 'Register interest';
+        error.classList.add('show');
+      });
+    });
+  });
+})();
+</script>
+<script>
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}})
+},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+<script>document.addEventListener('DOMContentLoaded',function(){try{lucide.createIcons()}catch(e){}})</script>
+</body>
+</html>
