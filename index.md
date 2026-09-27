@@ -290,7 +290,7 @@ one to eight
 
 [Refund Policy](../refund-policy)
 
-Afterschool Agent is an on-demand training programme with a weekly live Q&A. The Hermes agent software is free and open-source. All live sessions are supervised. No data leaves your device. Pricing is $44.88 one-time / $11.22 per week. No lock-in.
+Afterschool Agent is an on-demand training programme with a weekly live Q&A. The Hermes agent software is free and open-source. All live sessions are supervised. No data leaves your device. Pricing is $44.88 one-time. No lock-in.
 
 ×
 
