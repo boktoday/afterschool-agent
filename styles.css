@@ -55,7 +55,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(14px);-
 
 /* Hamburger */
 
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px 10px;background:transparent;border:1px solid rgba(217,164,65,.25);border-radius:8px;z-index:101}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px 10px;background:transparent;border:1px solid rgba(217,164,65,.25);border-radius:0;z-index:110;position:relative}
 
 .hamburger span{display:block;width:22px;height:2px;background:var(--gold);border-radius:2px;transition:all .3s}
 
@@ -69,9 +69,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(14px);-
 
 .nav-overlay{display:none}
 
-@media(max-width:760px){
+@media(max-width:900px){
 
-  .nav-links{display:flex;flex-wrap:wrap;gap:.5rem 1rem;justify-content:flex-end;max-width:70%}
+  .nav-links{display:none}
 
   .nav-links a{font-size:.6rem;letter-spacing:.08em}
 
@@ -816,3 +816,9 @@ footer{padding:3rem 1.5rem 2rem;text-align:center;border-top:1px solid rgba(217,
 /* keep the brand nav wordmark as a serif-ish lockup */
 footer .footer-wordmark{font-family:'Tanker','Switzer',sans-serif;font-weight:400;}
 
+
+
+/* Mobile nav open: the sticky nav's backdrop-filter makes position:fixed children size to the nav
+   box (112px) instead of the viewport; neutralise it while the overlay is open, and lock the page. */
+body.nav-open nav{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+body.nav-open{overflow:hidden}

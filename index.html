@@ -67,6 +67,8 @@
       <li><a href="/landing-3d">Go 3D</a></li>
       <li><a href="https://store.onetoeight.guide/" target="_blank" rel="noopener" style="display:inline-block;background:var(--gold);color:var(--night);padding:.5rem 1rem;font-family:var(--disp);font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;border-radius:0">Store</a></li>
     </ul>
+
+    <button class="hamburger" onclick="toggleNav()" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <!-- HERO -->
@@ -372,14 +374,10 @@
   <div class="footer-disclaim">Afterschool Agent is a training programme with live sessions. The Hermes agent software is free and open-source. All live sessions are supervised. No data leaves your device. Pricing is $44.88 one-time. No lock-in.</div>
 </footer>
 <script>
-function toggleNav(){
-  document.getElementById('nav-links').classList.toggle('mobile-open');
-}
+function toggleNav(){var ul=document.getElementById('nav-links'),hb=document.querySelector('.hamburger'),open=ul.classList.toggle('mobile-open');document.body.classList.toggle('nav-open',open);if(hb){hb.classList.toggle('open',open);hb.setAttribute('aria-expanded',open?'true':'false');}}
 // Close nav on link click (mobile)
 document.querySelectorAll('.nav-links a').forEach(function(el){
-  el.addEventListener('click', function(){
-    document.getElementById('nav-links').classList.remove('mobile-open');
-  });
+  el.addEventListener('click', function(){document.getElementById('nav-links').classList.remove('mobile-open');document.body.classList.remove('nav-open');var hb=document.querySelector('.hamburger');if(hb){hb.classList.remove('open');hb.setAttribute('aria-expanded','false');}});document.addEventListener('keydown',function(e){if(e.key==='Escape'){var ul=document.getElementById('nav-links');if(ul.classList.contains('mobile-open')){ul.classList.remove('mobile-open');document.body.classList.remove('nav-open');var hb=document.querySelector('.hamburger');if(hb){hb.classList.remove('open');hb.setAttribute('aria-expanded','false');}}}});
 });
 </script>
 <script>
