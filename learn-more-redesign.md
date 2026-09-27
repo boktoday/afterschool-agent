@@ -176,9 +176,7 @@ One-Time Payment
 
 - One-on-one help during Q&A sessions
 
-- All eight essentials personalised with activities for your young person
 
-- Hermes agent software, free and local-first. A one-time $20 OpenRouter.ai account credit covers setup and advanced queries.
 
 - The three daily rituals configured by the final module
 
