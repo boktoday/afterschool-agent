@@ -46,7 +46,6 @@ Afterschool Agent - Life Skills for the Screen Generation
 
 - [FAQ](learn-more.html#faq)
 
-- [Go 3D](/landing-3d)
 
 - [Store](https://store.onetoeight.guide/)
 
