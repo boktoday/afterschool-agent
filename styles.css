@@ -123,9 +123,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(14px);-
 
   .hero-content{max-width:100%!important;width:100%!important;text-align:center!important;margin:0!important}
 
-  .hero h1{font-size:clamp(1.4rem,5vw,1.75rem)!important;line-height:1.15!important;margin-bottom:.8rem!important;word-break:break-word!important}
+  .hero h1{font-size:clamp(2rem,8.5vw,2.5rem)!important;line-height:1.15!important;margin-bottom:.8rem!important;word-break:break-word!important}
 
-  .hero-time{font-size:clamp(1.5rem,5.2vw,1.85rem)!important;line-height:1.1!important;margin-bottom:.3rem!important;word-break:break-word!important}
+  .hero-time{font-size:clamp(2.2rem,10vw,2.7rem)!important;line-height:1.1!important;margin-bottom:.3rem!important;word-break:break-word!important}
 
   .hero-sub{font-size:.95rem!important;max-width:100%!important;width:100%!important;margin:0 0 1.2rem!important;line-height:1.55!important;word-break:break-word!important}
 
@@ -278,7 +278,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(14px);-
 
 .eyebrow{font-family:var(--disp);font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1.8rem;display:inline-block;border:1px solid rgba(217,164,65,.28);padding:.4rem 1.1rem;border-radius:100px}
 
-.hero h1{font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.8rem);font-weight:700;line-height:1.05;letter-spacing:-.02em;color:var(--dawn);margin-bottom:1.5rem}
+.hero h1{font-family:var(--serif);font-size:clamp(2rem,5.5vw,4.2rem);font-weight:700;line-height:1.05;letter-spacing:-.02em;color:var(--dawn);margin-bottom:1.5rem}
 
 .hero h1 em{font-style:italic;font-weight:400;color:var(--gold)}
 
