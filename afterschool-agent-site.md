@@ -173,7 +173,9 @@ The agent's primary job is to guide your young person through the eight essentia
 
 - A structured on-demand programme anchored to the eight essentials
 
-- Weekly live Q&A session every Monday with a real instructor
+- A weekly build video. One recorded move a week, 10 to 15 minutes, finishable in half an hour. The library grows forever.
+- Question line. Send questions any time, any timezone. I'll answer the common questions and meaningful ones in the weekly video or a monthly Answers episode.
+- Move cards. A one-page printable with each video: what to do, what you'll end up with.
 
 - Flexible schedule: learn at your own pace, any time
 
@@ -509,7 +511,9 @@ One-Time Payment
 
 - All on-demand training modules (work at your own pace)
 
-- Weekly live Q&A session every Monday at 5:00 PM
+- A weekly build video. One recorded move a week, 10 to 15 minutes, finishable in half an hour. The library grows forever.
+- Question line. Send questions any time, any timezone. I'll answer the common questions and meaningful ones in the weekly video or a monthly Answers episode.
+- Move cards. A one-page printable with each video: what to do, what you'll end up with.
 
 - One-on-one help during Q&A sessions
 
