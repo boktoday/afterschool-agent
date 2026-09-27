@@ -519,7 +519,6 @@ One-Time Payment
 - Move cards. A one-page printable with each video: what to do, what you'll end up with.
 - Lifetime updates for the agent, skills, partner offers and onetoeight.org guide updates.
 
-- One-on-one help during Q&A sessions
 
 
 
