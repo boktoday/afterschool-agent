@@ -1,6 +1,6 @@
 # Afterschool Agent
 
-> On-demand training plus a weekly live Q&A where young people build a personal AI agent that teaches the eight essentials.
+> Two programmes. One AI agent. Young people build a personal AI agent that teaches the eight essentials, after school or at their own pace.
 
 https://www.afterschool.agency
 
@@ -11,16 +11,22 @@ The Afterschool Agent programme walks young people aged 13 to 23 through buildin
 ## Key features
 
 - On-demand training modules, self-paced on their own schedule
-- Weekly live Q&A every Tuesday at 5:00 PM with a real instructor
+- A weekly build video: one recorded move a week, 10 to 15 minutes
+- A question line: send questions any time, any timezone
+- A dynamic FAQ built from every past answer and all transcripts
+- Move cards: a one-page printable with each video
+- Lifetime updates for the agent, skills, partner offers and guide updates
 - Fully secular: each young person tailors their agent to their own beliefs, with no worldview pushed
 - Local-first: everything runs on the device, no data retained or used for training
 - Three daily rituals: Afterschool Chat, Planning Session and a Morning Minute text-to-speech briefing
-- $8.88 per month, cancel anytime
-- Requirements: a laptop or desktop, plus a one-time OpenRouter.ai account credit
+- $44.88 one-time for the self-paced route; the after-school group and the 4-week masterclass cohort are by registration
+- Requirements: a laptop or desktop, plus an OpenRouter.ai account credit
 
 ## Pages
 
 - Home: https://www.afterschool.agency/
+- Learn more: https://www.afterschool.agency/learn-more
+- Register interest: https://www.afterschool.agency/register
 - Privacy: https://www.afterschool.agency/privacy/
 - Security: https://www.afterschool.agency/security/
 - Terms: https://www.afterschool.agency/terms/
