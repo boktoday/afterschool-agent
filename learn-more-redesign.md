@@ -170,6 +170,7 @@ One-Time Payment
 
 - A weekly build video. One recorded move a week, 10 to 15 minutes, finishable in half an hour. The library grows forever.
 - Question line. Send questions any time, any timezone. I'll answer the common questions and meaningful ones in the weekly video or a monthly Answers episode.
+- Dynamic FAQ for every past answer and all transcripts. Instant, at any hour.
 - Move cards. A one-page printable with each video: what to do, what you'll end up with.
 - Lifetime updates for the agent, skills, partner offers and onetoeight.org guide updates.
 
