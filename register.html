@@ -40,6 +40,8 @@
 .reg-btn:hover{background:var(--night2);transform:translateY(-1px)}
 .reg-btn:disabled{opacity:.65;cursor:wait;transform:none}
 .reg-note{position:relative;z-index:1;font-size:.78rem;color:rgba(13,18,32,.55);margin:.9rem 0 0;text-align:center;line-height:1.5}
+        .reg-prog-note{display:none;margin:.5rem 0 0;font-size:.82rem;color:rgba(13,18,32,.62);line-height:1.55}
+        .reg-prog-note.show{display:block}
 .reg-error,.reg-connect{position:relative;z-index:1;display:none;margin:.9rem 0 0;text-align:center;font-size:.85rem;font-weight:600;background:rgba(255,255,255,.45);padding:.75rem 1rem}
 .reg-error{border:1.5px solid var(--terra-deep);color:var(--terra-deep)}
 .reg-connect{border:1.5px solid var(--sage-deep);color:var(--sage-deep)}
@@ -100,6 +102,7 @@
             <option value="unsure">Not sure yet</option>
           </select>
         </div>
+        <p class="reg-prog-note" id="reg-prog-note">The masterclass cohort starts on the first Monday of the month. Live sessions run on AEST.</p>
         <label class="reg-label" for="reg-message">Anything we should know? <span class="reg-opt">Optional</span></label>
         <textarea class="reg-textarea" id="reg-message" name="message" rows="3" placeholder="Questions, timing, anything else."></textarea>
         <input type="text" name="website" class="reg-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -166,6 +169,10 @@ document.querySelectorAll('.nav-links a').forEach(function(el){
     var pre = new URLSearchParams(location.search).get('programme');
     if (pre && form.querySelector('option[value="' + pre + '"]')) { form.programme.value = pre; }
   } catch (e) {}
+  var progNote = document.getElementById('reg-prog-note');
+  function updateProgNote(){ if (progNote) { progNote.classList.toggle('show', form.programme.value === 'masterclass'); } }
+  form.programme.addEventListener('change', updateProgNote);
+  updateProgNote();
   form.addEventListener('submit', function(e){
     e.preventDefault();
     var fd = new FormData(form);
