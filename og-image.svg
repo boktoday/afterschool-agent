@@ -39,7 +39,7 @@
   <text x="80" y="340" font-family="system-ui,sans-serif" font-size="18" fill="rgba(246,239,227,.5)" letter-spacing="3" text-transform="uppercase">IN A WORLD FULL OF AI AGENTS</text>
   <text x="80" y="370" font-family="system-ui,sans-serif" font-size="18" fill="rgba(246,239,227,.5)" letter-spacing="3" text-transform="uppercase">WE GIVE YOUNG PEOPLE AGENCY</text>
   <line x1="80" y1="395" x2="350" y2="395" stroke="#d9a441" stroke-width="2" opacity=".6"/>
-  <text x="80" y="430" font-family="system-ui,sans-serif" font-size="14" fill="rgba(246,239,227,.35)" letter-spacing="2">ON-DEMAND TRAINING · WEEKLY LIVE Q&A · $44.88</text>
+  <text x="80" y="430" font-family="system-ui,sans-serif" font-size="14" fill="rgba(246,239,227,.35)" letter-spacing="2">ON-DEMAND TRAINING · WEEKLY LIVE Q&A · $19.99</text>
   <!-- bottom -->
   <text x="80" y="560" font-family="system-ui,sans-serif" font-size="11" fill="rgba(246,239,227,.2)" letter-spacing="4" text-transform="uppercase">onetoeight.org</text>
 </svg>

@@ -19,7 +19,7 @@ The Afterschool Agent programme walks young people aged 13 to 23 through buildin
 - Fully secular: each young person tailors their agent to their own beliefs, with no worldview pushed
 - Local-first: everything runs on the device, no data retained or used for training
 - Three daily rituals: Afterschool Chat, Planning Session and a Morning Minute text-to-speech briefing
-- $44.88 one-time for the self-paced route; the after-school group and the 4-week masterclass cohort are by registration
+- $19.99 one-time for the self-paced route; the after-school group and the 4-week masterclass cohort are by registration
 - Requirements: a laptop or desktop, plus an OpenRouter.ai account credit
 
 ## Pages
