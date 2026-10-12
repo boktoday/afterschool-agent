@@ -822,3 +822,6 @@ footer .footer-wordmark{font-family:'Tanker','Switzer',sans-serif;font-weight:40
    box (112px) instead of the viewport; neutralise it while the overlay is open, and lock the page. */
 body.nav-open nav{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
 body.nav-open{overflow:hidden}
+
+/* Hire-me mobile-only nav item */
+@media(min-width:901px){.hire-m{display:none}}
