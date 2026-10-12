@@ -153,6 +153,9 @@
 .h-hero .chapter-btn,.h-sec .chapter-btn{border:2px solid currentColor;padding:.85rem 1.5rem;display:inline-block;text-decoration:none;background:transparent;cursor:pointer;font-family:inherit;font-size:.95rem}
 .h-hero .chapter-btn:hover,.h-sec .chapter-btn:hover{background:#2c2118;color:#f6efe3}
 .h-max{max-width:62rem;margin:0 auto}
+.h-hero{padding-left:clamp(1.25rem,6vw,4rem);padding-right:clamp(1.25rem,6vw,4rem)}
+.h-sec{padding-left:clamp(1.25rem,6vw,4rem);padding-right:clamp(1.25rem,6vw,4rem)}
+@media(min-width:901px){.hire-m{display:none}}
 @media(max-width:960px){.h-g3{grid-template-columns:1fr}}
 @media(max-width:860px){.h-g2,.h-cgrid{grid-template-columns:1fr}}
 </style></head>
@@ -179,7 +182,8 @@
 
       <li><a href="learn-more.html#faq">FAQ</a></li>
 
-      <li><a href="https://store.onetoeight.guide/" target="_blank" rel="noopener" style="display:inline-block;background:var(--gold);color:var(--night);padding:.5rem 1rem;font-family:var(--disp);font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;border-radius:0">Store</a></li>
+      <li class="hire-m"><a href="/hire">Hire me</a></li>
+        <li><a href="https://store.onetoeight.guide/" target="_blank" rel="noopener" style="display:inline-block;background:var(--gold);color:var(--night);padding:.5rem 1rem;font-family:var(--disp);font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;border-radius:0">Store</a></li>
 
     </ul>
 
